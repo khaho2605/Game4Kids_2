@@ -35,6 +35,9 @@ class BrushTeethViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        layout()
+        arrOrigin = getPos()
+        setPosition(arrData: arrOrigin?.randomArr(arrSource: arrOrigin!) as! [CGPoint])
         
         playerImg1.isUserInteractionEnabled = true
         playerImg2.isUserInteractionEnabled = true
@@ -53,8 +56,7 @@ class BrushTeethViewController: BaseViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        arrOrigin = getPos()
-        setPosition(arrData: arrOrigin?.randomArr(arrSource: arrOrigin!) as! [CGPoint])
+        
     }
     
     @IBAction func replayBtnDidTap(_ sender: Any) {
@@ -183,5 +185,54 @@ extension BrushTeethViewController {
             
 //            _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.playDongVai), userInfo: nil, repeats: false);
         }
+    }
+}
+
+extension BrushTeethViewController {
+    func layout() {
+        let screenHeight: CGFloat = self.view.frame.height
+        let screenWidth: CGFloat = self.view.frame.width
+        let topMargin: CGFloat = screenHeight*0.22
+        let witdhPlayer: CGFloat = screenHeight*0.2
+        let heightPlayer: CGFloat = witdhPlayer
+        
+        let topMarginTarget: CGFloat = screenHeight*0.2
+        let witdhTarget: CGFloat = screenHeight*0.23
+        let heightTarget: CGFloat = witdhTarget
+        
+        let widthButton: CGFloat = screenWidth*0.2
+        let heightButton: CGFloat = screenHeight*0.26
+        
+        playerImg3.frame = CGRect(x: 0, y: topMargin, width: witdhPlayer, height: heightPlayer)
+        playerImg3.center = CGPoint(x: self.view.center.x-witdhPlayer/2, y: playerImg3.frame.origin.y)
+        
+        playerImg2.frame = CGRect(x: playerImg3.frame.origin.x-10-witdhPlayer, y: playerImg3.frame.origin.y, width: witdhPlayer, height: heightPlayer)
+        playerImg1.frame = CGRect(x: playerImg2.frame.origin.x-10-witdhPlayer, y: playerImg3.frame.origin.y, width: witdhPlayer, height: heightPlayer)
+        
+        
+        playerImg4.frame = CGRect(x: playerImg3.frame.maxX+10, y: playerImg1.frame.origin.y, width: witdhPlayer, height: heightPlayer)
+        playerImg5.frame = CGRect(x: playerImg4.frame.maxX+10, y: playerImg1.frame.origin.y, width: witdhPlayer, height: heightPlayer)
+        playerImg6.frame = CGRect(x: playerImg5.frame.maxX+10, y: playerImg1.frame.origin.y, width: witdhPlayer, height: heightPlayer)
+        
+        playerImg1.layer.cornerRadius = 5
+        playerImg2.layer.cornerRadius = 5
+        playerImg3.layer.cornerRadius = 5
+        playerImg4.layer.cornerRadius = 5
+        playerImg5.layer.cornerRadius = 5
+        playerImg6.layer.cornerRadius = 5
+        
+        
+        targetImg2.frame = CGRect(x: 0, y: playerImg1.frame.maxY+topMarginTarget, width: witdhTarget, height: heightTarget)
+        targetImg2.center = CGPoint(x: self.view.center.x, y: targetImg2.frame.origin.y)
+        targetImg1.frame = CGRect(x: targetImg2.frame.origin.x-10-witdhTarget, y: targetImg2.frame.origin.y, width: witdhTarget, height: heightTarget)
+        
+        targetImg3.frame = CGRect(x: targetImg2.frame.maxX+10, y: targetImg2.frame.origin.y, width: witdhTarget, height: heightTarget)
+        targetImg4.frame = CGRect(x: targetImg1.frame.origin.x, y: targetImg1.frame.maxY+10, width: witdhTarget, height: heightTarget)
+        targetImg5.frame = CGRect(x: targetImg4.frame.maxX+10, y: targetImg4.frame.origin.y, width: witdhTarget, height: heightTarget)
+        targetImg6.frame = CGRect(x: targetImg5.frame.maxX+10, y: targetImg4.frame.origin.y, width: witdhTarget, height: heightTarget)
+        
+        replayBtn.frame = CGRect(x: targetImg6.frame.maxX+20, y: targetImg6.frame.origin.y, width: widthButton, height: heightButton)
+        replayBtn.layer.cornerRadius = 10
+        replayBtn.titleLabel?.adjustsFontSizeToFitWidth = true
     }
 }
