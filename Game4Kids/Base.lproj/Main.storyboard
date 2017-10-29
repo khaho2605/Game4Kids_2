@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iad-In-HbH">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MÀN HÌNH CHÍNH-->
         <scene sceneID="MIi-qu-Deg">
             <objects>
                 <viewController id="ieS-he-dGW" customClass="ViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,27 +21,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcq-sk-Zqj">
-                                <rect key="frame" x="418" y="284" width="158" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPo-Ck-k7W">
+                                <rect key="frame" x="954" y="698" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WJm-Vg-1OK"/>
+                                    <constraint firstAttribute="width" constant="50" id="etG-5F-T09"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="notMute"/>
+                                <connections>
+                                    <action selector="muteBtnDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="RHZ-bX-Y22"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcq-sk-Zqj">
+                                <rect key="frame" x="410" y="124" width="205" height="128"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Đánh Răng">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="didTapBtn:" destination="ieS-he-dGW" eventType="touchUpInside" id="lep-V9-FMm"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="eEU-A2-5jD"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zcq-sk-Zqj" firstAttribute="width" secondItem="v6L-Lx-20s" secondAttribute="width" multiplier="1/5" id="JLb-pi-vtf"/>
+                            <constraint firstItem="Zcq-sk-Zqj" firstAttribute="top" secondItem="YIt-xq-eyN" secondAttribute="bottom" constant="60" id="O0z-ju-vqY"/>
+                            <constraint firstItem="Zcq-sk-Zqj" firstAttribute="centerX" secondItem="v6L-Lx-20s" secondAttribute="centerX" id="eKg-ws-qK4"/>
+                            <constraint firstAttribute="trailing" secondItem="YPo-Ck-k7W" secondAttribute="trailing" constant="20" id="saD-2s-5ip"/>
+                            <constraint firstItem="f0A-rt-4Fj" firstAttribute="top" secondItem="YPo-Ck-k7W" secondAttribute="bottom" constant="20" id="v3w-ia-lai"/>
+                            <constraint firstItem="Zcq-sk-Zqj" firstAttribute="height" secondItem="v6L-Lx-20s" secondAttribute="height" multiplier="1/6" id="zet-mC-HTG"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="MÀN HÌNH CHÍNH" id="FfR-ZP-xxT"/>
+                    <connections>
+                        <outlet property="muteBtn" destination="YPo-Ck-k7W" id="esn-4Z-nx2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uX0-FF-qGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732" y="-392"/>
+            <point key="canvasLocation" x="-8.203125" y="-392.1875"/>
         </scene>
-        <!--Brush Teeth View Controller-->
+        <!--ĐÁNH RĂNG-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BrushTeethViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
@@ -115,6 +144,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="ĐÁNH RĂNG" id="qlN-ql-EG8"/>
                     <connections>
                         <outlet property="playerImg1" destination="fYm-qg-ue1" id="sR6-dL-rrK"/>
                         <outlet property="playerImg2" destination="DOx-Pa-DWe" id="MJd-r3-Ab4"/>
@@ -133,7 +163,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50.390625" y="-187.5"/>
+            <point key="canvasLocation" x="673" y="-392"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JJm-oT-Vzw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iad-In-HbH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ubO-d9-SSF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ieS-he-dGW" kind="relationship" relationship="rootViewController" id="7sL-YW-l8x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lum-09-yv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732.421875" y="-392.1875"/>
         </scene>
     </scenes>
     <resources>
@@ -144,5 +192,6 @@
         <image name="5" width="502" height="500"/>
         <image name="6" width="500" height="500"/>
         <image name="khung_hinh" width="291" height="321"/>
+        <image name="notMute" width="512" height="512"/>
     </resources>
 </document>

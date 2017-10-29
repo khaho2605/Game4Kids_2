@@ -18,7 +18,6 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        playSound(name: "AllFallDown", Extension: "mp3")
     }
 }
 
