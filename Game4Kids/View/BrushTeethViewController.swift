@@ -71,6 +71,7 @@ class BrushTeethViewController: BaseViewController {
     
 }
 
+//MARK: Add gesture
 extension BrushTeethViewController {
     //Get arr posX
     func getPos() -> [CGPoint] {
@@ -188,6 +189,7 @@ extension BrushTeethViewController {
     }
 }
 
+//MARK: Layout 
 extension BrushTeethViewController {
     func layout() {
         let screenHeight: CGFloat = self.view.frame.height
