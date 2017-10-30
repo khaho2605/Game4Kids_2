@@ -30,14 +30,14 @@ class BrushTeethViewController: BaseViewController {
     var originPlayer4:CGPoint?
     var originPlayer5:CGPoint?
     var originPlayer6:CGPoint?
-    
-    var arrOrigin: [CGPoint]?
+    var arrOrigin: [CGPoint] = [CGPoint]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         layout()
         arrOrigin = getPos()
-        setPosition(arrData: arrOrigin?.randomArr(arrSource: arrOrigin!) as! [CGPoint])
+        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
+        setPosition(arrData: data)
         
         playerImg1.isUserInteractionEnabled = true
         playerImg2.isUserInteractionEnabled = true
@@ -46,16 +46,17 @@ class BrushTeethViewController: BaseViewController {
         playerImg5.isUserInteractionEnabled = true
         playerImg6.isUserInteractionEnabled = true
         
-        playerImg1.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(dragView1)))
-        playerImg2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(dragView2)))
-        playerImg3.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(dragView3)))
-        playerImg4.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(dragView4)))
-        playerImg5.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(dragView5)))
-        playerImg6.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(dragView6)))
+        playerImg1.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
+        playerImg2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
+        playerImg3.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
+        playerImg4.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
+        playerImg5.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
+        playerImg6.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
     }
     
     @IBAction func replayBtnDidTap(_ sender: Any) {
-        setPosition(arrData: arrOrigin?.randomArr(arrSource: arrOrigin!) as! [CGPoint])
+        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
+        setPosition(arrData: data)
         playerImg1.isUserInteractionEnabled = true
         playerImg2.isUserInteractionEnabled = true
         playerImg3.isUserInteractionEnabled = true
@@ -63,7 +64,6 @@ class BrushTeethViewController: BaseViewController {
         playerImg5.isUserInteractionEnabled = true
         playerImg6.isUserInteractionEnabled = true
     }
-    
 }
 
 //MARK: Add gesture
@@ -99,69 +99,39 @@ extension BrushTeethViewController {
 }
 
 extension BrushTeethViewController {
-    func dragView1(recognizer:UIPanGestureRecognizer){
-        dragView(recognizer: recognizer, target: targetImg1, posPlayer: originPlayer1!)
-        if recognizer.state == .ended {
-            checkFinishGame()
-            if endTouch {
-                playerImg1.isUserInteractionEnabled = false
-                endTouch = false
-            }
+    func actionForGesture(recognizer: UIPanGestureRecognizer) {
+        var targetView = UIView()
+        var posOrigin = CGPoint(x: 0, y: 0)
+        
+        let tagView: Int = recognizer.view?.tag ?? 0
+        let viewPlayer = recognizer.view
+        switch tagView {
+        case 1:
+            targetView = targetImg1
+            posOrigin = originPlayer1 ?? CGPoint.zero
+        case 2:
+            targetView = targetImg2
+            posOrigin = originPlayer2 ?? CGPoint.zero
+        case 3:
+            targetView = targetImg3
+            posOrigin = originPlayer3 ?? CGPoint.zero
+        case 4:
+            targetView = targetImg4
+            posOrigin = originPlayer4 ?? CGPoint.zero
+        case 5:
+            targetView = targetImg5
+            posOrigin = originPlayer5 ?? CGPoint.zero
+        case 6:
+            targetView = targetImg6
+            posOrigin = originPlayer6 ?? CGPoint.zero
+        default:
+            break
         }
-    }
-    
-    func dragView2(recognizer:UIPanGestureRecognizer){
-        dragView(recognizer: recognizer, target: targetImg2, posPlayer: originPlayer2!)
+        dragView(recognizer: recognizer, target: targetView, posPlayer: posOrigin)
         if recognizer.state == .ended {
             checkFinishGame()
             if endTouch {
-                playerImg2.isUserInteractionEnabled = false
-                endTouch = false
-            }
-        }
-    }
-    
-    func dragView3(recognizer:UIPanGestureRecognizer){
-        dragView(recognizer: recognizer, target: targetImg3, posPlayer: originPlayer3!)
-        if recognizer.state == .ended {
-            checkFinishGame()
-            if endTouch {
-                playerImg3.isUserInteractionEnabled = false
-                endTouch = false
-            }
-        }
-
-    }
-    
-    func dragView4(recognizer:UIPanGestureRecognizer){
-        dragView(recognizer: recognizer, target: targetImg4, posPlayer: originPlayer4!)
-        if recognizer.state == .ended {
-            checkFinishGame()
-            if endTouch {
-                playerImg4.isUserInteractionEnabled = false
-                endTouch = false
-            }
-        }
-    }
-    
-    func dragView5(recognizer:UIPanGestureRecognizer){
-        dragView(recognizer: recognizer, target: targetImg5, posPlayer: originPlayer5!)
-        if recognizer.state == .ended {
-            checkFinishGame()
-            if endTouch {
-                playerImg5.isUserInteractionEnabled = false
-                endTouch = false
-            }
-        }
-
-    }
-    
-    func dragView6(recognizer:UIPanGestureRecognizer){
-        dragView(recognizer: recognizer, target: targetImg6, posPlayer: originPlayer6!)
-        if recognizer.state == .ended {
-            checkFinishGame()
-            if endTouch {
-                playerImg6.isUserInteractionEnabled = false
+                viewPlayer?.isUserInteractionEnabled = false
                 endTouch = false
             }
         }
@@ -178,13 +148,11 @@ extension BrushTeethViewController {
             playerImg4.isUserInteractionEnabled = false
             playerImg5.isUserInteractionEnabled = false
             playerImg6.isUserInteractionEnabled = false
-            
-//            _ = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.playDongVai), userInfo: nil, repeats: false);
         }
     }
 }
 
-//MARK: Layout 
+//MARK: Layout
 extension BrushTeethViewController {
     func layout() {
         let screenHeight: CGFloat = self.view.frame.height

@@ -15,7 +15,7 @@ class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        playSound(name: "AllFallDown", Extension: "mp3")
+        playSound(name: "AllFallDown", Extension: "mp3", repeatSound: true)
     }
 
     @IBAction func muteBtnDidTap(_ sender: Any) {
@@ -31,5 +31,8 @@ class ViewController: BaseViewController {
 
     }
 
+    @IBAction func abcBtnDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(GameViewController(), animated: true)
+    }
 }
 

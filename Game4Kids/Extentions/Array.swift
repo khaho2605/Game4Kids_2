@@ -24,9 +24,9 @@ extension MutableCollection where Index == Int {
 }
 
 extension Array {
-    func randomArr(arrSource: [Any]) -> [Any] {
+    func randomArr() -> [Any] {
         var arr = [Any]()
-        arr = arrSource
+        arr = self
         arr.shuffle()
         return arr
     }

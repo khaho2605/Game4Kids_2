@@ -12,6 +12,8 @@
 		EA7F5CE21FA587DC00A87ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7F5CE01FA587DC00A87ACC /* Main.storyboard */; };
 		EA7F5CE41FA587DC00A87ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7F5CE31FA587DC00A87ACC /* Assets.xcassets */; };
 		EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7F5CE51FA587DC00A87ACC /* LaunchScreen.storyboard */; };
+		EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */; };
+		EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */; };
 		EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF4961FA58D6000AF4078 /* BrushTeethViewController.swift */; };
 		EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF4991FA5903500AF4078 /* BaseViewController.swift */; };
 		EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF49C1FA5920700AF4078 /* Array.swift */; };
@@ -29,6 +31,8 @@
 		EA7F5CE31FA587DC00A87ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA7F5CE61FA587DC00A87ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA7F5CE81FA587DC00A87ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		EAEFF4961FA58D6000AF4078 /* BrushTeethViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrushTeethViewController.swift; sourceTree = "<group>"; };
 		EAEFF4991FA5903500AF4078 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EAEFF49C1FA5920700AF4078 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				EAEFF4961FA58D6000AF4078 /* BrushTeethViewController.swift */,
+				EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */,
+				EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */,
 				EAEFF4A81FA5ABDC00AF4078 /* thu cach khac.wav in Resources */,
 				EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */,
 				EAEFF4A01FA5979200AF4078 /* AllFallDown.mp3 in Resources */,
@@ -198,6 +205,7 @@
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
 				EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */,
+				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
