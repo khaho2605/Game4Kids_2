@@ -22,6 +22,8 @@ class GameViewController: BaseViewController {
     @IBOutlet weak var targetView1: UIView!
     @IBOutlet weak var targetView2: UIView!
     @IBOutlet weak var replayBtn: UIButton!
+    @IBOutlet weak var bathRoomLb: UILabel!
+    @IBOutlet weak var bedRoomLb: UILabel!
     
     var originPlayer:CGPoint?
     var originPlayer1:CGPoint?
@@ -202,9 +204,17 @@ extension GameViewController {
         let margin: CGFloat = 12
         let radius: CGFloat = 8
         
+        bathRoomLb.sizeToFit()
+        bedRoomLb.sizeToFit()
+        
+        
+        
         self.targetView1.frame = CGRect(x: 20, y: replayBtn.frame.origin.y-heightTargetView-8, width: widthTargetView, height: heightTargetView)
         self.targetView2.frame = CGRect(x: screenWidth-spacing-widthTargetView, y: targetView1.frame.origin.y, width: widthTargetView, height: heightTargetView)
         
+        bathRoomLb.frame = CGRect(x: targetView1.frame.origin.x + 8, y: targetView1.frame.origin.y + 8 , width: bathRoomLb.frame.width, height: bathRoomLb.frame.height)
+        bedRoomLb.frame = CGRect(x: targetView2.frame.origin.x + 8, y: targetView2.frame.origin.y + 8 , width: bedRoomLb.frame.width, height: bedRoomLb.frame.height)
+
         self.playerImg3.frame = CGRect(x: centerX - witdhPlayer - margin/2, y: topMargin, width: witdhPlayer, height: witdhPlayer)
         self.playerImg2.frame = CGRect(x: playerImg3.frame.origin.x - witdhPlayer - margin, y: topMargin, width: witdhPlayer, height: witdhPlayer)
         self.playerImg1.frame = CGRect(x: playerImg2.frame.origin.x - witdhPlayer - margin, y: topMargin, width: witdhPlayer, height: witdhPlayer)
