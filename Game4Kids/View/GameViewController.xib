@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="Game4Kids" customModuleProvider="target">
             <connections>
+                <outlet property="playerImg" destination="5ez-RO-aLd" id="NHR-FC-Ze1"/>
                 <outlet property="playerImg1" destination="cq0-r0-S0G" id="9Oi-BD-2es"/>
                 <outlet property="playerImg2" destination="0Oh-pq-MfN" id="Xto-eE-DOU"/>
                 <outlet property="playerImg3" destination="qKj-bK-HaS" id="8NR-I7-RnL"/>
                 <outlet property="playerImg4" destination="Xw7-FQ-1kg" id="5n5-yr-Plk"/>
                 <outlet property="playerImg5" destination="EBp-1T-V6n" id="hqn-1R-O6K"/>
                 <outlet property="playerImg6" destination="oFs-b1-pTu" id="glp-fC-Zvs"/>
-                <outlet property="targetView1" destination="AVr-HD-8vy" id="d5t-Bj-beB"/>
-                <outlet property="targetView2" destination="0YS-nc-Ima" id="kje-V9-u5H"/>
+                <outlet property="playerImg7" destination="2fC-H5-dfS" id="5vd-zS-eDu"/>
+                <outlet property="replayBtn" destination="uey-6h-fLp" id="zjW-PQ-Lxx"/>
+                <outlet property="targetView1" destination="lOe-pX-opZ" id="gbs-Oo-Yh4"/>
+                <outlet property="targetView2" destination="ycT-Dk-XNw" id="Tp1-xh-W6b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,55 +31,90 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="abc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMc-oO-6uv">
-                    <rect key="frame" x="491" y="88" width="42" height="53"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOe-pX-opZ">
+                    <rect key="frame" x="20" y="280" width="482" height="307"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AVr-HD-8vy">
-                    <rect key="frame" x="20" y="332" width="462" height="416"/>
+                    <color key="backgroundColor" red="0.87220287320000001" green="0.20682784909999999" blue="0.22709366680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycT-Dk-XNw">
+                    <rect key="frame" x="522" y="280" width="482" height="307"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0YS-nc-Ima">
-                    <rect key="frame" x="542" y="332" width="462" height="416"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cq0-r0-S0G">
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom_1" translatesAutoresizingMaskIntoConstraints="NO" id="cq0-r0-S0G">
                     <rect key="frame" x="20" y="128" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Oh-pq-MfN">
-                    <rect key="frame" x="151" y="128" width="100" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom_2" translatesAutoresizingMaskIntoConstraints="NO" id="0Oh-pq-MfN">
+                    <rect key="frame" x="139" y="128" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.41960784309999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKj-bK-HaS">
-                    <rect key="frame" x="300" y="128" width="100" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom_3" translatesAutoresizingMaskIntoConstraints="NO" id="qKj-bK-HaS">
+                    <rect key="frame" x="247" y="128" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xw7-FQ-1kg">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bed_room_1" translatesAutoresizingMaskIntoConstraints="NO" id="Xw7-FQ-1kg">
                     <rect key="frame" x="568" y="128" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-1T-V6n">
-                    <rect key="frame" x="736" y="128" width="100" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bed_room_2" translatesAutoresizingMaskIntoConstraints="NO" id="EBp-1T-V6n">
+                    <rect key="frame" x="709" y="128" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFs-b1-pTu">
-                    <rect key="frame" x="904" y="128" width="100" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bed_room_3" translatesAutoresizingMaskIntoConstraints="NO" id="oFs-b1-pTu">
+                    <rect key="frame" x="830" y="128" width="100" height="100"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom_4" translatesAutoresizingMaskIntoConstraints="NO" id="5ez-RO-aLd">
+                    <rect key="frame" x="382" y="128" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bed_room_4" translatesAutoresizingMaskIntoConstraints="NO" id="2fC-H5-dfS">
+                    <rect key="frame" x="924" y="128" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uey-6h-fLp">
+                    <rect key="frame" x="256" y="620" width="512" height="128"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                    <state key="normal" title="Chơi Lại">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapReplayBtn:" destination="-1" eventType="touchUpInside" id="rVS-NS-hNz"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uey-6h-fLp" secondAttribute="bottom" constant="20" id="6Sr-Ic-uVG"/>
+                <constraint firstItem="uey-6h-fLp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DnJ-tT-ko3"/>
+                <constraint firstItem="uey-6h-fLp" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="2/12" id="PD6-qk-CRn"/>
+                <constraint firstItem="uey-6h-fLp" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1/2" identifier="3/10" id="tZX-3z-MhI"/>
+            </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="bathroom_1" width="498" height="502"/>
+        <image name="bathroom_2" width="502" height="504"/>
+        <image name="bathroom_3" width="258" height="256"/>
+        <image name="bathroom_4" width="264" height="236"/>
+        <image name="bed_room_1" width="266" height="266"/>
+        <image name="bed_room_2" width="266" height="274"/>
+        <image name="bed_room_3" width="270" height="272"/>
+        <image name="bed_room_4" width="268" height="268"/>
+    </resources>
 </document>
