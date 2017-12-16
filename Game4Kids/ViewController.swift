@@ -37,5 +37,9 @@ class ViewController: BaseViewController {
     @IBAction func goWcDidTap(_ sender: Any) {
         self.navigationController?.pushViewController(GoWCViewController(), animated: true)
     }
+    @IBAction func handwashingBtnDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(IntroHandwashingViewController(), animated: true)
+    }
+    
 }
 
