@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iad-In-HbH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iad-In-HbH">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,53 +32,63 @@
                                     <action selector="muteBtnDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="RHZ-bX-Y22"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcq-sk-Zqj">
-                                <rect key="frame" x="410" y="124" width="205" height="128"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <state key="normal" title="Đánh Răng">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="eEU-A2-5jD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaj-pP-Wqg">
-                                <rect key="frame" x="410" y="292" width="205" height="128"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <state key="normal" title="Game No.1">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="abcBtnDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="edA-ue-GZh"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-UW-QOB">
+                                <rect key="frame" x="430" y="282" width="164" height="204"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeN-Nt-0cl">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <state key="normal" title="Đi Vệ Sinh">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="goWcDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="oC9-NV-exj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHY-Jh-ise">
+                                        <rect key="frame" x="0.0" y="78" width="164" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <state key="normal" title="Mặc Cởi Áo">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-V3-8fO">
+                                        <rect key="frame" x="0.0" y="156" width="164" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <state key="normal" title="Rửa Tay">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aaj-pP-Wqg" firstAttribute="centerX" secondItem="v6L-Lx-20s" secondAttribute="centerX" id="FFy-6U-Mvi"/>
-                            <constraint firstItem="aaj-pP-Wqg" firstAttribute="height" secondItem="Zcq-sk-Zqj" secondAttribute="height" id="HWc-Pp-gKm"/>
-                            <constraint firstItem="Zcq-sk-Zqj" firstAttribute="width" secondItem="v6L-Lx-20s" secondAttribute="width" multiplier="1/5" id="JLb-pi-vtf"/>
-                            <constraint firstItem="Zcq-sk-Zqj" firstAttribute="top" secondItem="YIt-xq-eyN" secondAttribute="bottom" constant="60" id="O0z-ju-vqY"/>
-                            <constraint firstItem="aaj-pP-Wqg" firstAttribute="width" secondItem="Zcq-sk-Zqj" secondAttribute="width" id="TJx-Tl-y9F"/>
-                            <constraint firstItem="Zcq-sk-Zqj" firstAttribute="centerX" secondItem="v6L-Lx-20s" secondAttribute="centerX" id="eKg-ws-qK4"/>
-                            <constraint firstItem="aaj-pP-Wqg" firstAttribute="top" secondItem="Zcq-sk-Zqj" secondAttribute="bottom" constant="40" id="oOB-TM-Xoh"/>
+                            <constraint firstItem="cjF-UW-QOB" firstAttribute="centerY" secondItem="v6L-Lx-20s" secondAttribute="centerY" id="kQB-4N-doL"/>
+                            <constraint firstItem="cjF-UW-QOB" firstAttribute="centerX" secondItem="v6L-Lx-20s" secondAttribute="centerX" id="mcE-hW-Wqu"/>
                             <constraint firstAttribute="trailing" secondItem="YPo-Ck-k7W" secondAttribute="trailing" constant="20" id="saD-2s-5ip"/>
                             <constraint firstItem="f0A-rt-4Fj" firstAttribute="top" secondItem="YPo-Ck-k7W" secondAttribute="bottom" constant="20" id="v3w-ia-lai"/>
-                            <constraint firstItem="Zcq-sk-Zqj" firstAttribute="height" secondItem="v6L-Lx-20s" secondAttribute="height" multiplier="1/6" id="zet-mC-HTG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MÀN HÌNH CHÍNH" id="FfR-ZP-xxT"/>

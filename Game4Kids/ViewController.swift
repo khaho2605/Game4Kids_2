@@ -34,5 +34,8 @@ class ViewController: BaseViewController {
     @IBAction func abcBtnDidTap(_ sender: Any) {
         self.navigationController?.pushViewController(GameViewController(), animated: true)
     }
+    @IBAction func goWcDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(GoWCViewController(), animated: true)
+    }
 }
 

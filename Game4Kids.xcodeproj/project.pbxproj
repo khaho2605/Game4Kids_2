@@ -14,6 +14,8 @@
 		EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7F5CE51FA587DC00A87ACC /* LaunchScreen.storyboard */; };
 		EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */; };
 		EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */; };
+		EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */; };
+		EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADD1B1B1FE4B1B0003157F9 /* GoWCViewController.xib */; };
 		EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF4961FA58D6000AF4078 /* BrushTeethViewController.swift */; };
 		EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF4991FA5903500AF4078 /* BaseViewController.swift */; };
 		EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF49C1FA5920700AF4078 /* Array.swift */; };
@@ -33,6 +35,8 @@
 		EA7F5CE81FA587DC00A87ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoWCViewController.swift; sourceTree = "<group>"; };
+		EADD1B1B1FE4B1B0003157F9 /* GoWCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoWCViewController.xib; sourceTree = "<group>"; };
 		EAEFF4961FA58D6000AF4078 /* BrushTeethViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrushTeethViewController.swift; sourceTree = "<group>"; };
 		EAEFF4991FA5903500AF4078 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EAEFF49C1FA5920700AF4078 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 		EA7F5CDB1FA587DC00A87ACC /* Game4Kids */ = {
 			isa = PBXGroup;
 			children = (
+				EADD1B191FE4B179003157F9 /* ThaoDien */,
 				EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */,
 				EAEFF49E1FA5978000AF4078 /* Sound */,
 				EAEFF49B1FA591E000AF4078 /* Extentions */,
@@ -84,6 +89,15 @@
 				EA7F5CE81FA587DC00A87ACC /* Info.plist */,
 			);
 			path = Game4Kids;
+			sourceTree = "<group>";
+		};
+		EADD1B191FE4B179003157F9 /* ThaoDien */ = {
+			isa = PBXGroup;
+			children = (
+				EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */,
+				EADD1B1B1FE4B1B0003157F9 /* GoWCViewController.xib */,
+			);
+			path = ThaoDien;
 			sourceTree = "<group>";
 		};
 		EAEFF4931FA58CFF00AF4078 /* View */ = {
@@ -184,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */,
+				EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */,
 				EAEFF4A81FA5ABDC00AF4078 /* thu cach khac.wav in Resources */,
 				EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */,
 				EAEFF4A01FA5979200AF4078 /* AllFallDown.mp3 in Resources */,
@@ -207,6 +222,7 @@
 				EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */,
 				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
+				EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
