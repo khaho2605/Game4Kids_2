@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeClothesViewController" customModule="Game4Kids" customModuleProvider="target">
+            <connections>
+                <outlet property="playerImg1" destination="qDK-yc-WqS" id="hkL-iX-Ggt"/>
+                <outlet property="playerImg2" destination="rS3-Pi-4Vy" id="XAi-xW-mXZ"/>
+                <outlet property="playerImg3" destination="SIy-wA-DGr" id="5NM-ce-q5n"/>
+                <outlet property="playerImg4" destination="3SW-lC-vf0" id="jv2-BJ-EZ9"/>
+                <outlet property="playerImg5" destination="9yP-TU-jdd" id="2c9-l4-EdJ"/>
+                <outlet property="replayBtn" destination="QZU-tK-hqf" id="aJX-Li-29K"/>
+                <outlet property="targetImg1" destination="fTn-64-tbA" id="rcS-Wu-Z7U"/>
+                <outlet property="targetImg2" destination="YPg-xH-IPS" id="elJ-kN-Tqt"/>
+                <outlet property="targetImg3" destination="Xvf-qC-zO4" id="ZKc-pf-Bda"/>
+                <outlet property="targetImg4" destination="5p0-gG-WMR" id="rYV-IH-Qxl"/>
+                <outlet property="targetImg5" destination="u0H-ZR-096" id="k5H-Ly-w1u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="fTn-64-tbA">
+                    <rect key="frame" x="121" y="326" width="170" height="170"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="YPg-xH-IPS">
+                    <rect key="frame" x="313" y="326" width="170" height="170"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="Xvf-qC-zO4">
+                    <rect key="frame" x="512" y="326" width="170" height="170"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="5p0-gG-WMR">
+                    <rect key="frame" x="207" y="525" width="170" height="170"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="u0H-ZR-096">
+                    <rect key="frame" x="414" y="525" width="170" height="170"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change_clothes_1" translatesAutoresizingMaskIntoConstraints="NO" id="qDK-yc-WqS">
+                    <rect key="frame" x="101" y="83" width="160" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change_clothes_2" translatesAutoresizingMaskIntoConstraints="NO" id="rS3-Pi-4Vy">
+                    <rect key="frame" x="289" y="83" width="160" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change_clothes_3" translatesAutoresizingMaskIntoConstraints="NO" id="SIy-wA-DGr">
+                    <rect key="frame" x="457" y="83" width="160" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change_clothes_4" translatesAutoresizingMaskIntoConstraints="NO" id="3SW-lC-vf0">
+                    <rect key="frame" x="643" y="83" width="160" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change_clothes_5" translatesAutoresizingMaskIntoConstraints="NO" id="9yP-TU-jdd">
+                    <rect key="frame" x="844" y="96" width="160" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZU-tK-hqf">
+                    <rect key="frame" x="673" y="559" width="195" height="84"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <state key="normal" title="CHƠI LẠI">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="replayBtnDidTap:" destination="-1" eventType="touchUpInside" id="TAl-bV-XVL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="change_clothes_1" width="500" height="450"/>
+        <image name="change_clothes_2" width="500" height="450"/>
+        <image name="change_clothes_3" width="500" height="450"/>
+        <image name="change_clothes_4" width="500" height="471"/>
+        <image name="change_clothes_5" width="500" height="447"/>
+        <image name="khung_hinh" width="291" height="321"/>
+    </resources>
+</document>

@@ -41,5 +41,8 @@ class ViewController: BaseViewController {
         self.navigationController?.pushViewController(IntroHandwashingViewController(), animated: true)
     }
     
+    @IBAction func changeClothesBtnDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(ChangeClothesViewController(), animated: true)
+    }
 }
 

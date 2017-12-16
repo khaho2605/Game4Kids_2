@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,10 +34,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-UW-QOB">
-                                <rect key="frame" x="430" y="282" width="164" height="204"/>
+                                <rect key="frame" x="220" y="282" width="584" height="204"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeN-Nt-0cl">
-                                        <rect key="frame" x="0.0" y="0.0" width="164" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Đi Vệ Sinh">
@@ -53,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-V3-8fO">
-                                        <rect key="frame" x="0.0" y="78" width="164" height="48"/>
+                                        <rect key="frame" x="0.0" y="78" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Rửa Tay">
@@ -70,7 +71,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHY-Jh-ise">
-                                        <rect key="frame" x="0.0" y="156" width="164" height="48"/>
+                                        <rect key="frame" x="0.0" y="156" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Mặc Cởi Áo">
@@ -82,12 +83,17 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeClothesBtnDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="s2s-Fq-GTz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cjF-UW-QOB" firstAttribute="leading" secondItem="v6L-Lx-20s" secondAttribute="leadingMargin" constant="200" id="2cC-Pj-5Me"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cjF-UW-QOB" secondAttribute="trailing" constant="200" id="Zvp-gh-UP6"/>
                             <constraint firstItem="cjF-UW-QOB" firstAttribute="centerY" secondItem="v6L-Lx-20s" secondAttribute="centerY" id="kQB-4N-doL"/>
                             <constraint firstItem="cjF-UW-QOB" firstAttribute="centerX" secondItem="v6L-Lx-20s" secondAttribute="centerX" id="mcE-hW-Wqu"/>
                             <constraint firstAttribute="trailing" secondItem="YPo-Ck-k7W" secondAttribute="trailing" constant="20" id="saD-2s-5ip"/>

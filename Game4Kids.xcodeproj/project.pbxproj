@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */; };
+		EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */; };
 		EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */; };
 		EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */; };
 		EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClothesViewController.swift; sourceTree = "<group>"; };
+		EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeClothesViewController.xib; sourceTree = "<group>"; };
 		EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwashingViewController.swift; sourceTree = "<group>"; };
 		EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandwashingViewController.xib; sourceTree = "<group>"; };
 		EA7F5CD91FA587DC00A87ACC /* Game4Kids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game4Kids.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,8 @@
 				EA81A2EA1FE5007200206697 /* IntroHandwashingViewController.xib */,
 				EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */,
 				EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */,
+				EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */,
+				EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */,
 			);
 			path = ThaoDien;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				EA81A2EC1FE5007200206697 /* IntroHandwashingViewController.xib in Resources */,
 				EA7F5CE41FA587DC00A87ACC /* Assets.xcassets in Resources */,
 				EA7F5CE21FA587DC00A87ACC /* Main.storyboard in Resources */,
+				EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +242,7 @@
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
 				EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */,
+				EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */,
 				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
 				EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
