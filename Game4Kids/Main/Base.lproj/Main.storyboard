@@ -192,7 +192,7 @@
         <!--CÔ DUNG-->
         <scene sceneID="a0Z-4r-Te8">
             <objects>
-                <viewController id="oua-Ck-8HR" sceneMemberID="viewController">
+                <viewController id="oua-Ck-8HR" customClass="MsDungViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1d3-iv-CXw"/>
                         <viewControllerLayoutGuide type="bottom" id="iXU-gC-Ryf"/>
@@ -232,6 +232,9 @@
                                                         <integer key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="camXuc2BtnDidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="0pi-w9-WiK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

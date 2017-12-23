@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA01CB6E1FEE98E900FCFB49 /* CamXuc2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA01CB6C1FEE98E900FCFB49 /* CamXuc2ViewController.swift */; };
+		EA01CB6F1FEE98E900FCFB49 /* CamXuc2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA01CB6D1FEE98E900FCFB49 /* CamXuc2ViewController.xib */; };
+		EA01CB721FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA01CB701FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift */; };
+		EA01CB731FEE9C9300FCFB49 /* DoanCamXuc1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA01CB711FEE9C9300FCFB49 /* DoanCamXuc1ViewController.xib */; };
+		EA01CB751FEEA2C800FCFB49 /* MsDungViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA01CB741FEEA2C800FCFB49 /* MsDungViewController.swift */; };
 		EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */; };
 		EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */; };
 		EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */; };
@@ -33,6 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA01CB6C1FEE98E900FCFB49 /* CamXuc2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamXuc2ViewController.swift; sourceTree = "<group>"; };
+		EA01CB6D1FEE98E900FCFB49 /* CamXuc2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CamXuc2ViewController.xib; sourceTree = "<group>"; };
+		EA01CB701FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoanCamXuc1ViewController.swift; sourceTree = "<group>"; };
+		EA01CB711FEE9C9300FCFB49 /* DoanCamXuc1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoanCamXuc1ViewController.xib; sourceTree = "<group>"; };
+		EA01CB741FEEA2C800FCFB49 /* MsDungViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MsDungViewController.swift; sourceTree = "<group>"; };
 		EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClothesViewController.swift; sourceTree = "<group>"; };
 		EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeClothesViewController.xib; sourceTree = "<group>"; };
 		EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwashingViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +81,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA01CB6A1FEE987A00FCFB49 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA7F5CE31FA587DC00A87ACC /* Assets.xcassets */,
+				EAEFF49E1FA5978000AF4078 /* Sound */,
+				EAEFF49B1FA591E000AF4078 /* Extentions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EA01CB6B1FEE98A300FCFB49 /* Cô Dung */ = {
+			isa = PBXGroup;
+			children = (
+				EA01CB6C1FEE98E900FCFB49 /* CamXuc2ViewController.swift */,
+				EA01CB6D1FEE98E900FCFB49 /* CamXuc2ViewController.xib */,
+				EA01CB701FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift */,
+				EA01CB711FEE9C9300FCFB49 /* DoanCamXuc1ViewController.xib */,
+			);
+			name = "Cô Dung";
+			path = "Cô Dung";
+			sourceTree = "<group>";
+		};
 		EA7F5CD01FA587DC00A87ACC = {
 			isa = PBXGroup;
 			children = (
@@ -90,13 +122,12 @@
 		EA7F5CDB1FA587DC00A87ACC /* Game4Kids */ = {
 			isa = PBXGroup;
 			children = (
+				EA01CB6A1FEE987A00FCFB49 /* Utils */,
 				EA9DFC881FEE4F7800F33CE7 /* Main */,
+				EA01CB6B1FEE98A300FCFB49 /* Cô Dung */,
 				EADD1B191FE4B179003157F9 /* ThaoDien */,
-				EAEFF49E1FA5978000AF4078 /* Sound */,
-				EAEFF49B1FA591E000AF4078 /* Extentions */,
 				EAEFF4981FA5902800AF4078 /* Base */,
 				EAEFF4931FA58CFF00AF4078 /* View */,
-				EA7F5CE31FA587DC00A87ACC /* Assets.xcassets */,
 				EA7F5CE51FA587DC00A87ACC /* LaunchScreen.storyboard */,
 				EA7F5CE81FA587DC00A87ACC /* Info.plist */,
 				EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */,
@@ -110,6 +141,7 @@
 				EA9DFC891FEE4F9C00F33CE7 /* MainViewController.swift */,
 				EA7F5CDE1FA587DC00A87ACC /* ViewController.swift */,
 				EA7F5CE01FA587DC00A87ACC /* Main.storyboard */,
+				EA01CB741FEEA2C800FCFB49 /* MsDungViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -235,9 +267,11 @@
 				EAEFF4A61FA5ABCE00AF4078 /* dung roi.wav in Resources */,
 				EAEFF4AA1FA5B07700AF4078 /* be that gioi.wav in Resources */,
 				EA81A2EC1FE5007200206697 /* IntroHandwashingViewController.xib in Resources */,
+				EA01CB731FEE9C9300FCFB49 /* DoanCamXuc1ViewController.xib in Resources */,
 				EA7F5CE41FA587DC00A87ACC /* Assets.xcassets in Resources */,
 				EA7F5CE21FA587DC00A87ACC /* Main.storyboard in Resources */,
 				EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */,
+				EA01CB6F1FEE98E900FCFB49 /* CamXuc2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA01CB6E1FEE98E900FCFB49 /* CamXuc2ViewController.swift in Sources */,
 				EA81A2EB1FE5007200206697 /* IntroHandwashingViewController.swift in Sources */,
+				EA01CB751FEEA2C800FCFB49 /* MsDungViewController.swift in Sources */,
 				EA9DFC8A1FEE4F9C00F33CE7 /* MainViewController.swift in Sources */,
+				EA01CB721FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
