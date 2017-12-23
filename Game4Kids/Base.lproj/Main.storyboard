@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Iad-In-HbH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rAD-AU-GjT">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,85 @@
     </dependencies>
     <scenes>
         <!--MÀN HÌNH CHÍNH-->
+        <scene sceneID="eE2-KC-IbU">
+            <objects>
+                <viewController id="4a2-Ld-4jS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ztu-d6-bOI"/>
+                        <viewControllerLayoutGuide type="bottom" id="yq7-Km-Nao"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XFG-nh-btI">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="aRX-mU-Cp6">
+                                <rect key="frame" x="220" y="282" width="584" height="204"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Iv-o0-tqD">
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <state key="normal" title=" CÔ DUNG">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="oua-Ck-8HR" kind="push" id="sWZ-UU-ydz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLy-YZ-Sw1">
+                                        <rect key="frame" x="0.0" y="78" width="584" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <state key="normal" title="KHAI TRÍ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="uUA-Lb-VbT" kind="push" id="jsV-He-Nmi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKj-k1-J2w">
+                                        <rect key="frame" x="0.0" y="156" width="584" height="48"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                        <state key="normal" title="THẢO ĐIỀN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="ieS-he-dGW" kind="push" id="xND-oG-PyJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aRX-mU-Cp6" firstAttribute="centerY" secondItem="XFG-nh-btI" secondAttribute="centerY" id="0fe-Zs-Wvu"/>
+                            <constraint firstItem="aRX-mU-Cp6" firstAttribute="leading" secondItem="XFG-nh-btI" secondAttribute="leadingMargin" constant="200" id="2VM-R6-4nA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aRX-mU-Cp6" secondAttribute="trailing" constant="200" id="vn0-hD-Yec"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="MÀN HÌNH CHÍNH" id="xIy-sL-1GO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4j-aa-ib4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551.953125" y="-469.53125"/>
+        </scene>
+        <!--THẢO ĐIỀN-->
         <scene sceneID="MIi-qu-Deg">
             <objects>
                 <viewController id="ieS-he-dGW" customClass="ViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,14 +179,52 @@
                             <constraint firstItem="f0A-rt-4Fj" firstAttribute="top" secondItem="YPo-Ck-k7W" secondAttribute="bottom" constant="20" id="v3w-ia-lai"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MÀN HÌNH CHÍNH" id="FfR-ZP-xxT"/>
+                    <navigationItem key="navigationItem" title="THẢO ĐIỀN" id="FfR-ZP-xxT"/>
                     <connections>
                         <outlet property="muteBtn" destination="YPo-Ck-k7W" id="esn-4Z-nx2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uX0-FF-qGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8.203125" y="-392.1875"/>
+            <point key="canvasLocation" x="188" y="143"/>
+        </scene>
+        <!--CÔ DUNG-->
+        <scene sceneID="a0Z-4r-Te8">
+            <objects>
+                <viewController id="oua-Ck-8HR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1d3-iv-CXw"/>
+                        <viewControllerLayoutGuide type="bottom" id="iXU-gC-Ryf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hgd-IJ-X8c">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CÔ DUNG" id="8Pp-QZ-2ne"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gG7-Og-jFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="-1199"/>
+        </scene>
+        <!--KHAI TRÍ-->
+        <scene sceneID="rEQ-L4-xfh">
+            <objects>
+                <viewController id="uUA-Lb-VbT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wwF-9e-EQp"/>
+                        <viewControllerLayoutGuide type="bottom" id="vNj-gZ-v7l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JZA-07-M8z">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KHAI TRÍ" id="MMV-2t-7Fy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hD3-Ah-9AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="-533"/>
         </scene>
         <!--ĐÁNH RĂNG-->
         <scene sceneID="tne-QT-ifu">
@@ -203,25 +320,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="-392"/>
+            <point key="canvasLocation" x="-1272" y="-1199"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="JJm-oT-Vzw">
+        <scene sceneID="8WB-Hd-8Xq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iad-In-HbH" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rAD-AU-GjT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ubO-d9-SSF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i2u-ym-7cb">
                         <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ieS-he-dGW" kind="relationship" relationship="rootViewController" id="7sL-YW-l8x"/>
+                        <segue destination="4a2-Ld-4jS" kind="relationship" relationship="rootViewController" id="N28-Ew-LtB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lum-09-yv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAY-Y0-hc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732.421875" y="-392.1875"/>
+            <point key="canvasLocation" x="-1206" y="-470"/>
         </scene>
     </scenes>
     <resources>

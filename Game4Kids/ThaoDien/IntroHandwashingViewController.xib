@@ -40,7 +40,7 @@
                     </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Ex1-K8-ZCA">
-                    <rect key="frame" x="26" y="46" width="972" height="230.5"/>
+                    <rect key="frame" x="26" y="70" width="972" height="230.5"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_handwashing_1" translatesAutoresizingMaskIntoConstraints="NO" id="gcF-Yx-yRY">
                             <rect key="frame" x="0.0" y="0.0" width="473" height="230.5"/>
@@ -51,7 +51,7 @@
                     </subviews>
                 </stackView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_handwashing_3" translatesAutoresizingMaskIntoConstraints="NO" id="QSJ-vs-qX5">
-                    <rect key="frame" x="276" y="292.5" width="473" height="230"/>
+                    <rect key="frame" x="276" y="316.5" width="473" height="230"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="QSJ-vs-qX5" secondAttribute="height" multiplier="473:230" id="dhz-AY-Sr1"/>
                     </constraints>
@@ -60,7 +60,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="PgH-4T-pP9" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" id="6Wl-xF-Cob"/>
-                <constraint firstItem="Ex1-K8-ZCA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="26" id="7dV-rz-Xgm"/>
+                <constraint firstItem="Ex1-K8-ZCA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="7dV-rz-Xgm"/>
                 <constraint firstItem="QSJ-vs-qX5" firstAttribute="height" secondItem="Ex1-K8-ZCA" secondAttribute="height" id="NT6-VE-CcX"/>
                 <constraint firstItem="QSJ-vs-qX5" firstAttribute="top" secondItem="Ex1-K8-ZCA" secondAttribute="bottom" constant="16" id="TkI-Bd-JaQ"/>
                 <constraint firstItem="Ex1-K8-ZCA" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="bao-HN-C60"/>
