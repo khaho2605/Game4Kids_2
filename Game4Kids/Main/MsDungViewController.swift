@@ -24,4 +24,12 @@ class MsDungViewController: BaseViewController {
         self.navigationController?.pushViewController(DoanCamXuc1ViewController(), animated: true)
     }
     
+    @IBAction func doanCamXuc21DidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(DoanCamXuc21ViewController(), animated: true)
+    }
+    
+    @IBAction func doanCamXuc22DidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(DoanCamXuc22ViewController(), animated: true)
+
+    }
 }

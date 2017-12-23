@@ -300,6 +300,9 @@
                                                         <integer key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doanCamXuc21DidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="eBQ-TM-bxT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -320,6 +323,9 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doanCamXuc22DidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="SiD-FA-Z67"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
