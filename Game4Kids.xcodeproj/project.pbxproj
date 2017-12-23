@@ -16,6 +16,8 @@
 		EA01CB791FEEAAA900FCFB49 /* DoanCamXuc21ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA01CB771FEEAAA900FCFB49 /* DoanCamXuc21ViewController.xib */; };
 		EA01CB7C1FEEADB600FCFB49 /* DoanCamXuc22ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA01CB7A1FEEADB600FCFB49 /* DoanCamXuc22ViewController.swift */; };
 		EA01CB7D1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA01CB7B1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib */; };
+		EA01CB801FEEB26A00FCFB49 /* DongCam1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA01CB7E1FEEB26A00FCFB49 /* DongCam1ViewController.swift */; };
+		EA01CB811FEEB26A00FCFB49 /* DongCam1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA01CB7F1FEEB26A00FCFB49 /* DongCam1ViewController.xib */; };
 		EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */; };
 		EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */; };
 		EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */; };
@@ -51,6 +53,8 @@
 		EA01CB771FEEAAA900FCFB49 /* DoanCamXuc21ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoanCamXuc21ViewController.xib; sourceTree = "<group>"; };
 		EA01CB7A1FEEADB600FCFB49 /* DoanCamXuc22ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoanCamXuc22ViewController.swift; sourceTree = "<group>"; };
 		EA01CB7B1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoanCamXuc22ViewController.xib; sourceTree = "<group>"; };
+		EA01CB7E1FEEB26A00FCFB49 /* DongCam1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongCam1ViewController.swift; sourceTree = "<group>"; };
+		EA01CB7F1FEEB26A00FCFB49 /* DongCam1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongCam1ViewController.xib; sourceTree = "<group>"; };
 		EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClothesViewController.swift; sourceTree = "<group>"; };
 		EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeClothesViewController.xib; sourceTree = "<group>"; };
 		EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwashingViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				EA01CB771FEEAAA900FCFB49 /* DoanCamXuc21ViewController.xib */,
 				EA01CB7A1FEEADB600FCFB49 /* DoanCamXuc22ViewController.swift */,
 				EA01CB7B1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib */,
+				EA01CB7E1FEEB26A00FCFB49 /* DongCam1ViewController.swift */,
+				EA01CB7F1FEEB26A00FCFB49 /* DongCam1ViewController.xib */,
 			);
 			name = "Cô Dung";
 			path = "Cô Dung";
@@ -284,6 +290,7 @@
 				EA7F5CE41FA587DC00A87ACC /* Assets.xcassets in Resources */,
 				EA7F5CE21FA587DC00A87ACC /* Main.storyboard in Resources */,
 				EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */,
+				EA01CB811FEEB26A00FCFB49 /* DongCam1ViewController.xib in Resources */,
 				EA01CB6F1FEE98E900FCFB49 /* CamXuc2ViewController.xib in Resources */,
 				EA01CB791FEEAAA900FCFB49 /* DoanCamXuc21ViewController.xib in Resources */,
 			);
@@ -297,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA01CB6E1FEE98E900FCFB49 /* CamXuc2ViewController.swift in Sources */,
+				EA01CB801FEEB26A00FCFB49 /* DongCam1ViewController.swift in Sources */,
 				EA81A2EB1FE5007200206697 /* IntroHandwashingViewController.swift in Sources */,
 				EA01CB7C1FEEADB600FCFB49 /* DoanCamXuc22ViewController.swift in Sources */,
 				EA01CB751FEEA2C800FCFB49 /* MsDungViewController.swift in Sources */,

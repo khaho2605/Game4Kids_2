@@ -242,10 +242,10 @@
                                         <rect key="frame" x="290" y="75" width="372" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcm-pc-fa2">
-                                                <rect key="frame" x="0.0" y="0.0" width="173" height="45"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="169" height="45"/>
                                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                                <state key="normal" title="ĐỒNG CẢM 2">
+                                                <state key="normal" title="ĐỒNG CẢM 1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -253,12 +253,15 @@
                                                         <integer key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="dongCam1DidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="e9v-KE-C9k"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibk-yA-Gd5">
-                                                <rect key="frame" x="203" y="0.0" width="169" height="45"/>
+                                                <rect key="frame" x="199" y="0.0" width="173" height="45"/>
                                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                                <state key="normal" title="ĐỒNG CẢM 1">
+                                                <state key="normal" title="ĐỒNG CẢM 2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
