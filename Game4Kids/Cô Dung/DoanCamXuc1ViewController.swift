@@ -14,4 +14,12 @@ class DoanCamXuc1ViewController: BaseViewController {
         super.viewDidLoad()
 
     }
+    @IBAction func result1BtnDidTap(_ sender: Any) {
+        playSound(name: "dung roi", Extension: "wav", repeatSound: false)
+    }
+    
+    @IBAction func result2BtnDidTap(_ sender: Any) {
+        playSound(name: "thu cach khac", Extension: "wav", repeatSound: false)
+    }
+    
 }

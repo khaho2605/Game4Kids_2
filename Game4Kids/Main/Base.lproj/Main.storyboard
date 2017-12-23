@@ -284,6 +284,9 @@
                                                         <integer key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doanCamXuc1DidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="h68-s8-rar"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-TR-JXt">
                                                 <rect key="frame" x="263" y="0.0" width="257" height="45"/>

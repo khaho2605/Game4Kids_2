@@ -19,4 +19,9 @@ class MsDungViewController: BaseViewController {
     @IBAction func camXuc2BtnDidTap(_ sender: Any) {
         self.navigationController?.pushViewController(CamXuc2ViewController(), animated: true)
     }
+    
+    @IBAction func doanCamXuc1DidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(DoanCamXuc1ViewController(), animated: true)
+    }
+    
 }
