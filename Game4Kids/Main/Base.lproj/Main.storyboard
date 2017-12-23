@@ -13,7 +13,7 @@
         <!--MÀN HÌNH CHÍNH-->
         <scene sceneID="eE2-KC-IbU">
             <objects>
-                <viewController id="4a2-Ld-4jS" sceneMemberID="viewController">
+                <viewController id="4a2-Ld-4jS" customClass="MainViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ztu-d6-bOI"/>
                         <viewControllerLayoutGuide type="bottom" id="yq7-Km-Nao"/>
@@ -75,15 +75,32 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kI-Mg-tma">
+                                <rect key="frame" x="954" y="698" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="5uX-3w-Ubz"/>
+                                    <constraint firstAttribute="height" constant="50" id="vkw-gE-sti"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="notMute"/>
+                                <connections>
+                                    <action selector="muteBtnDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="9y9-nH-62A"/>
+                                    <action selector="muteBtnDidTap:" destination="4a2-Ld-4jS" eventType="touchUpInside" id="MtW-In-sTJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aRX-mU-Cp6" firstAttribute="centerY" secondItem="XFG-nh-btI" secondAttribute="centerY" id="0fe-Zs-Wvu"/>
                             <constraint firstItem="aRX-mU-Cp6" firstAttribute="leading" secondItem="XFG-nh-btI" secondAttribute="leadingMargin" constant="200" id="2VM-R6-4nA"/>
+                            <constraint firstItem="yq7-Km-Nao" firstAttribute="top" secondItem="2kI-Mg-tma" secondAttribute="bottom" constant="20" id="6ue-XA-dDb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aRX-mU-Cp6" secondAttribute="trailing" constant="200" id="vn0-hD-Yec"/>
+                            <constraint firstAttribute="trailing" secondItem="2kI-Mg-tma" secondAttribute="trailing" constant="20" id="xfS-Xq-niI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MÀN HÌNH CHÍNH" id="xIy-sL-1GO"/>
+                    <connections>
+                        <outlet property="muteBtn" destination="2kI-Mg-tma" id="ztB-uG-bWH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4j-aa-ib4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,17 +118,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPo-Ck-k7W">
-                                <rect key="frame" x="954" y="698" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="WJm-Vg-1OK"/>
-                                    <constraint firstAttribute="width" constant="50" id="etG-5F-T09"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="notMute"/>
-                                <connections>
-                                    <action selector="muteBtnDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="RHZ-bX-Y22"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-UW-QOB">
                                 <rect key="frame" x="220" y="282" width="584" height="204"/>
                                 <subviews>
@@ -175,18 +181,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="cjF-UW-QOB" secondAttribute="trailing" constant="200" id="Zvp-gh-UP6"/>
                             <constraint firstItem="cjF-UW-QOB" firstAttribute="centerY" secondItem="v6L-Lx-20s" secondAttribute="centerY" id="kQB-4N-doL"/>
                             <constraint firstItem="cjF-UW-QOB" firstAttribute="centerX" secondItem="v6L-Lx-20s" secondAttribute="centerX" id="mcE-hW-Wqu"/>
-                            <constraint firstAttribute="trailing" secondItem="YPo-Ck-k7W" secondAttribute="trailing" constant="20" id="saD-2s-5ip"/>
-                            <constraint firstItem="f0A-rt-4Fj" firstAttribute="top" secondItem="YPo-Ck-k7W" secondAttribute="bottom" constant="20" id="v3w-ia-lai"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="THẢO ĐIỀN" id="FfR-ZP-xxT"/>
-                    <connections>
-                        <outlet property="muteBtn" destination="YPo-Ck-k7W" id="esn-4Z-nx2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uX0-FF-qGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="143"/>
+            <point key="canvasLocation" x="188" y="203"/>
         </scene>
         <!--CÔ DUNG-->
         <scene sceneID="a0Z-4r-Te8">
@@ -199,7 +200,131 @@
                     <view key="view" contentMode="scaleToFill" id="hgd-IJ-X8c">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="j1n-bg-jmE">
+                                <rect key="frame" x="36" y="286.5" width="952" height="195"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Fm3-Z6-4aV">
+                                        <rect key="frame" x="311.5" y="0.0" width="329" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3z-HI-98p">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="45"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <state key="normal" title="CẢM XÚC 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7E-GI-PyD">
+                                                <rect key="frame" x="178" y="0.0" width="151" height="45"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <state key="normal" title="CẢM XÚC 2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eqq-7s-QM5">
+                                        <rect key="frame" x="290" y="75" width="372" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcm-pc-fa2">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="45"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <state key="normal" title="ĐỒNG CẢM 2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibk-yA-Gd5">
+                                                <rect key="frame" x="203" y="0.0" width="169" height="45"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <state key="normal" title="ĐỒNG CẢM 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qhZ-aL-QwX">
+                                        <rect key="frame" x="216" y="150" width="520" height="45"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeu-Bm-uTq">
+                                                <rect key="frame" x="0.0" y="0.0" width="233" height="45"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <state key="normal" title="ĐOÁN CẢM XÚC 1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-TR-JXt">
+                                                <rect key="frame" x="263" y="0.0" width="257" height="45"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                                <state key="normal" title="ĐOÁN CẢM XÚC 2.1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mR-bf-vmM">
+                                <rect key="frame" x="381.5" y="511.5" width="261" height="48"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="JTn-HJ-cnG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <state key="normal" title="ĐOÁN CẢM XÚC 2.2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="j1n-bg-jmE" firstAttribute="centerY" secondItem="hgd-IJ-X8c" secondAttribute="centerY" id="9pj-IS-UKw"/>
+                            <constraint firstItem="j1n-bg-jmE" firstAttribute="centerX" secondItem="hgd-IJ-X8c" secondAttribute="centerX" id="NGY-KO-ljo"/>
+                            <constraint firstItem="4mR-bf-vmM" firstAttribute="top" secondItem="j1n-bg-jmE" secondAttribute="bottom" constant="30" id="ZDj-tq-bfI"/>
+                            <constraint firstItem="j1n-bg-jmE" firstAttribute="leading" secondItem="hgd-IJ-X8c" secondAttribute="leadingMargin" constant="16" id="Zyd-tN-XQ3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j1n-bg-jmE" secondAttribute="trailing" constant="16" id="goP-kK-doV"/>
+                            <constraint firstItem="4mR-bf-vmM" firstAttribute="centerX" secondItem="hgd-IJ-X8c" secondAttribute="centerX" id="zsM-Zf-6Vx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CÔ DUNG" id="8Pp-QZ-2ne"/>
                 </viewController>

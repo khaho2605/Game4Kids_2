@@ -18,6 +18,7 @@
 		EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7F5CE51FA587DC00A87ACC /* LaunchScreen.storyboard */; };
 		EA81A2EB1FE5007200206697 /* IntroHandwashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA81A2E91FE5007200206697 /* IntroHandwashingViewController.swift */; };
 		EA81A2EC1FE5007200206697 /* IntroHandwashingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA81A2EA1FE5007200206697 /* IntroHandwashingViewController.xib */; };
+		EA9DFC8A1FEE4F9C00F33CE7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9DFC891FEE4F9C00F33CE7 /* MainViewController.swift */; };
 		EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */; };
 		EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */; };
 		EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */; };
@@ -45,6 +46,7 @@
 		EA7F5CE81FA587DC00A87ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA81A2E91FE5007200206697 /* IntroHandwashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroHandwashingViewController.swift; sourceTree = "<group>"; };
 		EA81A2EA1FE5007200206697 /* IntroHandwashingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroHandwashingViewController.xib; sourceTree = "<group>"; };
+		EA9DFC891FEE4F9C00F33CE7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoWCViewController.swift; sourceTree = "<group>"; };
@@ -88,19 +90,28 @@
 		EA7F5CDB1FA587DC00A87ACC /* Game4Kids */ = {
 			isa = PBXGroup;
 			children = (
+				EA9DFC881FEE4F7800F33CE7 /* Main */,
 				EADD1B191FE4B179003157F9 /* ThaoDien */,
 				EAEFF49E1FA5978000AF4078 /* Sound */,
 				EAEFF49B1FA591E000AF4078 /* Extentions */,
 				EAEFF4981FA5902800AF4078 /* Base */,
 				EAEFF4931FA58CFF00AF4078 /* View */,
-				EA7F5CDE1FA587DC00A87ACC /* ViewController.swift */,
-				EA7F5CE01FA587DC00A87ACC /* Main.storyboard */,
 				EA7F5CE31FA587DC00A87ACC /* Assets.xcassets */,
 				EA7F5CE51FA587DC00A87ACC /* LaunchScreen.storyboard */,
 				EA7F5CE81FA587DC00A87ACC /* Info.plist */,
 				EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */,
 			);
 			path = Game4Kids;
+			sourceTree = "<group>";
+		};
+		EA9DFC881FEE4F7800F33CE7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EA9DFC891FEE4F9C00F33CE7 /* MainViewController.swift */,
+				EA7F5CDE1FA587DC00A87ACC /* ViewController.swift */,
+				EA7F5CE01FA587DC00A87ACC /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		EADD1B191FE4B179003157F9 /* ThaoDien */ = {
@@ -238,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA81A2EB1FE5007200206697 /* IntroHandwashingViewController.swift in Sources */,
+				EA9DFC8A1FEE4F9C00F33CE7 /* MainViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
