@@ -13,6 +13,11 @@ class DoanCamXuc21ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "ĐOÁN CẢM XÚC 2.1"
+    }
 
     @IBAction func result1BtnDidTap(_ sender: Any) {
         playSound(name: "dung roi", Extension: "wav", repeatSound: false)

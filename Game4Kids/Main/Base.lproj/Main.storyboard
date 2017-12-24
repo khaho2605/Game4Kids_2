@@ -202,7 +202,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="j1n-bg-jmE">
-                                <rect key="frame" x="36" y="286.5" width="952" height="195"/>
+                                <rect key="frame" x="36" y="244" width="952" height="195"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Fm3-Z6-4aV">
                                         <rect key="frame" x="311.5" y="0.0" width="329" height="45"/>
@@ -219,6 +219,9 @@
                                                         <integer key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="camXuc1BtnDidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="eMC-bv-do1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7E-GI-PyD">
                                                 <rect key="frame" x="178" y="0.0" width="151" height="45"/>
@@ -315,7 +318,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mR-bf-vmM">
-                                <rect key="frame" x="381.5" y="511.5" width="261" height="48"/>
+                                <rect key="frame" x="381.5" y="469" width="261" height="48"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JTn-HJ-cnG"/>
@@ -336,11 +339,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="j1n-bg-jmE" firstAttribute="centerY" secondItem="hgd-IJ-X8c" secondAttribute="centerY" id="9pj-IS-UKw"/>
                             <constraint firstItem="j1n-bg-jmE" firstAttribute="centerX" secondItem="hgd-IJ-X8c" secondAttribute="centerX" id="NGY-KO-ljo"/>
                             <constraint firstItem="4mR-bf-vmM" firstAttribute="top" secondItem="j1n-bg-jmE" secondAttribute="bottom" constant="30" id="ZDj-tq-bfI"/>
                             <constraint firstItem="j1n-bg-jmE" firstAttribute="leading" secondItem="hgd-IJ-X8c" secondAttribute="leadingMargin" constant="16" id="Zyd-tN-XQ3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="j1n-bg-jmE" secondAttribute="trailing" constant="16" id="goP-kK-doV"/>
+                            <constraint firstItem="j1n-bg-jmE" firstAttribute="top" secondItem="1d3-iv-CXw" secondAttribute="bottom" constant="180" id="jFg-Tk-i02"/>
                             <constraint firstItem="4mR-bf-vmM" firstAttribute="centerX" secondItem="hgd-IJ-X8c" secondAttribute="centerX" id="zsM-Zf-6Vx"/>
                         </constraints>
                     </view>

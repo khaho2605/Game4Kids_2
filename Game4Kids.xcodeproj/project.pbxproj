@@ -36,6 +36,8 @@
 		EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */; };
 		EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */; };
 		EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADD1B1B1FE4B1B0003157F9 /* GoWCViewController.xib */; };
+		EAE5E72F1FEF876900003966 /* CamXuc1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE5E72D1FEF876900003966 /* CamXuc1ViewController.swift */; };
+		EAE5E7301FEF876900003966 /* CamXuc1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE5E72E1FEF876900003966 /* CamXuc1ViewController.xib */; };
 		EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF4961FA58D6000AF4078 /* BrushTeethViewController.swift */; };
 		EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF4991FA5903500AF4078 /* BaseViewController.swift */; };
 		EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFF49C1FA5920700AF4078 /* Array.swift */; };
@@ -77,6 +79,8 @@
 		EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 		EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoWCViewController.swift; sourceTree = "<group>"; };
 		EADD1B1B1FE4B1B0003157F9 /* GoWCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoWCViewController.xib; sourceTree = "<group>"; };
+		EAE5E72D1FEF876900003966 /* CamXuc1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamXuc1ViewController.swift; sourceTree = "<group>"; };
+		EAE5E72E1FEF876900003966 /* CamXuc1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CamXuc1ViewController.xib; sourceTree = "<group>"; };
 		EAEFF4961FA58D6000AF4078 /* BrushTeethViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrushTeethViewController.swift; sourceTree = "<group>"; };
 		EAEFF4991FA5903500AF4078 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EAEFF49C1FA5920700AF4078 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 		EA01CB6B1FEE98A300FCFB49 /* Cô Dung */ = {
 			isa = PBXGroup;
 			children = (
+				EAE5E72D1FEF876900003966 /* CamXuc1ViewController.swift */,
+				EAE5E72E1FEF876900003966 /* CamXuc1ViewController.xib */,
 				EA01CB6C1FEE98E900FCFB49 /* CamXuc2ViewController.swift */,
 				EA01CB6D1FEE98E900FCFB49 /* CamXuc2ViewController.xib */,
 				EA01CB701FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift */,
@@ -300,6 +306,7 @@
 				EA01CB811FEEB26A00FCFB49 /* DongCam1ViewController.xib in Resources */,
 				EA01CB6F1FEE98E900FCFB49 /* CamXuc2ViewController.xib in Resources */,
 				EA01CB791FEEAAA900FCFB49 /* DoanCamXuc21ViewController.xib in Resources */,
+				EAE5E7301FEF876900003966 /* CamXuc1ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +323,7 @@
 				EA01CB7C1FEEADB600FCFB49 /* DoanCamXuc22ViewController.swift in Sources */,
 				EA01CB751FEEA2C800FCFB49 /* MsDungViewController.swift in Sources */,
 				EA9DFC8A1FEE4F9C00F33CE7 /* MainViewController.swift in Sources */,
+				EAE5E72F1FEF876900003966 /* CamXuc1ViewController.swift in Sources */,
 				EA01CB721FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift in Sources */,
 				EA01CB781FEEAAA900FCFB49 /* DoanCamXuc21ViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,

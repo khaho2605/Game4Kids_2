@@ -16,6 +16,9 @@ class MsDungViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func camXuc1BtnDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(CamXuc1ViewController(), animated: true)
+    }
     @IBAction func camXuc2BtnDidTap(_ sender: Any) {
         self.navigationController?.pushViewController(CamXuc2ViewController(), animated: true)
     }

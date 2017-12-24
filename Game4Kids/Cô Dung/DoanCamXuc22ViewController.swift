@@ -12,7 +12,11 @@ class DoanCamXuc22ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.title = "ĐOÁN CẢM XÚC 2.2"
     }
 
     @IBAction func result1BtnDidTap(_ sender: Any) {
