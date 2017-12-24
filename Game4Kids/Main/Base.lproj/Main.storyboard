@@ -269,6 +269,9 @@
                                                         <integer key="value" value="8"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="dongCam2BtnDidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="ydR-QG-ZWs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

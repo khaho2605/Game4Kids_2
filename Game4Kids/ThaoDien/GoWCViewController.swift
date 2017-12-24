@@ -123,7 +123,7 @@ extension GoWCViewController {
     }
     
     func checkFinishGame() {
-        if isFinish == 6 {
+        if isFinish == 4 {
             print("Value", isFinish)
             playSound(name: "be that gioi", Extension: "wav")
             isFinish = 0

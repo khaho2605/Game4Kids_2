@@ -20,6 +20,8 @@
 		EA01CB811FEEB26A00FCFB49 /* DongCam1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA01CB7F1FEEB26A00FCFB49 /* DongCam1ViewController.xib */; };
 		EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */; };
 		EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */; };
+		EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */; };
+		EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */; };
 		EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */; };
 		EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */; };
 		EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */; };
@@ -57,6 +59,8 @@
 		EA01CB7F1FEEB26A00FCFB49 /* DongCam1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongCam1ViewController.xib; sourceTree = "<group>"; };
 		EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClothesViewController.swift; sourceTree = "<group>"; };
 		EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeClothesViewController.xib; sourceTree = "<group>"; };
+		EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongCam2ViewController.swift; sourceTree = "<group>"; };
+		EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongCam2ViewController.xib; sourceTree = "<group>"; };
 		EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwashingViewController.swift; sourceTree = "<group>"; };
 		EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandwashingViewController.xib; sourceTree = "<group>"; };
 		EA7F5CD91FA587DC00A87ACC /* Game4Kids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game4Kids.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +120,8 @@
 				EA01CB7B1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib */,
 				EA01CB7E1FEEB26A00FCFB49 /* DongCam1ViewController.swift */,
 				EA01CB7F1FEEB26A00FCFB49 /* DongCam1ViewController.xib */,
+				EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */,
+				EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */,
 			);
 			name = "Cô Dung";
 			path = "Cô Dung";
@@ -283,6 +289,7 @@
 				EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */,
 				EA01CB7D1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib in Resources */,
 				EAEFF4A01FA5979200AF4078 /* AllFallDown.mp3 in Resources */,
+				EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */,
 				EAEFF4A61FA5ABCE00AF4078 /* dung roi.wav in Resources */,
 				EAEFF4AA1FA5B07700AF4078 /* be that gioi.wav in Resources */,
 				EA81A2EC1FE5007200206697 /* IntroHandwashingViewController.xib in Resources */,
@@ -318,6 +325,7 @@
 				EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */,
 				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
 				EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */,
+				EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
 				EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */,
 			);

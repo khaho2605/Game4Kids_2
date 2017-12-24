@@ -137,7 +137,7 @@ extension ChangeClothesViewController {
     }
     
     func checkFinishGame() {
-        if isFinish == 6 {
+        if isFinish == 5 {
             print("Value", isFinish)
             playSound(name: "be that gioi", Extension: "wav")
             isFinish = 0
