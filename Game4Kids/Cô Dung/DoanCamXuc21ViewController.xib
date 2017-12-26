@@ -27,18 +27,32 @@
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vgt-KB-lkM">
                     <rect key="frame" x="60" y="505.5" width="904" height="230.5"/>
                     <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-Ez-hF8">
+                            <rect key="frame" x="0.0" y="0.0" width="226" height="230.5"/>
+                            <state key="normal" backgroundImage="SỢ"/>
+                            <connections>
+                                <action selector="result2BtnDidTap:" destination="-1" eventType="touchUpInside" id="D51-PC-Bpd"/>
+                            </connections>
+                        </button>
                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p56-vA-eC0">
-                            <rect key="frame" x="0.0" y="0.0" width="452" height="230.5"/>
-                            <state key="normal" backgroundImage="cam_xuc_2_true"/>
+                            <rect key="frame" x="226" y="0.0" width="226" height="230.5"/>
+                            <state key="normal" backgroundImage="vui1"/>
                             <connections>
                                 <action selector="result1BtnDidTap:" destination="-1" eventType="touchUpInside" id="rcw-n2-8u9"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wi7-Oa-Rpr">
-                            <rect key="frame" x="452" y="0.0" width="452" height="230.5"/>
+                            <rect key="frame" x="452" y="0.0" width="226" height="230.5"/>
                             <state key="normal" backgroundImage="cam_xuc_2_wrong_2"/>
                             <connections>
                                 <action selector="result2BtnDidTap:" destination="-1" eventType="touchUpInside" id="9RV-z9-5bj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2C-1Q-GhZ">
+                            <rect key="frame" x="678" y="0.0" width="226" height="230.5"/>
+                            <state key="normal" backgroundImage="GIẬN"/>
+                            <connections>
+                                <action selector="result2BtnDidTap:" destination="-1" eventType="touchUpInside" id="cyP-wU-Ge7"/>
                             </connections>
                         </button>
                     </subviews>
@@ -60,7 +74,9 @@
     </objects>
     <resources>
         <image name="Bé Ném Banh Vào Rổ" width="226" height="300"/>
-        <image name="cam_xuc_2_true" width="113" height="118"/>
+        <image name="GIẬN" width="2448" height="3264"/>
+        <image name="SỢ" width="2448" height="3264"/>
         <image name="cam_xuc_2_wrong_2" width="123" height="113"/>
+        <image name="vui1" width="800" height="800"/>
     </resources>
 </document>
