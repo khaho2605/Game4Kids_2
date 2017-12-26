@@ -61,7 +61,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEH-ro-H5o">
                             <rect key="frame" x="685.5" y="0.0" width="218.5" height="230.5"/>
-                            <state key="normal" backgroundImage="vui1"/>
+                            <state key="normal" backgroundImage="vui"/>
                             <connections>
                                 <action selector="result2BtnDidTap:" destination="-1" eventType="touchUpInside" id="fdt-Sf-Afb"/>
                             </connections>
@@ -90,6 +90,6 @@
         <image name="TH - bong bóng bể_1" width="684" height="688"/>
         <image name="TH - bong bóng bể_2" width="649" height="673"/>
         <image name="TH - bong bóng bể_3" width="677" height="691"/>
-        <image name="vui1" width="112" height="107"/>
+        <image name="vui" width="800" height="800"/>
     </resources>
 </document>

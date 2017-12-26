@@ -36,7 +36,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p56-vA-eC0">
                             <rect key="frame" x="226" y="0.0" width="226" height="230.5"/>
-                            <state key="normal" backgroundImage="vui1"/>
+                            <state key="normal" backgroundImage="vui-new"/>
                             <connections>
                                 <action selector="result1BtnDidTap:" destination="-1" eventType="touchUpInside" id="rcw-n2-8u9"/>
                             </connections>
@@ -77,6 +77,6 @@
         <image name="GIẬN" width="2448" height="3264"/>
         <image name="SỢ" width="2448" height="3264"/>
         <image name="cam_xuc_2_wrong_2" width="123" height="113"/>
-        <image name="vui1" width="800" height="800"/>
+        <image name="vui-new" width="630" height="630"/>
     </resources>
 </document>

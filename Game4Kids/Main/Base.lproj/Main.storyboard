@@ -356,7 +356,7 @@
         <!--KHAI TRÍ-->
         <scene sceneID="rEQ-L4-xfh">
             <objects>
-                <viewController id="uUA-Lb-VbT" sceneMemberID="viewController">
+                <viewController id="uUA-Lb-VbT" customClass="KhaiTriViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wwF-9e-EQp"/>
                         <viewControllerLayoutGuide type="bottom" id="vNj-gZ-v7l"/>
@@ -364,7 +364,35 @@
                     <view key="view" contentMode="scaleToFill" id="JZA-07-M8z">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-7Z-5to">
+                                <rect key="frame" x="220" y="354" width="584" height="60"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pTK-mI-1Cx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <state key="normal" title="BONG BÓNG">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="bubbleBtnDidTap:" destination="uUA-Lb-VbT" eventType="touchUpInside" id="5E1-Kr-hve"/>
+                                    <action selector="doanCamXuc22DidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="A71-Rj-XUm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2l2-7Z-5to" firstAttribute="leading" secondItem="JZA-07-M8z" secondAttribute="leadingMargin" constant="200" id="HdG-d5-5mZ"/>
+                            <constraint firstItem="2l2-7Z-5to" firstAttribute="centerY" secondItem="JZA-07-M8z" secondAttribute="centerY" id="Mt9-8K-Pf7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2l2-7Z-5to" secondAttribute="trailing" constant="200" id="SzU-us-wSn"/>
+                            <constraint firstItem="2l2-7Z-5to" firstAttribute="centerX" secondItem="JZA-07-M8z" secondAttribute="centerX" id="xlm-zd-jLG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="KHAI TRÍ" id="MMV-2t-7Fy"/>
                 </viewController>

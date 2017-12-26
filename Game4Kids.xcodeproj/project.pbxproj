@@ -18,6 +18,9 @@
 		EA01CB7D1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA01CB7B1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib */; };
 		EA01CB801FEEB26A00FCFB49 /* DongCam1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA01CB7E1FEEB26A00FCFB49 /* DongCam1ViewController.swift */; };
 		EA01CB811FEEB26A00FCFB49 /* DongCam1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA01CB7F1FEEB26A00FCFB49 /* DongCam1ViewController.xib */; };
+		EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */; };
+		EA24F1261FF1CF8700FE7637 /* BubbleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */; };
+		EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */; };
 		EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */; };
 		EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */; };
 		EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */; };
@@ -59,6 +62,9 @@
 		EA01CB7B1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoanCamXuc22ViewController.xib; sourceTree = "<group>"; };
 		EA01CB7E1FEEB26A00FCFB49 /* DongCam1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongCam1ViewController.swift; sourceTree = "<group>"; };
 		EA01CB7F1FEEB26A00FCFB49 /* DongCam1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongCam1ViewController.xib; sourceTree = "<group>"; };
+		EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
+		EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BubbleViewController.xib; sourceTree = "<group>"; };
+		EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaiTriViewController.swift; sourceTree = "<group>"; };
 		EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClothesViewController.swift; sourceTree = "<group>"; };
 		EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeClothesViewController.xib; sourceTree = "<group>"; };
 		EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongCam2ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,16 @@
 			path = "Cô Dung";
 			sourceTree = "<group>";
 		};
+		EA24F1201FF1CD9400FE7637 /* Khai Trí */ = {
+			isa = PBXGroup;
+			children = (
+				EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */,
+				EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */,
+			);
+			name = "Khai Trí";
+			path = "Khai Trí";
+			sourceTree = "<group>";
+		};
 		EA7F5CD01FA587DC00A87ACC = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +171,7 @@
 				EA01CB6A1FEE987A00FCFB49 /* Utils */,
 				EA9DFC881FEE4F7800F33CE7 /* Main */,
 				EA01CB6B1FEE98A300FCFB49 /* Cô Dung */,
+				EA24F1201FF1CD9400FE7637 /* Khai Trí */,
 				EADD1B191FE4B179003157F9 /* ThaoDien */,
 				EAEFF4981FA5902800AF4078 /* Base */,
 				EAEFF4931FA58CFF00AF4078 /* View */,
@@ -172,6 +189,7 @@
 				EA7F5CDE1FA587DC00A87ACC /* ViewController.swift */,
 				EA7F5CE01FA587DC00A87ACC /* Main.storyboard */,
 				EA01CB741FEEA2C800FCFB49 /* MsDungViewController.swift */,
+				EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -288,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA24F1261FF1CF8700FE7637 /* BubbleViewController.xib in Resources */,
 				EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */,
 				EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */,
 				EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */,
@@ -325,6 +344,7 @@
 				EA9DFC8A1FEE4F9C00F33CE7 /* MainViewController.swift in Sources */,
 				EAE5E72F1FEF876900003966 /* CamXuc1ViewController.swift in Sources */,
 				EA01CB721FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift in Sources */,
+				EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */,
 				EA01CB781FEEAAA900FCFB49 /* DoanCamXuc21ViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
@@ -334,6 +354,7 @@
 				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
 				EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */,
 				EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */,
+				EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
 				EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */,
 			);
