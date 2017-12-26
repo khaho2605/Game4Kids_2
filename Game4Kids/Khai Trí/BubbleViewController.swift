@@ -79,6 +79,7 @@ extension CGFloat {
 class BubbleViewController: UIViewController {
     
     @IBOutlet private weak var lblTimer:UILabel?
+    @IBOutlet weak var lblScore: UILabel!
     
     let imageSize = CGSize(width: 60, height: 60)
     var arrImage:[UIImageView] = [UIImageView]()
@@ -94,13 +95,16 @@ class BubbleViewController: UIViewController {
         }
     }
     
-    var score:Int = 0
+    var score:Int = 0 {
+        didSet {
+            print("score-------", score)
+            lblScore.text = "Điểm: \(score)"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.setupView()
-        
         self.startGame()
     }
     
@@ -185,15 +189,13 @@ extension BubbleViewController {
                     && (self.arrImage[index].layer.presentation()?.frame.origin.y ?? 0) + imageSize.height > position.y {
                     
                     self.arrImage[index].removeFromSuperview()
+                    self.score += 1
                     self.arrImage.remove(at: index)
                     
                     self.initMonster(position: position)
-                    
                     return
-                    
                 }
             }
-            
         }
     }
     

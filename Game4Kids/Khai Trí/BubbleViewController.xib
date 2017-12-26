@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BubbleViewController" customModule="Game4Kids" customModuleProvider="target">
             <connections>
+                <outlet property="lblScore" destination="Lns-GB-v3P" id="MIl-Wa-NeZ"/>
                 <outlet property="lblTimer" destination="qfO-B7-qwp" id="58I-BB-Gvq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,11 +28,19 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Điểm: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lns-GB-v3P">
+                    <rect key="frame" x="478" y="40" width="68.5" height="23"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="qfO-B7-qwp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ft6-oY-3GE"/>
                 <constraint firstItem="qfO-B7-qwp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gje-OR-sVS"/>
+                <constraint firstItem="Lns-GB-v3P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vHC-NG-0WI"/>
+                <constraint firstItem="Lns-GB-v3P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="vIM-7S-1jd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
