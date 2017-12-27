@@ -26,7 +26,7 @@
                     <rect key="frame" x="256" y="671" width="512" height="77"/>
                     <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                    <state key="normal" title="PLAY">
+                    <state key="normal" title="CHƠI">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <userDefinedRuntimeAttributes>
