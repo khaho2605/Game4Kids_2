@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChaoHoiViewController" customModule="Game4Kids" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xNW-3G-dw9">
+                    <rect key="frame" x="16" y="36" width="992" height="716"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nt2-1c-ewh">
+                            <rect key="frame" x="0.0" y="0.0" width="992" height="350"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 1 hình 1" translatesAutoresizingMaskIntoConstraints="NO" id="SaO-oP-qlq">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 2 hình 2" translatesAutoresizingMaskIntoConstraints="NO" id="mK6-zE-A9v">
+                                    <rect key="frame" x="336" y="0.0" width="320" height="350"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 3 hình 3" translatesAutoresizingMaskIntoConstraints="NO" id="iKT-fy-9Ho">
+                                    <rect key="frame" x="672" y="0.0" width="320" height="350"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GTU-3V-OMv">
+                            <rect key="frame" x="0.0" y="366" width="992" height="350"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 4 hình 4" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-Ht-DKO">
+                                    <rect key="frame" x="0.0" y="0.0" width="488" height="350"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 5 hình 5" translatesAutoresizingMaskIntoConstraints="NO" id="xQ2-UX-36y">
+                                    <rect key="frame" x="504" y="0.0" width="488" height="350"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xNW-3G-dw9" secondAttribute="trailing" constant="16" id="Lgz-JT-CFa"/>
+                <constraint firstItem="xNW-3G-dw9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bom-2n-aEV"/>
+                <constraint firstItem="xNW-3G-dw9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="qcT-LO-r7c"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xNW-3G-dw9" secondAttribute="bottom" constant="16" id="zqI-0C-Ow4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="câu 1 hình 1" width="1013" height="768"/>
+        <image name="câu 2 hình 2" width="1024" height="751"/>
+        <image name="câu 3 hình 3" width="976" height="768"/>
+        <image name="câu 4 hình 4" width="1024" height="696"/>
+        <image name="câu 5 hình 5" width="1024" height="703"/>
+    </resources>
+</document>
