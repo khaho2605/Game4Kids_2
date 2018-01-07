@@ -103,6 +103,38 @@ extension BaseViewController {
     }
     
     //Radom position on a view
+    func checkContaintViewRandom2(view: UIView, framePlayer: CGRect, frameTarget: UIView, frameOrigin: CGPoint) -> Bool {
+        if frameTarget.frame.contains(view.center) {
+            UIView.animate(withDuration: 0.3) {
+                let posXRandom = CGFloat.random(min: frameTarget.x, max: frameTarget.maxX - framePlayer.width)
+                let posYRandom = frameTarget.maxY - framePlayer.height
+                view.frame.origin = CGPoint(x: posXRandom , y: posYRandom)
+                self.playSound(name: "dung roi", Extension: "wav")
+                self.endTouch = true
+            }
+            return true
+        } else {
+            UIView.animate(withDuration: 0.3) {
+                view.center = frameOrigin
+                self.playSound(name: "thu cach khac", Extension: "wav")
+            }
+            return false
+        }
+    }
+    func dragViewRandom2(recognizer:UIPanGestureRecognizer, target: UIView, posPlayer: CGPoint, framePlayer: CGRect){
+        let translation = recognizer.translation(in: self.view)
+        recognizer.view!.center = CGPoint(x: recognizer.view!.center.x + translation.x, y: recognizer.view!.center.y + translation.y)
+        recognizer.setTranslation(CGPoint.zero, in: self.view)
+        if recognizer.state == .ended {
+            let check = checkContaintViewRandom2(view: recognizer.view!, framePlayer: framePlayer, frameTarget: target, frameOrigin: posPlayer)
+            if check {
+                self.isFinish += 1
+                target.isUserInteractionEnabled = false
+            }
+        }
+    }
+    
+    //Radom position on a view
     func checkContaintViewRandom(view: UIView, framePlayer: CGRect, frameTarget: UIView, frameOrigin: CGPoint) -> Bool {
         if frameTarget.frame.contains(view.center) {
             UIView.animate(withDuration: 0.3) {

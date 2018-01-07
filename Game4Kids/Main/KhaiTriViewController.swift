@@ -14,6 +14,10 @@ class KhaiTriViewController: BaseViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func chamSocBtnDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(ChamSocViewController(), animated: true)
+
+    }
     @IBAction func bubbleBtnDidTap(_ sender: Any) {
         self.navigationController?.pushViewController(BubbleViewController(), animated: true)
     }

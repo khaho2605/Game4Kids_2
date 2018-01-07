@@ -25,6 +25,8 @@
 		EA0A067C2001182C00C51C18 /* GiupDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A067A2001182C00C51C18 /* GiupDoViewController.swift */; };
 		EA0A067D2001182C00C51C18 /* GiupDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0A067B2001182C00C51C18 /* GiupDoViewController.xib */; };
 		EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A067E200118F500C51C18 /* SocialStoryViewController.swift */; };
+		EA0C6071200201CF008598BF /* ChamSocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C606F200201CF008598BF /* ChamSocViewController.swift */; };
+		EA0C6072200201CF008598BF /* ChamSocViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0C6070200201CF008598BF /* ChamSocViewController.xib */; };
 		EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */; };
 		EA24F1261FF1CF8700FE7637 /* BubbleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */; };
 		EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */; };
@@ -100,6 +102,8 @@
 		EA0A067A2001182C00C51C18 /* GiupDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiupDoViewController.swift; sourceTree = "<group>"; };
 		EA0A067B2001182C00C51C18 /* GiupDoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiupDoViewController.xib; sourceTree = "<group>"; };
 		EA0A067E200118F500C51C18 /* SocialStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialStoryViewController.swift; sourceTree = "<group>"; };
+		EA0C606F200201CF008598BF /* ChamSocViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamSocViewController.swift; sourceTree = "<group>"; };
+		EA0C6070200201CF008598BF /* ChamSocViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChamSocViewController.xib; sourceTree = "<group>"; };
 		EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
 		EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BubbleViewController.xib; sourceTree = "<group>"; };
 		EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaiTriViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +225,8 @@
 		EA24F1201FF1CD9400FE7637 /* Khai Trí */ = {
 			isa = PBXGroup;
 			children = (
+				EA0C606F200201CF008598BF /* ChamSocViewController.swift */,
+				EA0C6070200201CF008598BF /* ChamSocViewController.xib */,
 				EABE1E462001B7B000C23A1B /* Khởi xướng, chú ý */,
 				EA0A0679200117E000C51C18 /* Câu chuyện XH */,
 			);
@@ -469,6 +475,7 @@
 				EABE1E6E2001D40D00C23A1B /* DanTung.MOV in Resources */,
 				EAEFF4AA1FA5B07700AF4078 /* be that gioi.wav in Resources */,
 				EABE1E7B2001D42000C23A1B /* taulua.MOV in Resources */,
+				EA0C6072200201CF008598BF /* ChamSocViewController.xib in Resources */,
 				EA81A2EC1FE5007200206697 /* IntroHandwashingViewController.xib in Resources */,
 				EA01CB731FEE9C9300FCFB49 /* DoanCamXuc1ViewController.xib in Resources */,
 				EA7F5CE41FA587DC00A87ACC /* Assets.xcassets in Resources */,
@@ -505,6 +512,7 @@
 				EAE5E72F1FEF876900003966 /* CamXuc1ViewController.swift in Sources */,
 				EABE1E552001B99800C23A1B /* NhacCuViewController.swift in Sources */,
 				EA01CB721FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift in Sources */,
+				EA0C6071200201CF008598BF /* ChamSocViewController.swift in Sources */,
 				EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */,
 				EA01CB781FEEAAA900FCFB49 /* DoanCamXuc21ViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,

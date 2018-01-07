@@ -366,60 +366,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-7Z-5to">
-                                <rect key="frame" x="220" y="313" width="584" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <state key="normal" title="BONG BÓNG">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="bubbleBtnDidTap:" destination="uUA-Lb-VbT" eventType="touchUpInside" id="5E1-Kr-hve"/>
-                                    <action selector="doanCamXuc22DidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="A71-Rj-XUm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd6-F3-Zya">
-                                <rect key="frame" x="220" y="396" width="584" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <state key="normal" title="CÂU CHUYỆN XÃ HỘI ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="IJm-kS-ijb" kind="push" id="t1p-ta-gWa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-1z-3Zg">
-                                <rect key="frame" x="220" y="492" width="584" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <state key="normal" title="KỸ NĂNG KHỞI XƯỚNG CÙNG CHÚ Ý">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="qQd-zP-lzS" kind="push" id="hzq-dw-FMf"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YWC-Yf-zOF">
+                                <rect key="frame" x="200" y="270" width="624" height="228"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-7Z-5to">
+                                        <rect key="frame" x="0.0" y="0.0" width="624" height="45"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <state key="normal" title="BONG BÓNG">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="bubbleBtnDidTap:" destination="uUA-Lb-VbT" eventType="touchUpInside" id="5E1-Kr-hve"/>
+                                            <action selector="doanCamXuc22DidTap:" destination="oua-Ck-8HR" eventType="touchUpInside" id="A71-Rj-XUm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd6-F3-Zya">
+                                        <rect key="frame" x="0.0" y="61" width="624" height="45"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <state key="normal" title="CÂU CHUYỆN XÃ HỘI ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="IJm-kS-ijb" kind="push" id="t1p-ta-gWa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-1z-3Zg">
+                                        <rect key="frame" x="0.0" y="122" width="624" height="45"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <state key="normal" title="KỸ NĂNG KHỞI XƯỚNG CÙNG CHÚ Ý">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="qQd-zP-lzS" kind="push" id="hzq-dw-FMf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCt-S6-icR">
+                                        <rect key="frame" x="0.0" y="183" width="624" height="45"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <state key="normal" title="KỸ NĂNG CHĂM SÓC BẢN THÂN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chamSocBtnDidTap:" destination="uUA-Lb-VbT" eventType="touchUpInside" id="Ery-LC-gfj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YWC-Yf-zOF" firstAttribute="leading" secondItem="JZA-07-M8z" secondAttribute="leading" constant="200" id="55O-2D-T9V"/>
+                            <constraint firstAttribute="trailing" secondItem="YWC-Yf-zOF" secondAttribute="trailing" constant="200" id="IEC-qf-iTp"/>
+                            <constraint firstItem="YWC-Yf-zOF" firstAttribute="centerY" secondItem="JZA-07-M8z" secondAttribute="centerY" id="JYh-NA-ExW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="KHAI TRÍ" id="MMV-2t-7Fy"/>
                 </viewController>
@@ -439,59 +462,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xco-RH-Tqh">
-                                <rect key="frame" x="220" y="214" width="584" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <state key="normal" title="KỸ NĂNG CHÀO HỎI">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="chaoHoiBtnDidTap:" destination="IJm-kS-ijb" eventType="touchUpInside" id="ku0-SA-voX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8L-hC-yfr">
-                                <rect key="frame" x="220" y="332" width="584" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <state key="normal" title="KỸ NĂNG CHIA SẺ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="chiaSeBtnDidTap:" destination="IJm-kS-ijb" eventType="touchUpInside" id="Tz2-mW-f3P"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoH-9e-udu">
-                                <rect key="frame" x="220" y="434" width="584" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <state key="normal" title="KỸ NĂNG GIÚP ĐỠ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="giupDoBtnDidTap:" destination="IJm-kS-ijb" eventType="touchUpInside" id="7Tu-ef-rK7"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hwm-hl-YmZ">
+                                <rect key="frame" x="220" y="300.5" width="584" height="167"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xco-RH-Tqh">
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="45"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <state key="normal" title="KỸ NĂNG CHÀO HỎI">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chaoHoiBtnDidTap:" destination="IJm-kS-ijb" eventType="touchUpInside" id="ku0-SA-voX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8L-hC-yfr">
+                                        <rect key="frame" x="0.0" y="61" width="584" height="45"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <state key="normal" title="KỸ NĂNG CHIA SẺ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chiaSeBtnDidTap:" destination="IJm-kS-ijb" eventType="touchUpInside" id="Tz2-mW-f3P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoH-9e-udu">
+                                        <rect key="frame" x="0.0" y="122" width="584" height="45"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <state key="normal" title="KỸ NĂNG GIÚP ĐỠ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="giupDoBtnDidTap:" destination="IJm-kS-ijb" eventType="touchUpInside" id="7Tu-ef-rK7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hwm-hl-YmZ" firstAttribute="centerY" secondItem="i83-HC-QVL" secondAttribute="centerY" id="7uP-ec-gff"/>
+                            <constraint firstItem="Hwm-hl-YmZ" firstAttribute="leading" secondItem="i83-HC-QVL" secondAttribute="leadingMargin" constant="200" id="JCm-Li-uSX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hwm-hl-YmZ" secondAttribute="trailing" constant="200" id="mtM-9z-9OK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CÂU CHUYỆN XÃ HỘI " id="FLw-aj-YwZ"/>
                 </viewController>
@@ -512,10 +542,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3RV-CT-Wii">
-                                <rect key="frame" x="60" y="256" width="904" height="256"/>
+                                <rect key="frame" x="220" y="256" width="584" height="256"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4j-U5-qdY">
-                                        <rect key="frame" x="0.0" y="0.0" width="904" height="74.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="74.5"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="ĐỘNG VẬT">
@@ -531,7 +561,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBt-N6-y4B">
-                                        <rect key="frame" x="0.0" y="90.5" width="904" height="75"/>
+                                        <rect key="frame" x="0.0" y="90.5" width="584" height="75"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="PHƯƠNG TIỆN">
@@ -547,7 +577,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQU-vD-0JX">
-                                        <rect key="frame" x="0.0" y="181.5" width="904" height="74.5"/>
+                                        <rect key="frame" x="0.0" y="181.5" width="584" height="74.5"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="NHẠC CỤ">
@@ -568,8 +598,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3RV-CT-Wii" firstAttribute="height" secondItem="Vnp-rB-jHW" secondAttribute="height" multiplier="1/3" id="GBq-d8-Hh0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="3RV-CT-Wii" secondAttribute="trailing" constant="40" id="Wgr-dU-aTV"/>
-                            <constraint firstItem="3RV-CT-Wii" firstAttribute="leading" secondItem="Vnp-rB-jHW" secondAttribute="leadingMargin" constant="40" id="tMJ-lD-dZ1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3RV-CT-Wii" secondAttribute="trailing" constant="200" id="Wgr-dU-aTV"/>
+                            <constraint firstItem="3RV-CT-Wii" firstAttribute="leading" secondItem="Vnp-rB-jHW" secondAttribute="leadingMargin" constant="200" id="tMJ-lD-dZ1"/>
                             <constraint firstItem="3RV-CT-Wii" firstAttribute="centerY" secondItem="Vnp-rB-jHW" secondAttribute="centerY" id="wqc-7I-Tg6"/>
                         </constraints>
                     </view>
