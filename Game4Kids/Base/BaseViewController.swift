@@ -12,8 +12,8 @@ import AVKit
 
 class CustomAVPlayerViewController: AVPlayerViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("touchesBegan")
         self.dismiss(animated: true, completion: nil)
+        self.player?.pause()
     }
 }
 
