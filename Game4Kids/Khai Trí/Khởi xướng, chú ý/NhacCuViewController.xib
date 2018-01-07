@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NhacCuViewController" customModule="Game4Kids" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="V01-cR-9Rj">
+                    <rect key="frame" x="16" y="16" width="992" height="329"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7z1-VE-LLm">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+                            <state key="normal" backgroundImage="violon"/>
+                            <connections>
+                                <action selector="violonBtnDidTap:" destination="-1" eventType="touchUpInside" id="gOg-5Q-wdJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vht-MR-HUF">
+                            <rect key="frame" x="336" y="0.0" width="320" height="329"/>
+                            <state key="normal" backgroundImage="trong"/>
+                            <connections>
+                                <action selector="trongBtnDidTap:" destination="-1" eventType="touchUpInside" id="BhC-Oi-Z5D"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJt-Tf-eye">
+                            <rect key="frame" x="672" y="0.0" width="320" height="329"/>
+                            <state key="normal" backgroundImage="dantung"/>
+                            <connections>
+                                <action selector="danTungBtnDidTap:" destination="-1" eventType="touchUpInside" id="0c9-Vv-AhY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8fW-pO-HTT">
+                    <rect key="frame" x="181.5" y="361" width="661" height="329"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ips-62-JDZ">
+                            <rect key="frame" x="0.0" y="0.0" width="322.5" height="329"/>
+                            <state key="normal" backgroundImage="ken"/>
+                            <connections>
+                                <action selector="kenBtnDidTap:" destination="-1" eventType="touchUpInside" id="dfc-Jm-gLs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB9-gq-1sp">
+                            <rect key="frame" x="338.5" y="0.0" width="322.5" height="329"/>
+                            <state key="normal" backgroundImage="dan"/>
+                            <connections>
+                                <action selector="danBtnDidTap:" destination="-1" eventType="touchUpInside" id="Xyb-cn-enX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="V01-cR-9Rj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="7bs-3E-pux"/>
+                <constraint firstItem="8fW-pO-HTT" firstAttribute="width" secondItem="V01-cR-9Rj" secondAttribute="width" multiplier="2/3" id="8sF-pg-Vrk"/>
+                <constraint firstItem="V01-cR-9Rj" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="3/7" id="C27-Qw-LRa"/>
+                <constraint firstItem="8fW-pO-HTT" firstAttribute="top" secondItem="V01-cR-9Rj" secondAttribute="bottom" constant="16" id="djt-Sr-OMW"/>
+                <constraint firstItem="V01-cR-9Rj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="grk-H3-N5V"/>
+                <constraint firstItem="8fW-pO-HTT" firstAttribute="height" secondItem="V01-cR-9Rj" secondAttribute="height" id="p6V-SP-niV"/>
+                <constraint firstItem="8fW-pO-HTT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tYq-O2-mPZ"/>
+                <constraint firstAttribute="trailing" secondItem="V01-cR-9Rj" secondAttribute="trailing" constant="16" id="wDP-l0-6mu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dan" width="548" height="531"/>
+        <image name="dantung" width="572" height="485"/>
+        <image name="ken" width="582" height="503"/>
+        <image name="trong" width="566" height="507"/>
+        <image name="violon" width="559" height="484"/>
+    </resources>
+</document>

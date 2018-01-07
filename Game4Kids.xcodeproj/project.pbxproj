@@ -44,6 +44,30 @@
 		EA9DFC8A1FEE4F9C00F33CE7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9DFC891FEE4F9C00F33CE7 /* MainViewController.swift */; };
 		EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */; };
 		EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */; };
+		EABE1E4A2001B80300C23A1B /* KhoiXuongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE1E492001B80300C23A1B /* KhoiXuongViewController.swift */; };
+		EABE1E4D2001B92E00C23A1B /* DongVatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE1E4B2001B92E00C23A1B /* DongVatViewController.swift */; };
+		EABE1E4E2001B92E00C23A1B /* DongVatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E4C2001B92E00C23A1B /* DongVatViewController.xib */; };
+		EABE1E512001B97400C23A1B /* PhuongTienViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE1E4F2001B97400C23A1B /* PhuongTienViewController.swift */; };
+		EABE1E522001B97400C23A1B /* PhuongTienViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E502001B97400C23A1B /* PhuongTienViewController.xib */; };
+		EABE1E552001B99800C23A1B /* NhacCuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE1E532001B99800C23A1B /* NhacCuViewController.swift */; };
+		EABE1E562001B99800C23A1B /* NhacCuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E542001B99800C23A1B /* NhacCuViewController.xib */; };
+		EABE1E592001C78E00C23A1B /* BaseVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABE1E572001C78E00C23A1B /* BaseVideoViewController.swift */; };
+		EABE1E5A2001C78E00C23A1B /* BaseVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E582001C78E00C23A1B /* BaseVideoViewController.xib */; };
+		EABE1E5D2001C91100C23A1B /* bo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E5C2001C91100C23A1B /* bo.MOV */; };
+		EABE1E622001CD7000C23A1B /* heo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E5E2001CD6700C23A1B /* heo.MOV */; };
+		EABE1E632001CD7000C23A1B /* meo.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E5F2001CD6A00C23A1B /* meo.MOV */; };
+		EABE1E642001CD7000C23A1B /* cho.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E602001CD6D00C23A1B /* cho.MOV */; };
+		EABE1E652001CD7000C23A1B /* ga.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E612001CD7000C23A1B /* ga.MOV */; };
+		EABE1E6D2001D40D00C23A1B /* ken.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E682001D40100C23A1B /* ken.MOV */; };
+		EABE1E6E2001D40D00C23A1B /* DanTung.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E692001D40400C23A1B /* DanTung.MOV */; };
+		EABE1E6F2001D40D00C23A1B /* dan.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E6A2001D40700C23A1B /* dan.MOV */; };
+		EABE1E702001D40D00C23A1B /* trong.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E6B2001D40A00C23A1B /* trong.MOV */; };
+		EABE1E712001D40D00C23A1B /* violon.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E6C2001D40D00C23A1B /* violon.MOV */; };
+		EABE1E772001D42000C23A1B /* xebus.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E722001D41200C23A1B /* xebus.MOV */; };
+		EABE1E782001D42000C23A1B /* thuyen.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E732001D41600C23A1B /* thuyen.MOV */; };
+		EABE1E792001D42000C23A1B /* xehoi.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E742001D41900C23A1B /* xehoi.MOV */; };
+		EABE1E7A2001D42000C23A1B /* maybay.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E752001D41C00C23A1B /* maybay.MOV */; };
+		EABE1E7B2001D42000C23A1B /* taulua.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EABE1E762001D42000C23A1B /* taulua.MOV */; };
 		EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */; };
 		EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EADD1B1B1FE4B1B0003157F9 /* GoWCViewController.xib */; };
 		EAE5E72F1FEF876900003966 /* CamXuc1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE5E72D1FEF876900003966 /* CamXuc1ViewController.swift */; };
@@ -97,6 +121,30 @@
 		EA9DFC891FEE4F9C00F33CE7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EAB2D7BE1FA5F58A001DD97E /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EAB2D7BF1FA5F58A001DD97E /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		EABE1E492001B80300C23A1B /* KhoiXuongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhoiXuongViewController.swift; sourceTree = "<group>"; };
+		EABE1E4B2001B92E00C23A1B /* DongVatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongVatViewController.swift; sourceTree = "<group>"; };
+		EABE1E4C2001B92E00C23A1B /* DongVatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongVatViewController.xib; sourceTree = "<group>"; };
+		EABE1E4F2001B97400C23A1B /* PhuongTienViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhuongTienViewController.swift; sourceTree = "<group>"; };
+		EABE1E502001B97400C23A1B /* PhuongTienViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhuongTienViewController.xib; sourceTree = "<group>"; };
+		EABE1E532001B99800C23A1B /* NhacCuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhacCuViewController.swift; sourceTree = "<group>"; };
+		EABE1E542001B99800C23A1B /* NhacCuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NhacCuViewController.xib; sourceTree = "<group>"; };
+		EABE1E572001C78E00C23A1B /* BaseVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVideoViewController.swift; sourceTree = "<group>"; };
+		EABE1E582001C78E00C23A1B /* BaseVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseVideoViewController.xib; sourceTree = "<group>"; };
+		EABE1E5C2001C91100C23A1B /* bo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = bo.MOV; sourceTree = "<group>"; };
+		EABE1E5E2001CD6700C23A1B /* heo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = heo.MOV; sourceTree = "<group>"; };
+		EABE1E5F2001CD6A00C23A1B /* meo.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = meo.MOV; sourceTree = "<group>"; };
+		EABE1E602001CD6D00C23A1B /* cho.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = cho.MOV; sourceTree = "<group>"; };
+		EABE1E612001CD7000C23A1B /* ga.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = ga.MOV; sourceTree = "<group>"; };
+		EABE1E682001D40100C23A1B /* ken.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = ken.MOV; sourceTree = "<group>"; };
+		EABE1E692001D40400C23A1B /* DanTung.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = DanTung.MOV; sourceTree = "<group>"; };
+		EABE1E6A2001D40700C23A1B /* dan.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = dan.MOV; sourceTree = "<group>"; };
+		EABE1E6B2001D40A00C23A1B /* trong.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = trong.MOV; sourceTree = "<group>"; };
+		EABE1E6C2001D40D00C23A1B /* violon.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = violon.MOV; sourceTree = "<group>"; };
+		EABE1E722001D41200C23A1B /* xebus.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = xebus.MOV; sourceTree = "<group>"; };
+		EABE1E732001D41600C23A1B /* thuyen.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = thuyen.MOV; sourceTree = "<group>"; };
+		EABE1E742001D41900C23A1B /* xehoi.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = xehoi.MOV; sourceTree = "<group>"; };
+		EABE1E752001D41C00C23A1B /* maybay.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = maybay.MOV; sourceTree = "<group>"; };
+		EABE1E762001D42000C23A1B /* taulua.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = taulua.MOV; sourceTree = "<group>"; };
 		EADD1B1A1FE4B1B0003157F9 /* GoWCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoWCViewController.swift; sourceTree = "<group>"; };
 		EADD1B1B1FE4B1B0003157F9 /* GoWCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoWCViewController.xib; sourceTree = "<group>"; };
 		EAE5E72D1FEF876900003966 /* CamXuc1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamXuc1ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +221,7 @@
 		EA24F1201FF1CD9400FE7637 /* Khai Trí */ = {
 			isa = PBXGroup;
 			children = (
+				EABE1E462001B7B000C23A1B /* Khởi xướng, chú ý */,
 				EA0A0679200117E000C51C18 /* Câu chuyện XH */,
 			);
 			name = "Khai Trí";
@@ -224,6 +273,60 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		EABE1E462001B7B000C23A1B /* Khởi xướng, chú ý */ = {
+			isa = PBXGroup;
+			children = (
+				EABE1E492001B80300C23A1B /* KhoiXuongViewController.swift */,
+				EABE1E4B2001B92E00C23A1B /* DongVatViewController.swift */,
+				EABE1E4C2001B92E00C23A1B /* DongVatViewController.xib */,
+				EABE1E4F2001B97400C23A1B /* PhuongTienViewController.swift */,
+				EABE1E502001B97400C23A1B /* PhuongTienViewController.xib */,
+				EABE1E532001B99800C23A1B /* NhacCuViewController.swift */,
+				EABE1E542001B99800C23A1B /* NhacCuViewController.xib */,
+			);
+			name = "Khởi xướng, chú ý";
+			path = "Khởi xướng, chú ý";
+			sourceTree = "<group>";
+		};
+		EABE1E5B2001C8E100C23A1B /* Động vật */ = {
+			isa = PBXGroup;
+			children = (
+				EABE1E602001CD6D00C23A1B /* cho.MOV */,
+				EABE1E612001CD7000C23A1B /* ga.MOV */,
+				EABE1E5E2001CD6700C23A1B /* heo.MOV */,
+				EABE1E5F2001CD6A00C23A1B /* meo.MOV */,
+				EABE1E5C2001C91100C23A1B /* bo.MOV */,
+			);
+			name = "Động vật";
+			path = "Động vật";
+			sourceTree = "<group>";
+		};
+		EABE1E662001D3C200C23A1B /* Nhạc cụ */ = {
+			isa = PBXGroup;
+			children = (
+				EABE1E6A2001D40700C23A1B /* dan.MOV */,
+				EABE1E692001D40400C23A1B /* DanTung.MOV */,
+				EABE1E682001D40100C23A1B /* ken.MOV */,
+				EABE1E6B2001D40A00C23A1B /* trong.MOV */,
+				EABE1E6C2001D40D00C23A1B /* violon.MOV */,
+			);
+			name = "Nhạc cụ";
+			path = "Nhạc cụ";
+			sourceTree = "<group>";
+		};
+		EABE1E672001D3CD00C23A1B /* Phương tiện */ = {
+			isa = PBXGroup;
+			children = (
+				EABE1E752001D41C00C23A1B /* maybay.MOV */,
+				EABE1E762001D42000C23A1B /* taulua.MOV */,
+				EABE1E732001D41600C23A1B /* thuyen.MOV */,
+				EABE1E722001D41200C23A1B /* xebus.MOV */,
+				EABE1E742001D41900C23A1B /* xehoi.MOV */,
+			);
+			name = "Phương tiện";
+			path = "Phương tiện";
+			sourceTree = "<group>";
+		};
 		EADD1B191FE4B179003157F9 /* ThaoDien */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				EAEFF4991FA5903500AF4078 /* BaseViewController.swift */,
+				EABE1E572001C78E00C23A1B /* BaseVideoViewController.swift */,
+				EABE1E582001C78E00C23A1B /* BaseVideoViewController.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -268,6 +373,9 @@
 		EAEFF49E1FA5978000AF4078 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				EABE1E672001D3CD00C23A1B /* Phương tiện */,
+				EABE1E662001D3C200C23A1B /* Nhạc cụ */,
+				EABE1E5B2001C8E100C23A1B /* Động vật */,
 				EAEFF49F1FA5979200AF4078 /* AllFallDown.mp3 */,
 				EAEFF4A91FA5B07700AF4078 /* be that gioi.wav */,
 				EAEFF4A51FA5ABCE00AF4078 /* dung roi.wav */,
@@ -337,28 +445,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA24F1261FF1CF8700FE7637 /* BubbleViewController.xib in Resources */,
+				EABE1E7A2001D42000C23A1B /* maybay.MOV in Resources */,
+				EABE1E5A2001C78E00C23A1B /* BaseVideoViewController.xib in Resources */,
 				EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */,
 				EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */,
 				EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */,
 				EAEFF4A81FA5ABDC00AF4078 /* thu cach khac.wav in Resources */,
+				EABE1E792001D42000C23A1B /* xehoi.MOV in Resources */,
+				EABE1E632001CD7000C23A1B /* meo.MOV in Resources */,
+				EABE1E522001B97400C23A1B /* PhuongTienViewController.xib in Resources */,
+				EABE1E5D2001C91100C23A1B /* bo.MOV in Resources */,
 				EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */,
 				EA01CB7D1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib in Resources */,
 				EAEFF4A01FA5979200AF4078 /* AllFallDown.mp3 in Resources */,
+				EABE1E772001D42000C23A1B /* xebus.MOV in Resources */,
 				EA0A067D2001182C00C51C18 /* GiupDoViewController.xib in Resources */,
+				EABE1E642001CD7000C23A1B /* cho.MOV in Resources */,
+				EABE1E652001CD7000C23A1B /* ga.MOV in Resources */,
+				EABE1E6D2001D40D00C23A1B /* ken.MOV in Resources */,
+				EABE1E6F2001D40D00C23A1B /* dan.MOV in Resources */,
 				EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */,
 				EAEFF4A61FA5ABCE00AF4078 /* dung roi.wav in Resources */,
+				EABE1E6E2001D40D00C23A1B /* DanTung.MOV in Resources */,
 				EAEFF4AA1FA5B07700AF4078 /* be that gioi.wav in Resources */,
+				EABE1E7B2001D42000C23A1B /* taulua.MOV in Resources */,
 				EA81A2EC1FE5007200206697 /* IntroHandwashingViewController.xib in Resources */,
 				EA01CB731FEE9C9300FCFB49 /* DoanCamXuc1ViewController.xib in Resources */,
 				EA7F5CE41FA587DC00A87ACC /* Assets.xcassets in Resources */,
+				EABE1E782001D42000C23A1B /* thuyen.MOV in Resources */,
 				EA0A067020010AAA00C51C18 /* ChaoHoiViewController.xib in Resources */,
+				EABE1E712001D40D00C23A1B /* violon.MOV in Resources */,
 				EA7F5CE21FA587DC00A87ACC /* Main.storyboard in Resources */,
+				EABE1E562001B99800C23A1B /* NhacCuViewController.xib in Resources */,
 				EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */,
 				EA0A0678200113BF00C51C18 /* ChiaSeViewController.xib in Resources */,
 				EA01CB811FEEB26A00FCFB49 /* DongCam1ViewController.xib in Resources */,
+				EABE1E4E2001B92E00C23A1B /* DongVatViewController.xib in Resources */,
 				EA01CB6F1FEE98E900FCFB49 /* CamXuc2ViewController.xib in Resources */,
+				EABE1E622001CD7000C23A1B /* heo.MOV in Resources */,
 				EA01CB791FEEAAA900FCFB49 /* DoanCamXuc21ViewController.xib in Resources */,
 				EAE5E7301FEF876900003966 /* CamXuc1ViewController.xib in Resources */,
+				EABE1E702001D40D00C23A1B /* trong.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +503,7 @@
 				EA01CB751FEEA2C800FCFB49 /* MsDungViewController.swift in Sources */,
 				EA9DFC8A1FEE4F9C00F33CE7 /* MainViewController.swift in Sources */,
 				EAE5E72F1FEF876900003966 /* CamXuc1ViewController.swift in Sources */,
+				EABE1E552001B99800C23A1B /* NhacCuViewController.swift in Sources */,
 				EA01CB721FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift in Sources */,
 				EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */,
 				EA01CB781FEEAAA900FCFB49 /* DoanCamXuc21ViewController.swift in Sources */,
@@ -383,15 +511,19 @@
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
 				EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */,
+				EABE1E4D2001B92E00C23A1B /* DongVatViewController.swift in Sources */,
 				EA0A067C2001182C00C51C18 /* GiupDoViewController.swift in Sources */,
 				EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */,
 				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
+				EABE1E592001C78E00C23A1B /* BaseVideoViewController.swift in Sources */,
 				EA0A0677200113BF00C51C18 /* ChiaSeViewController.swift in Sources */,
 				EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */,
 				EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */,
 				EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */,
+				EABE1E4A2001B80300C23A1B /* KhoiXuongViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
 				EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */,
+				EABE1E512001B97400C23A1B /* PhuongTienViewController.swift in Sources */,
 				EA0A066F20010AAA00C51C18 /* ChaoHoiViewController.swift in Sources */,
 				EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */,
 			);

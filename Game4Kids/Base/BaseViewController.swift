@@ -8,17 +8,49 @@
 
 import UIKit
 import AVFoundation
+import AVKit
+
+class CustomAVPlayerViewController: AVPlayerViewController {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("touchesBegan")
+        self.dismiss(animated: true, completion: nil)
+    }
+}
 
 class BaseViewController: UIViewController {
 
     var player: AVAudioPlayer?
-    
+    let playerViewController = CustomAVPlayerViewController()
+
     var isFinish: Int = 0
     var endTouch = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
+    
+    func showVideo(name: String, type: String) {
+        self.player?.pause()
+        guard let path = Bundle.main.path(forResource: name, ofType: type) else {
+            debugPrint("\(name).\(type) not found")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        playerViewController.showsPlaybackControls = false
+        playerViewController.player = player
+        //hide video when finish
+        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerViewController.player?.currentItem)
+        present(playerViewController, animated: true) {
+            player.play()
+        }
+    }
+    
+    func playerDidFinishPlaying(note: NSNotification) {
+        self.playerViewController.dismiss(animated: true)
+    }
+    
+    
 }
 
 extension BaseViewController {

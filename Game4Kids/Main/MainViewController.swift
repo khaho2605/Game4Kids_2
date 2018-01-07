@@ -9,14 +9,14 @@
 import UIKit
 
 class MainViewController: BaseViewController {
+    static let sharedInstance = MainViewController()
+
     @IBOutlet weak var muteBtn: UIButton!
     var isMute = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         playSound(name: "AllFallDown", Extension: "mp3", repeatSound: true)
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func muteBtnDidTap(_ sender: Any) {
