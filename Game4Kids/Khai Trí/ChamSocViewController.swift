@@ -101,7 +101,6 @@ class ChamSocViewController: BaseViewController {
         originPlayer1 = playerImg1.center
         originPlayer2 = playerImg2.center
         originPlayer3 = playerImg3.center
-        
     }
     
     func actionDragView(recognizer: UIPanGestureRecognizer) {
@@ -124,11 +123,18 @@ class ChamSocViewController: BaseViewController {
         }
         dragViewRandom2(recognizer: recognizer, target: targetView, posPlayer: posOrigin, framePlayer: (playerView?.frame)!)
         if recognizer.state == .ended {
-//            checkFinishGame()
+            checkFinishGame()
             if endTouch {
                 playerView?.isUserInteractionEnabled = false
                 endTouch = false
             }
+        }
+    }
+    
+    func checkFinishGame() {
+        if isFinish == 3 {
+            print("Game is finish---------")
+//            playSound(name: "be that gioi", Extension: "wav")
         }
     }
     
@@ -138,36 +144,25 @@ class ChamSocViewController: BaseViewController {
         let screenHeight: CGFloat = self.view.frame.height
         let screenWidth: CGFloat = self.view.frame.width
         let topMargin: CGFloat = screenHeight*0.1
-        let wTarget: CGFloat = screenWidth*0.8
+        let wTarget: CGFloat = screenWidth*0.75
         let hTarget: CGFloat = screenHeight*0.2
         let marginPlayer: CGFloat = 40
         let hButton: CGFloat = screenHeight*0.08
         let wButton: CGFloat = screenWidth*0.4
         let wPlayer: CGFloat = screenHeight*0.18
+        let marginLb: CGFloat = 8
 
         shirtView.frame = CGRect(x: shirtLb.maxX + 32, y: topMargin, width: wTarget, height: hTarget)
-        shirtLb.frame.origin.y = shirtView.maxY - shirtLb.height
+        shirtLb.frame = CGRect(x: shirtView.x - shirtLb.width - marginLb, y: shirtView.maxY - shirtLb.height, width: shirtLb.width, height: shirtLb.height)
         pantsView.frame = CGRect(x: shirtView.x, y: shirtView.maxY+32, width: wTarget, height: hTarget)
-        pantsLb.frame.origin.y = pantsView.maxY - pantsLb.height
-        
+        pantsLb.frame = CGRect(x: pantsView.x - pantsLb.width - marginLb, y: pantsView.maxY - pantsLb.height, width: pantsLb.width, height: pantsLb.height)
+
         let posX: CGFloat = screenWidth/2 - wPlayer/2
         playerImg2.frame = CGRect(x: posX, y: pantsView.maxY + marginPlayer, width: wPlayer, height: wPlayer)
         playerImg1.frame = CGRect(x: playerImg2.x - marginPlayer - wPlayer, y: playerImg2.y, width: wPlayer, height: wPlayer)
         playerImg3.frame = CGRect(x: playerImg2.maxX + marginPlayer, y: playerImg2.y, width: wPlayer, height: wPlayer)
 
         replayBtn.layer.cornerRadius = 8
-        replayBtn.frame = CGRect(x: screenWidth/2 - wButton/2, y: screenHeight - 20 - hButton, width: wButton, height: hButton)        
-    }
-    
-    func addLine(fromPoint start: CGPoint, toPoint end:CGPoint, on subView: UIView) {
-        let line = CAShapeLayer()
-        let linePath = UIBezierPath()
-        linePath.move(to: start)
-        linePath.addLine(to: end)
-        line.path = linePath.cgPath
-        line.strokeColor = UIColor.black.cgColor
-        line.lineWidth = 0.2
-        line.lineJoin = kCALineJoinRound
-        subView.layer.addSublayer(line)
+        replayBtn.frame = CGRect(x: screenWidth/2 - wButton/2, y: screenHeight - 32 - hButton, width: wButton, height: hButton)
     }
 }

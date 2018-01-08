@@ -13,7 +13,7 @@ import AVKit
 class CustomAVPlayerViewController: AVPlayerViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dismiss(animated: true, completion: nil)
-        self.player?.pause()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "play"), object: nil)
     }
 }
 
@@ -31,7 +31,7 @@ class BaseViewController: UIViewController {
     }
     
     func showVideo(name: String, type: String) {
-        self.player?.pause()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "stop"), object: nil)
         guard let path = Bundle.main.path(forResource: name, ofType: type) else {
             debugPrint("\(name).\(type) not found")
             return
@@ -48,6 +48,7 @@ class BaseViewController: UIViewController {
     
     func playerDidFinishPlaying(note: NSNotification) {
         self.playerViewController.dismiss(animated: true)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "play"), object: nil)
     }
     
     

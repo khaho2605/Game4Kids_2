@@ -17,6 +17,8 @@ class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playSound(name: "AllFallDown", Extension: "mp3", repeatSound: true)
+        NotificationCenter.default.addObserver(self, selector: #selector(stopMusic), name: NSNotification.Name(rawValue: "stop"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(playMusic), name: NSNotification.Name(rawValue: "play"), object: nil)
     }
 
     @IBAction func muteBtnDidTap(_ sender: Any) {
@@ -29,7 +31,13 @@ class MainViewController: BaseViewController {
             isMute = true
             muteBtn.setImage(UIImage(named: "mute"), for: .normal)
         }
-        
     }
 
+    func stopMusic() {
+        player?.pause()
+    }
+    
+    func playMusic() {
+        player?.play()
+    }
 }
