@@ -13,13 +13,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChamSocViewController" customModule="Game4Kids" customModuleProvider="target">
             <connections>
                 <outlet property="pantsLb" destination="b2j-u4-HDS" id="UQC-r5-i9K"/>
-                <outlet property="pantsView" destination="0rj-Z9-f4I" id="W93-MB-vRG"/>
+                <outlet property="pantsView" destination="kGB-2v-qje" id="0Dq-p7-Laf"/>
                 <outlet property="playerImg1" destination="JCq-fy-Wxj" id="v2Q-AZ-Nzx"/>
                 <outlet property="playerImg2" destination="0Fe-Cx-Eni" id="SUh-HB-Qco"/>
                 <outlet property="playerImg3" destination="DSq-9f-1cj" id="LeO-yA-f3f"/>
                 <outlet property="replayBtn" destination="J0D-js-Wvj" id="Wjv-FY-c05"/>
                 <outlet property="shirtLb" destination="NXm-8o-cs6" id="n69-Q5-H4N"/>
-                <outlet property="shirtView" destination="CvQ-bk-TsC" id="KrG-0I-ZfY"/>
+                <outlet property="shirtView" destination="quA-nL-7MH" id="hhy-ec-BGT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -54,16 +54,6 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CvQ-bk-TsC">
-                    <rect key="frame" x="215" y="83" width="746" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0rj-Z9-f4I">
-                    <rect key="frame" x="215" y="249" width="746" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JCq-fy-Wxj">
                     <rect key="frame" x="114" y="452" width="240" height="189"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -79,9 +69,20 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.15686274510000001" green="0.81960784310000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="quA-nL-7MH">
+                    <rect key="frame" x="215" y="45" width="769" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="kGB-2v-qje">
+                    <rect key="frame" x="204" y="230" width="769" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="line" width="904" height="258"/>
+    </resources>
 </document>

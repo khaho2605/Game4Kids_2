@@ -140,11 +140,34 @@ class ChamSocViewController: BaseViewController {
         let topMargin: CGFloat = screenHeight*0.1
         let wTarget: CGFloat = screenWidth*0.8
         let hTarget: CGFloat = screenHeight*0.2
+        let marginPlayer: CGFloat = 40
+        let hButton: CGFloat = screenHeight*0.08
+        let wButton: CGFloat = screenWidth*0.4
+        let wPlayer: CGFloat = screenHeight*0.18
 
-        shirtView.frame = CGRect(x: shirtLb.maxX + 16, y: topMargin, width: wTarget, height: hTarget)
+        shirtView.frame = CGRect(x: shirtLb.maxX + 32, y: topMargin, width: wTarget, height: hTarget)
         shirtLb.frame.origin.y = shirtView.maxY - shirtLb.height
-        pantsView.frame = CGRect(x: pantsLb.maxX + 16, y: shirtView.maxY+16, width: wTarget, height: hTarget)
+        pantsView.frame = CGRect(x: shirtView.x, y: shirtView.maxY+32, width: wTarget, height: hTarget)
         pantsLb.frame.origin.y = pantsView.maxY - pantsLb.height
+        
+        let posX: CGFloat = screenWidth/2 - wPlayer/2
+        playerImg2.frame = CGRect(x: posX, y: pantsView.maxY + marginPlayer, width: wPlayer, height: wPlayer)
+        playerImg1.frame = CGRect(x: playerImg2.x - marginPlayer - wPlayer, y: playerImg2.y, width: wPlayer, height: wPlayer)
+        playerImg3.frame = CGRect(x: playerImg2.maxX + marginPlayer, y: playerImg2.y, width: wPlayer, height: wPlayer)
 
+        replayBtn.layer.cornerRadius = 8
+        replayBtn.frame = CGRect(x: screenWidth/2 - wButton/2, y: screenHeight - 20 - hButton, width: wButton, height: hButton)        
+    }
+    
+    func addLine(fromPoint start: CGPoint, toPoint end:CGPoint, on subView: UIView) {
+        let line = CAShapeLayer()
+        let linePath = UIBezierPath()
+        linePath.move(to: start)
+        linePath.addLine(to: end)
+        line.path = linePath.cgPath
+        line.strokeColor = UIColor.black.cgColor
+        line.lineWidth = 0.2
+        line.lineJoin = kCALineJoinRound
+        subView.layer.addSublayer(line)
     }
 }

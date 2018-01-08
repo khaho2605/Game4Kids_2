@@ -216,6 +216,5 @@ extension CamXuc1ViewController {
         playerImg6.frame = CGRect(x: playerImg2.x, y: playerImg4.maxY + marginPlayer, width: witdhPlayer, height: witdhPlayer)
         playerImg8.frame = CGRect(x: playerImg2.x, y: playerImg6.maxY + marginPlayer, width: witdhPlayer, height: witdhPlayer)
 
-
     }
 }
