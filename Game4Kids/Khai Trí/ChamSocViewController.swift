@@ -149,7 +149,7 @@ class ChamSocViewController: BaseViewController {
         let marginPlayer: CGFloat = 40
         let hButton: CGFloat = screenHeight*0.08
         let wButton: CGFloat = screenWidth*0.4
-        let wPlayer: CGFloat = screenHeight*0.18
+        let wPlayer: CGFloat = screenHeight*0.22
         let marginLb: CGFloat = 8
 
         shirtView.frame = CGRect(x: shirtLb.maxX + 32, y: topMargin, width: wTarget, height: hTarget)

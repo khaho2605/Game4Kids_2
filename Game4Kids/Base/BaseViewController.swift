@@ -13,6 +13,7 @@ import AVKit
 class CustomAVPlayerViewController: AVPlayerViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dismiss(animated: true, completion: nil)
+        self.player?.pause()
         NotificationCenter.default.post(name: Notification.Name(rawValue: "play"), object: nil)
     }
 }
@@ -48,6 +49,7 @@ class BaseViewController: UIViewController {
     
     func playerDidFinishPlaying(note: NSNotification) {
         self.playerViewController.dismiss(animated: true)
+        self.playerViewController.player?.pause()
         NotificationCenter.default.post(name: Notification.Name(rawValue: "play"), object: nil)
     }
     
