@@ -76,7 +76,7 @@ extension CGFloat {
     }
 }
 
-class BubbleViewController: UIViewController {
+class BubbleViewController: BaseViewController {
     
     @IBOutlet private weak var lblTimer:UILabel?
     @IBOutlet weak var lblScore: UILabel!
@@ -85,7 +85,6 @@ class BubbleViewController: UIViewController {
     var arrImage:[UIImageView] = [UIImageView]()
 //    weak var delegate:ViewControllerDelegate?
     
-    var player : AVAudioPlayer?
     var countMiss:Int = 0
     
     var timer:Timer?
@@ -179,16 +178,15 @@ extension BubbleViewController {
     
     @objc func actionTouch(recognizer: UITapGestureRecognizer) {
         
-        if let position:CGPoint = recognizer.location(in: self.view) {
-            
+        if let position: CGPoint = recognizer.location(in: self.view) {
             for index in 0 ..< self.arrImage.count {
-                
                 if (self.arrImage[index].layer.presentation()?.frame.origin.x ?? 0) < position.x
                     && (self.arrImage[index].layer.presentation()?.frame.origin.x ?? 0) + imageSize.width > position.x
                     && (self.arrImage[index].layer.presentation()?.frame.origin.y ?? 0) < position.y
                     && (self.arrImage[index].layer.presentation()?.frame.origin.y ?? 0) + imageSize.height > position.y {
                     
                     self.arrImage[index].removeFromSuperview()
+                    playSound(name: "bong_no", Extension: "mp3", repeatSound: true)
                     self.score += 1
                     self.arrImage.remove(at: index)
                     
@@ -232,21 +230,3 @@ extension BubbleViewController {
     }
 }
 
-extension BubbleViewController {
-    
-    func playSound() {
-        
-        let path = Bundle.main.path(forResource: "happy", ofType:"mp3")!
-        let url = URL(fileURLWithPath: path)
-        
-        do {
-            let sound = try AVAudioPlayer(contentsOf: url)
-            self.player = sound
-            sound.prepareToPlay()
-            sound.play()
-        } catch {
-            print("error loading file")
-            // couldn't load file :(
-        }
-    }
-}
