@@ -59,7 +59,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AB9-gq-1sp">
                             <rect key="frame" x="338.5" y="0.0" width="322.5" height="329"/>
-                            <state key="normal" backgroundImage="dan"/>
+                            <state key="normal" backgroundImage="piano"/>
                             <connections>
                                 <action selector="danBtnDidTap:" destination="-1" eventType="touchUpInside" id="Xyb-cn-enX"/>
                             </connections>
@@ -82,9 +82,9 @@
         </view>
     </objects>
     <resources>
-        <image name="dan" width="548" height="531"/>
         <image name="dantung" width="572" height="485"/>
         <image name="ken" width="582" height="503"/>
+        <image name="piano" width="560" height="470"/>
         <image name="trong" width="566" height="507"/>
         <image name="violon" width="559" height="484"/>
     </resources>
