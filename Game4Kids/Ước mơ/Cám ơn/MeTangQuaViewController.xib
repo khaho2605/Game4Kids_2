@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,34 +23,30 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khi được mẹ tặng quà nhân ngày sinh nhật" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UdC-fJ-Gx3">
-                    <rect key="frame" x="16" y="36" width="992" height="63"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Khi được mẹ tặng quà nhân ngày sinh nhật" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UdC-fJ-Gx3">
+                    <rect key="frame" x="16" y="36" width="992" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manhinh1" translatesAutoresizingMaskIntoConstraints="NO" id="aBt-ZE-YE0">
-                    <rect key="frame" x="389.5" y="129" width="614.5" height="619"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="aBt-ZE-YE0" secondAttribute="height" multiplier="614:619" id="WIO-xi-7YT"/>
-                    </constraints>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="manhinh2" translatesAutoresizingMaskIntoConstraints="NO" id="aBt-ZE-YE0">
+                    <rect key="frame" x="20" y="109" width="731.5" height="639"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camon" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-5Z-Sh2">
-                    <rect key="frame" x="20" y="335.5" width="361.5" height="412.5"/>
+                    <rect key="frame" x="795" y="535" width="209" height="213"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="AbS-5Z-Sh2" firstAttribute="height" secondItem="aBt-ZE-YE0" secondAttribute="height" multiplier="2/3" id="2fG-su-xuB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UdC-fJ-Gx3" secondAttribute="trailing" constant="16" id="6gZ-Sl-iIY"/>
                 <constraint firstItem="UdC-fJ-Gx3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="84q-wm-Hzh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aBt-ZE-YE0" secondAttribute="bottom" constant="20" id="Atk-I1-WwC"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aBt-ZE-YE0" secondAttribute="trailing" constant="20" id="GIP-HS-8Zk"/>
-                <constraint firstItem="AbS-5Z-Sh2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="WF5-7v-bq9"/>
-                <constraint firstItem="aBt-ZE-YE0" firstAttribute="leading" secondItem="AbS-5Z-Sh2" secondAttribute="trailing" constant="8" id="ahm-p0-HLh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AbS-5Z-Sh2" secondAttribute="bottom" constant="20" id="F5M-PO-RDB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AbS-5Z-Sh2" secondAttribute="trailing" constant="20" id="Uhj-OT-fmg"/>
+                <constraint firstItem="AbS-5Z-Sh2" firstAttribute="height" secondItem="aBt-ZE-YE0" secondAttribute="height" multiplier="1/3" id="WvB-1E-zwu"/>
                 <constraint firstItem="aBt-ZE-YE0" firstAttribute="top" secondItem="UdC-fJ-Gx3" secondAttribute="bottom" constant="30" id="i6q-0h-nIq"/>
-                <constraint firstItem="aBt-ZE-YE0" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="3/5" id="nAe-89-zym"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AbS-5Z-Sh2" secondAttribute="bottom" constant="20" id="vbn-5H-Y23"/>
+                <constraint firstItem="aBt-ZE-YE0" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="5/7" id="nAe-89-zym"/>
+                <constraint firstItem="aBt-ZE-YE0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uuR-rx-E4g"/>
                 <constraint firstItem="UdC-fJ-Gx3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xVp-t3-yy9"/>
                 <constraint firstItem="UdC-fJ-Gx3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="zUR-Fy-mAx"/>
             </constraints>
@@ -60,6 +55,6 @@
     </objects>
     <resources>
         <image name="camon" width="209" height="320"/>
-        <image name="manhinh1" width="1300" height="1298"/>
+        <image name="manhinh2" width="350" height="332"/>
     </resources>
 </document>

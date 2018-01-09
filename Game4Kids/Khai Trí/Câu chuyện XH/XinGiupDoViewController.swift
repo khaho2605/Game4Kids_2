@@ -19,7 +19,7 @@ class XinGiupDoViewController: BaseViewController {
 
     
     @IBAction func tapGestureOnView(_ sender: Any) {
-        let xPosition = meBeImg.maxX - meBeImg.width/2
+        let xPosition = meBeImg.maxX - 50
         let yPosition = beKeoImg.frame.origin.y
         
         let height = beKeoImg.frame.size.height

@@ -30,6 +30,8 @@
 		EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */; };
 		EA24F1261FF1CF8700FE7637 /* BubbleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */; };
 		EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */; };
+		EA25C30120050B1500BF60F6 /* CoGiaoKhenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25C2FF20050B1500BF60F6 /* CoGiaoKhenViewController.swift */; };
+		EA25C30220050B1500BF60F6 /* CoGiaoKhenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA25C30020050B1500BF60F6 /* CoGiaoKhenViewController.xib */; };
 		EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */; };
 		EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */; };
 		EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */; };
@@ -118,6 +120,8 @@
 		EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
 		EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BubbleViewController.xib; sourceTree = "<group>"; };
 		EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaiTriViewController.swift; sourceTree = "<group>"; };
+		EA25C2FF20050B1500BF60F6 /* CoGiaoKhenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoGiaoKhenViewController.swift; sourceTree = "<group>"; };
+		EA25C30020050B1500BF60F6 /* CoGiaoKhenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoGiaoKhenViewController.xib; sourceTree = "<group>"; };
 		EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClothesViewController.swift; sourceTree = "<group>"; };
 		EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeClothesViewController.xib; sourceTree = "<group>"; };
 		EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongCam2ViewController.swift; sourceTree = "<group>"; };
@@ -277,6 +281,8 @@
 				EA72D87C2004453300A53866 /* CamOnViewController.swift */,
 				EA72D8782004435000A53866 /* MeTangQuaViewController.swift */,
 				EA72D8792004435000A53866 /* MeTangQuaViewController.xib */,
+				EA25C2FF20050B1500BF60F6 /* CoGiaoKhenViewController.swift */,
+				EA25C30020050B1500BF60F6 /* CoGiaoKhenViewController.xib */,
 			);
 			name = "Cám ơn";
 			path = "Cám ơn";
@@ -537,6 +543,7 @@
 				EAA2FB8D2004902B00F925B5 /* ChaoHoiKXViewController.xib in Resources */,
 				EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */,
 				EAEFF4A61FA5ABCE00AF4078 /* dung roi.wav in Resources */,
+				EA25C30220050B1500BF60F6 /* CoGiaoKhenViewController.xib in Resources */,
 				EAA2FB912004920600F925B5 /* ChaoHoiKXResultViewController.xib in Resources */,
 				EABE1E6E2001D40D00C23A1B /* DanTung.MOV in Resources */,
 				EAEFF4AA1FA5B07700AF4078 /* be that gioi.wav in Resources */,
@@ -581,6 +588,7 @@
 				EA0C6071200201CF008598BF /* ChamSocViewController.swift in Sources */,
 				EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */,
 				EA01CB781FEEAAA900FCFB49 /* DoanCamXuc21ViewController.swift in Sources */,
+				EA25C30120050B1500BF60F6 /* CoGiaoKhenViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,

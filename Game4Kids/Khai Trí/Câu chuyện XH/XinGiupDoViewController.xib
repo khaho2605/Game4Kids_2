@@ -24,23 +24,23 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mebe" translatesAutoresizingMaskIntoConstraints="NO" id="uno-WQ-kFV">
-                    <rect key="frame" x="20" y="20" width="320" height="384"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mebe" translatesAutoresizingMaskIntoConstraints="NO" id="uno-WQ-kFV">
+                    <rect key="frame" x="20" y="20" width="461" height="768"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="uno-WQ-kFV" secondAttribute="height" multiplier="5:6" id="ZKv-jY-l56"/>
+                        <constraint firstAttribute="width" secondItem="uno-WQ-kFV" secondAttribute="height" multiplier="3:5" id="ZKv-jY-l56"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeKeo" translatesAutoresizingMaskIntoConstraints="NO" id="INL-Hj-eOJ">
-                    <rect key="frame" x="823" y="364" width="181" height="384"/>
+                    <rect key="frame" x="823" y="384" width="181" height="384"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="INL-Hj-eOJ" secondAttribute="height" multiplier="181:384" id="FIf-E6-M7O"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_chat" translatesAutoresizingMaskIntoConstraints="NO" id="HSE-Kh-5RJ">
-                    <rect key="frame" x="410" y="36" width="594" height="298"/>
+                    <rect key="frame" x="551" y="36" width="453" height="318"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bo muốn ăn kẹo?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDW-Do-A6N">
-                    <rect key="frame" x="566" y="164" width="283" height="43"/>
+                    <rect key="frame" x="636" y="174" width="283" height="43"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -56,8 +56,8 @@
                 <constraint firstItem="uno-WQ-kFV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="am3-vp-DO2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="INL-Hj-eOJ" secondAttribute="trailing" constant="20" id="dYx-Rm-4vA"/>
                 <constraint firstItem="HSE-Kh-5RJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="hdd-eS-jDF"/>
-                <constraint firstItem="uno-WQ-kFV" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/2" id="k9j-fl-xf6"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="INL-Hj-eOJ" secondAttribute="bottom" constant="20" id="lRC-ff-Vor"/>
+                <constraint firstItem="uno-WQ-kFV" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="k9j-fl-xf6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="INL-Hj-eOJ" secondAttribute="bottom" id="lRC-ff-Vor"/>
                 <constraint firstItem="uno-WQ-kFV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="n3L-Vn-Tir"/>
                 <constraint firstItem="HSE-Kh-5RJ" firstAttribute="leading" secondItem="uno-WQ-kFV" secondAttribute="trailing" constant="70" id="nBK-ay-x7C"/>
                 <constraint firstItem="pDW-Do-A6N" firstAttribute="centerY" secondItem="HSE-Kh-5RJ" secondAttribute="centerY" id="vwL-wP-ANO"/>

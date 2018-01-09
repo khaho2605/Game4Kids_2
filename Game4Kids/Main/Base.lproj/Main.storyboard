@@ -205,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uX0-FF-qGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="-280"/>
+            <point key="canvasLocation" x="188" y="-43"/>
         </scene>
         <!--ƯỚC MƠ-->
         <scene sceneID="a84-Hw-UyH">
@@ -290,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaG-fw-meF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="403"/>
+            <point key="canvasLocation" x="188" y="642"/>
         </scene>
         <!--CÁM ƠN-->
         <scene sceneID="DsQ-yz-SjY">
@@ -305,10 +305,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4aF-Ay-sD0">
-                                <rect key="frame" x="220" y="239.5" width="490" height="289"/>
+                                <rect key="frame" x="220" y="239.5" width="545" height="289"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4s-8f-tw9">
-                                        <rect key="frame" x="0.0" y="0.0" width="490" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="545" height="45"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="KHI MẸ TẶNG QUÀ">
@@ -324,7 +324,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H75-bI-QbF">
-                                        <rect key="frame" x="0.0" y="61" width="490" height="45"/>
+                                        <rect key="frame" x="0.0" y="61" width="545" height="45"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="CHIA SẺ ĐỒ CHƠI">
@@ -340,7 +340,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peG-mm-tLM">
-                                        <rect key="frame" x="0.0" y="122" width="490" height="45"/>
+                                        <rect key="frame" x="0.0" y="122" width="545" height="45"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="GIÚP ĐỠ MẸ LÀM VIỆC NHÀ">
@@ -356,7 +356,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gD2-Hd-qcd">
-                                        <rect key="frame" x="0.0" y="183" width="490" height="45"/>
+                                        <rect key="frame" x="0.0" y="183" width="545" height="45"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="CÔ GIÁO KHEN CHĂM NGOAN">
@@ -372,7 +372,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24s-cC-FyY">
-                                        <rect key="frame" x="0.0" y="244" width="490" height="45"/>
+                                        <rect key="frame" x="0.0" y="244" width="545" height="45"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="ĐƯỢC TẶNG QUÀ SINH NHẬT">
@@ -390,7 +390,7 @@
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thank" translatesAutoresizingMaskIntoConstraints="NO" id="DPP-xy-zxI">
-                                <rect key="frame" x="730" y="364" width="274" height="384"/>
+                                <rect key="frame" x="785" y="441" width="219" height="307"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="DPP-xy-zxI" secondAttribute="height" multiplier="137:192" id="QnR-Ek-SOz"/>
                                 </constraints>
@@ -403,7 +403,7 @@
                             <constraint firstItem="DPP-xy-zxI" firstAttribute="leading" secondItem="4aF-Ay-sD0" secondAttribute="trailing" constant="20" id="Xiw-75-r0O"/>
                             <constraint firstItem="4aF-Ay-sD0" firstAttribute="centerY" secondItem="Oq0-et-exv" secondAttribute="centerY" id="b4g-ae-m09"/>
                             <constraint firstItem="4aF-Ay-sD0" firstAttribute="leading" secondItem="Oq0-et-exv" secondAttribute="leadingMargin" constant="200" id="bKk-Yn-b9m"/>
-                            <constraint firstItem="DPP-xy-zxI" firstAttribute="height" secondItem="Oq0-et-exv" secondAttribute="height" multiplier="1/2" id="p7L-97-fTd"/>
+                            <constraint firstItem="DPP-xy-zxI" firstAttribute="height" secondItem="Oq0-et-exv" secondAttribute="height" multiplier="2/5" id="p7L-97-fTd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CÁM ƠN" id="54k-VR-QRn"/>
@@ -670,7 +670,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hD3-Ah-9AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="-940"/>
+            <point key="canvasLocation" x="188" y="-840"/>
         </scene>
         <!--CÂU CHUYỆN XÃ HỘI -->
         <scene sceneID="PI5-ux-dm1">
@@ -959,7 +959,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAY-Y0-hc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3646" y="-355"/>
+            <point key="canvasLocation" x="-1368" y="-470"/>
         </scene>
     </scenes>
     <resources>

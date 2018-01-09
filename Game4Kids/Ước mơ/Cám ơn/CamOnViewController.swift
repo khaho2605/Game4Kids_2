@@ -35,9 +35,9 @@ class CamOnViewController: BaseViewController {
     }
     
     @IBAction func coGiaoKhenBtnDidTap(_ sender: Any) {
-        let vc = MeTangQuaViewController()
-        vc.typeView = TypeView.CoGiaoKhen
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = MeTangQuaViewController()
+//        vc.typeView = TypeView.CoGiaoKhen
+        self.navigationController?.pushViewController(CoGiaoKhenViewController(), animated: true)
     }
     
     @IBAction func tangQuaBtnDidTap(_ sender: Any) {
