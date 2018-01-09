@@ -210,7 +210,7 @@
         <!--ƯỚC MƠ-->
         <scene sceneID="a84-Hw-UyH">
             <objects>
-                <viewController id="Tlh-ME-isT" sceneMemberID="viewController">
+                <viewController id="Tlh-ME-isT" customClass="UocMoViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EUT-Vb-YUs"/>
                         <viewControllerLayoutGuide type="bottom" id="KcS-Yw-2o3"/>
@@ -255,6 +255,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="changeClothesBtnDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="KJf-Hg-81Q"/>
+                                            <action selector="chiaSeDoChoiBtnDidTap:" destination="Tlh-ME-isT" eventType="touchUpInside" id="KyE-6U-os2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSI-4O-NTo">
@@ -272,6 +273,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="changeClothesBtnDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="GGR-nT-scB"/>
+                                            <action selector="chaoHoiKXBtnDidTap:" destination="Tlh-ME-isT" eventType="touchUpInside" id="hpI-0L-EGj"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChaoHoiKXResultViewController" customModule="Game4Kids" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chơi cùng bạn sẽ thấy vui hơn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlE-ia-cxk">
+                    <rect key="frame" x="16" y="36" width="992" height="43"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="choiCung" translatesAutoresizingMaskIntoConstraints="NO" id="mvf-KZ-xBi">
+                    <rect key="frame" x="20" y="99" width="984" height="649"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mvf-KZ-xBi" secondAttribute="bottom" constant="20" id="6UF-fE-Vbx"/>
+                <constraint firstItem="mvf-KZ-xBi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="NNb-56-n06"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mvf-KZ-xBi" secondAttribute="trailing" constant="20" id="QN7-ui-CzY"/>
+                <constraint firstItem="LlE-ia-cxk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="T1b-lM-X2o"/>
+                <constraint firstItem="LlE-ia-cxk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dpm-Od-USf"/>
+                <constraint firstItem="LlE-ia-cxk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gI9-IR-WIm"/>
+                <constraint firstItem="mvf-KZ-xBi" firstAttribute="top" secondItem="LlE-ia-cxk" secondAttribute="bottom" constant="20" id="ma1-Qa-xWE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LlE-ia-cxk" secondAttribute="trailing" constant="16" id="nJd-1V-zLk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="choiCung" width="781" height="507"/>
+    </resources>
+</document>
