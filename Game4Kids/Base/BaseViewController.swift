@@ -47,7 +47,7 @@ class BaseViewController: UIViewController {
         }
     }
     
-    func playerDidFinishPlaying(note: NSNotification) {
+    @objc func playerDidFinishPlaying(note: NSNotification) {
         self.playerViewController.dismiss(animated: true)
         self.playerViewController.player?.pause()
         NotificationCenter.default.post(name: Notification.Name(rawValue: "play"), object: nil)

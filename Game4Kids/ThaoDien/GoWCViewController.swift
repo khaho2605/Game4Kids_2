@@ -90,7 +90,7 @@ extension GoWCViewController {
 }
 
 extension GoWCViewController {
-    func actionForGesture(recognizer: UIPanGestureRecognizer) {
+    @objc func actionForGesture(recognizer: UIPanGestureRecognizer) {
         var targetView = UIView()
         var posOrigin = CGPoint(x: 0, y: 0)
         

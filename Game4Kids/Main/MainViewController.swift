@@ -33,11 +33,11 @@ class MainViewController: BaseViewController {
         }
     }
 
-    func stopMusic() {
+    @objc func stopMusic() {
         player?.pause()
     }
     
-    func playMusic() {
+    @objc func playMusic() {
         player?.play()
     }
 }

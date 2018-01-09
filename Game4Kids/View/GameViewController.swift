@@ -130,7 +130,7 @@ extension GameViewController {
 
 extension GameViewController {
     
-    func actionDragView(recognizer: UIPanGestureRecognizer) {
+    @objc func actionDragView(recognizer: UIPanGestureRecognizer) {
         var targetView = UIView()
         var posOrigin = CGPoint(x: 0, y: 0)
         
