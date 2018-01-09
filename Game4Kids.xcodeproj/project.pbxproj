@@ -36,6 +36,8 @@
 		EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */; };
 		EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */; };
 		EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */; };
+		EA72D875200439AF00A53866 /* XinGiupDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */; };
+		EA72D876200439AF00A53866 /* XinGiupDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA72D874200439AF00A53866 /* XinGiupDoViewController.xib */; };
 		EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */; };
 		EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F5CDE1FA587DC00A87ACC /* ViewController.swift */; };
 		EA7F5CE21FA587DC00A87ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7F5CE01FA587DC00A87ACC /* Main.storyboard */; };
@@ -112,6 +114,8 @@
 		EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongCam2ViewController.xib; sourceTree = "<group>"; };
 		EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwashingViewController.swift; sourceTree = "<group>"; };
 		EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandwashingViewController.xib; sourceTree = "<group>"; };
+		EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XinGiupDoViewController.swift; sourceTree = "<group>"; };
+		EA72D874200439AF00A53866 /* XinGiupDoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XinGiupDoViewController.xib; sourceTree = "<group>"; };
 		EA7F5CD91FA587DC00A87ACC /* Game4Kids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game4Kids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7F5CDE1FA587DC00A87ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +219,8 @@
 				EA0A0676200113BF00C51C18 /* ChiaSeViewController.xib */,
 				EA0A067A2001182C00C51C18 /* GiupDoViewController.swift */,
 				EA0A067B2001182C00C51C18 /* GiupDoViewController.xib */,
+				EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */,
+				EA72D874200439AF00A53866 /* XinGiupDoViewController.xib */,
 			);
 			name = "Câu chuyện XH";
 			path = "Câu chuyện XH";
@@ -465,6 +471,7 @@
 				EA0A067D2001182C00C51C18 /* GiupDoViewController.xib in Resources */,
 				EABE1E642001CD7000C23A1B /* cho.MOV in Resources */,
 				EABE1E652001CD7000C23A1B /* ga.MOV in Resources */,
+				EA72D876200439AF00A53866 /* XinGiupDoViewController.xib in Resources */,
 				EABE1E6D2001D40D00C23A1B /* ken.MOV in Resources */,
 				EABE1E6F2001D40D00C23A1B /* dan.MOV in Resources */,
 				EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */,
@@ -515,6 +522,7 @@
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
+				EA72D875200439AF00A53866 /* XinGiupDoViewController.swift in Sources */,
 				EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */,
 				EABE1E4D2001B92E00C23A1B /* DongVatViewController.swift in Sources */,
 				EA0A067C2001182C00C51C18 /* GiupDoViewController.swift in Sources */,

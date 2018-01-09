@@ -15,6 +15,10 @@ class SocialStoryViewController: BaseViewController {
 
     }
     
+    @IBAction func xinGiupDoBtnDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(XinGiupDoViewController(), animated: true)
+
+    }
     @IBAction func chaoHoiBtnDidTap(_ sender: Any) {
         self.navigationController?.pushViewController(ChaoHoiViewController(), animated: true)
     }
