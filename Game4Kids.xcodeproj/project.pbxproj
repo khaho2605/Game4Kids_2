@@ -38,6 +38,9 @@
 		EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */; };
 		EA72D875200439AF00A53866 /* XinGiupDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */; };
 		EA72D876200439AF00A53866 /* XinGiupDoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA72D874200439AF00A53866 /* XinGiupDoViewController.xib */; };
+		EA72D87A2004435000A53866 /* MeTangQuaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D8782004435000A53866 /* MeTangQuaViewController.swift */; };
+		EA72D87B2004435000A53866 /* MeTangQuaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA72D8792004435000A53866 /* MeTangQuaViewController.xib */; };
+		EA72D87D2004453300A53866 /* CamOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D87C2004453300A53866 /* CamOnViewController.swift */; };
 		EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */; };
 		EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7F5CDE1FA587DC00A87ACC /* ViewController.swift */; };
 		EA7F5CE21FA587DC00A87ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7F5CE01FA587DC00A87ACC /* Main.storyboard */; };
@@ -116,6 +119,9 @@
 		EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandwashingViewController.xib; sourceTree = "<group>"; };
 		EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XinGiupDoViewController.swift; sourceTree = "<group>"; };
 		EA72D874200439AF00A53866 /* XinGiupDoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XinGiupDoViewController.xib; sourceTree = "<group>"; };
+		EA72D8782004435000A53866 /* MeTangQuaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeTangQuaViewController.swift; sourceTree = "<group>"; };
+		EA72D8792004435000A53866 /* MeTangQuaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeTangQuaViewController.xib; sourceTree = "<group>"; };
+		EA72D87C2004453300A53866 /* CamOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamOnViewController.swift; sourceTree = "<group>"; };
 		EA7F5CD91FA587DC00A87ACC /* Game4Kids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game4Kids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7F5CDC1FA587DC00A87ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7F5CDE1FA587DC00A87ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -238,6 +244,26 @@
 			path = "Khai Trí";
 			sourceTree = "<group>";
 		};
+		EA72D8772004431400A53866 /* Ước mơ */ = {
+			isa = PBXGroup;
+			children = (
+				EA72D87E2004484900A53866 /* Cám ơn */,
+			);
+			name = "Ước mơ";
+			path = "Ước mơ";
+			sourceTree = "<group>";
+		};
+		EA72D87E2004484900A53866 /* Cám ơn */ = {
+			isa = PBXGroup;
+			children = (
+				EA72D87C2004453300A53866 /* CamOnViewController.swift */,
+				EA72D8782004435000A53866 /* MeTangQuaViewController.swift */,
+				EA72D8792004435000A53866 /* MeTangQuaViewController.xib */,
+			);
+			name = "Cám ơn";
+			path = "Cám ơn";
+			sourceTree = "<group>";
+		};
 		EA7F5CD01FA587DC00A87ACC = {
 			isa = PBXGroup;
 			children = (
@@ -258,11 +284,12 @@
 			isa = PBXGroup;
 			children = (
 				EA01CB6A1FEE987A00FCFB49 /* Utils */,
+				EAEFF4981FA5902800AF4078 /* Base */,
 				EA9DFC881FEE4F7800F33CE7 /* Main */,
 				EA01CB6B1FEE98A300FCFB49 /* Cô Dung */,
 				EA24F1201FF1CD9400FE7637 /* Khai Trí */,
 				EADD1B191FE4B179003157F9 /* ThaoDien */,
-				EAEFF4981FA5902800AF4078 /* Base */,
+				EA72D8772004431400A53866 /* Ước mơ */,
 				EAEFF4931FA58CFF00AF4078 /* View */,
 				EA7F5CE51FA587DC00A87ACC /* LaunchScreen.storyboard */,
 				EA7F5CE81FA587DC00A87ACC /* Info.plist */,
@@ -457,6 +484,7 @@
 				EABE1E7A2001D42000C23A1B /* maybay.MOV in Resources */,
 				EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */,
 				EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */,
+				EA72D87B2004435000A53866 /* MeTangQuaViewController.xib in Resources */,
 				EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */,
 				EAEFF4A81FA5ABDC00AF4078 /* thu cach khac.wav in Resources */,
 				EA956A582003526A001FB10E /* bong_no.mp3 in Resources */,
@@ -533,7 +561,9 @@
 				EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */,
 				EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */,
 				EABE1E4A2001B80300C23A1B /* KhoiXuongViewController.swift in Sources */,
+				EA72D87A2004435000A53866 /* MeTangQuaViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
+				EA72D87D2004453300A53866 /* CamOnViewController.swift in Sources */,
 				EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */,
 				EABE1E512001B97400C23A1B /* PhuongTienViewController.swift in Sources */,
 				EA0A066F20010AAA00C51C18 /* ChaoHoiViewController.swift in Sources */,
