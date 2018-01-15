@@ -27,6 +27,9 @@
 		EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A067E200118F500C51C18 /* SocialStoryViewController.swift */; };
 		EA0C6071200201CF008598BF /* ChamSocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C606F200201CF008598BF /* ChamSocViewController.swift */; };
 		EA0C6072200201CF008598BF /* ChamSocViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0C6070200201CF008598BF /* ChamSocViewController.xib */; };
+		EA125C77200CE48E003A4847 /* GameXHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125C75200CE48E003A4847 /* GameXHViewController.swift */; };
+		EA125C78200CE48E003A4847 /* GameXHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA125C76200CE48E003A4847 /* GameXHViewController.xib */; };
+		EA125C7A200CE620003A4847 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125C79200CE620003A4847 /* ViewType.swift */; };
 		EA132830200C5A63006118CF /* ChaoHoi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA13282F200C5A63006118CF /* ChaoHoi.storyboard */; };
 		EA132832200C5B8B006118CF /* ChaoHoiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA132831200C5B8B006118CF /* ChaoHoiDetailViewController.swift */; };
 		EA132834200C5E68006118CF /* ChaoHoiFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA132833200C5E68006118CF /* ChaoHoiFinishViewController.swift */; };
@@ -126,6 +129,9 @@
 		EA0A067E200118F500C51C18 /* SocialStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialStoryViewController.swift; sourceTree = "<group>"; };
 		EA0C606F200201CF008598BF /* ChamSocViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamSocViewController.swift; sourceTree = "<group>"; };
 		EA0C6070200201CF008598BF /* ChamSocViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChamSocViewController.xib; sourceTree = "<group>"; };
+		EA125C75200CE48E003A4847 /* GameXHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameXHViewController.swift; sourceTree = "<group>"; };
+		EA125C76200CE48E003A4847 /* GameXHViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameXHViewController.xib; sourceTree = "<group>"; };
+		EA125C79200CE620003A4847 /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
 		EA13282F200C5A63006118CF /* ChaoHoi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChaoHoi.storyboard; sourceTree = "<group>"; };
 		EA132831200C5B8B006118CF /* ChaoHoiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaoHoiDetailViewController.swift; sourceTree = "<group>"; };
 		EA132833200C5E68006118CF /* ChaoHoiFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaoHoiFinishViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +229,7 @@
 				EA7F5CE31FA587DC00A87ACC /* Assets.xcassets */,
 				EAEFF49E1FA5978000AF4078 /* Sound */,
 				EAEFF49B1FA591E000AF4078 /* Extentions */,
+				EA125C79200CE620003A4847 /* ViewType.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -264,6 +271,8 @@
 				EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */,
 				EA72D874200439AF00A53866 /* XinGiupDoViewController.xib */,
 				EA3EE56C200CA4CC00531A1B /* Chi tiết */,
+				EA125C75200CE48E003A4847 /* GameXHViewController.swift */,
+				EA125C76200CE48E003A4847 /* GameXHViewController.xib */,
 			);
 			name = "Câu chuyện XH";
 			path = "Câu chuyện XH";
@@ -601,6 +610,7 @@
 				EA01CB811FEEB26A00FCFB49 /* DongCam1ViewController.xib in Resources */,
 				EABE1E4E2001B92E00C23A1B /* DongVatViewController.xib in Resources */,
 				EA01CB6F1FEE98E900FCFB49 /* CamXuc2ViewController.xib in Resources */,
+				EA125C78200CE48E003A4847 /* GameXHViewController.xib in Resources */,
 				EABE1E622001CD7000C23A1B /* heo.MOV in Resources */,
 				EA01CB791FEEAAA900FCFB49 /* DoanCamXuc21ViewController.xib in Resources */,
 				EAE5E7301FEF876900003966 /* CamXuc1ViewController.xib in Resources */,
@@ -617,6 +627,7 @@
 			files = (
 				EA3EE570200CA59400531A1B /* ChiaSeDetailViewController.swift in Sources */,
 				EA01CB6E1FEE98E900FCFB49 /* CamXuc2ViewController.swift in Sources */,
+				EA125C77200CE48E003A4847 /* GameXHViewController.swift in Sources */,
 				EA01CB801FEEB26A00FCFB49 /* DongCam1ViewController.swift in Sources */,
 				EA81A2EB1FE5007200206697 /* IntroHandwashingViewController.swift in Sources */,
 				EA01CB7C1FEEADB600FCFB49 /* DoanCamXuc22ViewController.swift in Sources */,
@@ -656,6 +667,7 @@
 				EA72D87D2004453300A53866 /* CamOnViewController.swift in Sources */,
 				EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */,
 				EAA2FB8120047DB600F925B5 /* ChiaSeDoChoiViewController.swift in Sources */,
+				EA125C7A200CE620003A4847 /* ViewType.swift in Sources */,
 				EABE1E512001B97400C23A1B /* PhuongTienViewController.swift in Sources */,
 				EA0A066F20010AAA00C51C18 /* ChaoHoiViewController.swift in Sources */,
 				EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */,

@@ -1261,7 +1261,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YWC-Yf-zOF">
-                                <rect key="frame" x="200" y="270" width="624" height="228"/>
+                                <rect key="frame" x="200" y="239.5" width="624" height="289"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-7Z-5to">
                                         <rect key="frame" x="0.0" y="0.0" width="624" height="45"/>
@@ -1296,8 +1296,24 @@
                                             <segue destination="IJm-kS-ijb" kind="push" id="t1p-ta-gWa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-1z-3Zg">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzG-p6-vqV">
                                         <rect key="frame" x="0.0" y="122" width="624" height="45"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                        <state key="normal" title="GAME CÂU CHUYỆN XÃ HỘI ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="gameXhDidTap:" destination="uUA-Lb-VbT" eventType="touchUpInside" id="slS-Wm-Sa8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEl-1z-3Zg">
+                                        <rect key="frame" x="0.0" y="183" width="624" height="45"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="KỸ NĂNG KHỞI XƯỚNG CÙNG CHÚ Ý">
@@ -1313,7 +1329,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCt-S6-icR">
-                                        <rect key="frame" x="0.0" y="183" width="624" height="45"/>
+                                        <rect key="frame" x="0.0" y="244" width="624" height="45"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="KỸ NĂNG CHĂM SÓC BẢN THÂN">

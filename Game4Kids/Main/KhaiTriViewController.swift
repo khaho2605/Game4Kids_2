@@ -21,4 +21,8 @@ class KhaiTriViewController: BaseViewController {
     @IBAction func bubbleBtnDidTap(_ sender: Any) {
         self.navigationController?.pushViewController(BubbleViewController(), animated: true)
     }
+    @IBAction func gameXhDidTap(_ sender: Any) {
+        self.navigationController?.pushViewController(GameXHViewController(), animated: true)
+
+    }
 }

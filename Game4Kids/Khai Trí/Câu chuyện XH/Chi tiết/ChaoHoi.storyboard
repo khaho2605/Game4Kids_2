@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="câu 1 hình 1" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-qA-haR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi1" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-qA-haR">
                                 <rect key="frame" x="20" y="84" width="984" height="589"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwi-pE-OsC">
@@ -82,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="câu 2 hình 2" translatesAutoresizingMaskIntoConstraints="NO" id="Bhv-aA-IY8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi2" translatesAutoresizingMaskIntoConstraints="NO" id="Bhv-aA-IY8">
                                 <rect key="frame" x="20" y="84" width="984" height="589"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-z7-Xe9">
@@ -128,7 +128,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="câu 3 hình 3" translatesAutoresizingMaskIntoConstraints="NO" id="uNa-Dy-dge">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi3" translatesAutoresizingMaskIntoConstraints="NO" id="uNa-Dy-dge">
                                 <rect key="frame" x="20" y="84" width="984" height="589"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuH-7i-E9R">
@@ -174,7 +174,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="câu 4 hình 4" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-3d-Bnj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi4" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-3d-Bnj">
                                 <rect key="frame" x="20" y="84" width="984" height="589"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdy-X2-SJS">
@@ -220,7 +220,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="câu 5 hình 5" translatesAutoresizingMaskIntoConstraints="NO" id="td2-WO-oWU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi5" translatesAutoresizingMaskIntoConstraints="NO" id="td2-WO-oWU">
                                 <rect key="frame" x="20" y="84" width="984" height="589"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HW-Fc-n9G">
@@ -260,10 +260,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="câu 1 hình 1" width="1013" height="768"/>
-        <image name="câu 2 hình 2" width="1024" height="751"/>
-        <image name="câu 3 hình 3" width="976" height="768"/>
-        <image name="câu 4 hình 4" width="1024" height="696"/>
-        <image name="câu 5 hình 5" width="1024" height="703"/>
+        <image name="chao_hoi1" width="1013" height="768"/>
+        <image name="chao_hoi2" width="1024" height="751"/>
+        <image name="chao_hoi3" width="976" height="768"/>
+        <image name="chao_hoi4" width="1024" height="696"/>
+        <image name="chao_hoi5" width="1024" height="703"/>
     </resources>
 </document>

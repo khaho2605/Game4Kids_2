@@ -82,6 +82,16 @@ class ChangeClothesViewController: BaseViewController {
             playerImg2.image = #imageLiteral(resourceName: "coi_quan_2")
             playerImg3.image = #imageLiteral(resourceName: "coi_quan_3")
             playerImg4.image = #imageLiteral(resourceName: "coi_quan_4")
+        case TypeViewThaoDien.ChiaSe.rawValue:
+            playerImg1.image = #imageLiteral(resourceName: "chiase1")
+            playerImg2.image = #imageLiteral(resourceName: "chiase2")
+            playerImg3.image = #imageLiteral(resourceName: "chiase3")
+            playerImg4.image = #imageLiteral(resourceName: "chiase4")
+        case TypeViewThaoDien.GiupDo.rawValue:
+            playerImg1.image = #imageLiteral(resourceName: "giupdo1")
+            playerImg2.image = #imageLiteral(resourceName: "giupdo2")
+            playerImg3.image = #imageLiteral(resourceName: "giupdo3")
+            playerImg4.image = #imageLiteral(resourceName: "giupdo4")
         default:
             break
         }

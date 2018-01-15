@@ -27,13 +27,13 @@
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ulO-u5-Jkq">
                             <rect key="frame" x="0.0" y="0.0" width="992" height="288"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 1 hình 1" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-uo-uws">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chao_hoi1" translatesAutoresizingMaskIntoConstraints="NO" id="ZJa-uo-uws">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 2 hình 2" translatesAutoresizingMaskIntoConstraints="NO" id="rlW-eH-eec">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chao_hoi2" translatesAutoresizingMaskIntoConstraints="NO" id="rlW-eH-eec">
                                     <rect key="frame" x="336" y="0.0" width="320" height="288"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 3 hình 3" translatesAutoresizingMaskIntoConstraints="NO" id="0Tj-oo-rCi">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chao_hoi3" translatesAutoresizingMaskIntoConstraints="NO" id="0Tj-oo-rCi">
                                     <rect key="frame" x="672" y="0.0" width="320" height="288"/>
                                 </imageView>
                             </subviews>
@@ -69,10 +69,10 @@
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IVu-C1-JfK">
                             <rect key="frame" x="0.0" y="0.0" width="661" height="288"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 4 hình 4" translatesAutoresizingMaskIntoConstraints="NO" id="X6t-XW-O3T">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chao_hoi4" translatesAutoresizingMaskIntoConstraints="NO" id="X6t-XW-O3T">
                                     <rect key="frame" x="0.0" y="0.0" width="322.5" height="288"/>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="câu 5 hình 5" translatesAutoresizingMaskIntoConstraints="NO" id="m5O-zb-ZdQ">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chao_hoi5" translatesAutoresizingMaskIntoConstraints="NO" id="m5O-zb-ZdQ">
                                     <rect key="frame" x="338.5" y="0.0" width="322.5" height="288"/>
                                 </imageView>
                             </subviews>
@@ -131,10 +131,10 @@
         </view>
     </objects>
     <resources>
-        <image name="câu 1 hình 1" width="1013" height="768"/>
-        <image name="câu 2 hình 2" width="1024" height="751"/>
-        <image name="câu 3 hình 3" width="976" height="768"/>
-        <image name="câu 4 hình 4" width="1024" height="696"/>
-        <image name="câu 5 hình 5" width="1024" height="703"/>
+        <image name="chao_hoi1" width="1013" height="768"/>
+        <image name="chao_hoi2" width="1024" height="751"/>
+        <image name="chao_hoi3" width="976" height="768"/>
+        <image name="chao_hoi4" width="1024" height="696"/>
+        <image name="chao_hoi5" width="1024" height="703"/>
     </resources>
 </document>

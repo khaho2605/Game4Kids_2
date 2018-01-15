@@ -8,12 +8,6 @@
 
 import UIKit
 
-enum TypeViewThaoDien: String {
-    case MacAo = "MacAo"
-    case CoiQuan = "CoiQuan"
-    case MacQuan = "MacQuan"
-}
-
 class HandwashingViewController: BaseViewController {
 
     @IBOutlet weak var playerImg1: UIImageView!
@@ -94,6 +88,13 @@ class HandwashingViewController: BaseViewController {
             playerImg3.image = #imageLiteral(resourceName: "mac_quan_3")
             playerImg4.image = #imageLiteral(resourceName: "mac_quan_4")
             playerImg5.image = #imageLiteral(resourceName: "mac_quan_5")
+        case TypeViewThaoDien.ChaoHoi.rawValue:
+            self.title = "KỸ NĂNG CHÀO HỎI"
+            playerImg1.image = #imageLiteral(resourceName: "chao_hoi1")
+            playerImg2.image = #imageLiteral(resourceName: "chao_hoi2")
+            playerImg3.image = #imageLiteral(resourceName: "chao_hoi3")
+            playerImg4.image = #imageLiteral(resourceName: "chao_hoi4")
+            playerImg5.image = #imageLiteral(resourceName: "chao_hoi5")
         default:
             break
         }
