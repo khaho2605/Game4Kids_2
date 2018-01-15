@@ -13,16 +13,20 @@ class GoWCViewController: BaseViewController {
     @IBOutlet weak var playerImg2: UIImageView!
     @IBOutlet weak var playerImg3: UIImageView!
     @IBOutlet weak var playerImg4: UIImageView!
+    @IBOutlet weak var playerImg5: UIImageView!
     @IBOutlet weak var targetImg1: UIImageView!
     @IBOutlet weak var targetImg2: UIImageView!
     @IBOutlet weak var targetImg3: UIImageView!
     @IBOutlet weak var targetImg4: UIImageView!
+    @IBOutlet weak var targetImg5: UIImageView!
     @IBOutlet weak var replayBtn: UIButton!
     
     var originPlayer1:CGPoint?
     var originPlayer2:CGPoint?
     var originPlayer3:CGPoint?
     var originPlayer4:CGPoint?
+    var originPlayer5:CGPoint?
+
     var arrOrigin: [CGPoint] = [CGPoint]()
     
     override func viewDidLoad() {
@@ -35,19 +39,21 @@ class GoWCViewController: BaseViewController {
         playerImg2.isUserInteractionEnabled = true
         playerImg3.isUserInteractionEnabled = true
         playerImg4.isUserInteractionEnabled = true
-        
+        playerImg5.isUserInteractionEnabled = true
+
         playerImg1.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
         playerImg2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
         playerImg3.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
         playerImg4.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
+        playerImg5.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        layout()
-        arrOrigin = getPos()
-        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
-        setPosition(arrData: data)
+//        layout()
+//        arrOrigin = getPos()
+//        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
+//        setPosition(arrData: data)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,6 +68,8 @@ class GoWCViewController: BaseViewController {
         playerImg2.isUserInteractionEnabled = true
         playerImg3.isUserInteractionEnabled = true
         playerImg4.isUserInteractionEnabled = true
+        playerImg5.isUserInteractionEnabled = true
+
     }
 }
 
@@ -73,6 +81,7 @@ extension GoWCViewController {
         arr.append(playerImg2.frame.origin)
         arr.append(playerImg3.frame.origin)
         arr.append(playerImg4.frame.origin)
+        arr.append(playerImg5.frame.origin)
         return arr
     }
     
@@ -81,11 +90,13 @@ extension GoWCViewController {
         playerImg2.frame.origin = arrData[1]
         playerImg3.frame.origin = arrData[2]
         playerImg4.frame.origin = arrData[3]
+        playerImg5.frame.origin = arrData[4]
         
         originPlayer1 = playerImg1.center
         originPlayer2 = playerImg2.center
         originPlayer3 = playerImg3.center
         originPlayer4 = playerImg4.center
+        originPlayer5 = playerImg5.center
     }
 }
 
@@ -109,6 +120,9 @@ extension GoWCViewController {
         case 4:
             targetView = targetImg4
             posOrigin = originPlayer4 ?? CGPoint.zero
+        case 5:
+            targetView = targetImg5
+            posOrigin = originPlayer5 ?? CGPoint.zero
         default:
             break
         }
@@ -123,7 +137,7 @@ extension GoWCViewController {
     }
     
     func checkFinishGame() {
-        if isFinish == 4 {
+        if isFinish == 5 {
             print("Value", isFinish)
             playSound(name: "be that gioi", Extension: "wav")
             isFinish = 0

@@ -38,11 +38,28 @@ class ViewController: BaseViewController {
         self.navigationController?.pushViewController(GoWCViewController(), animated: true)
     }
     @IBAction func handwashingBtnDidTap(_ sender: Any) {
-        self.navigationController?.pushViewController(IntroHandwashingViewController(), animated: true)
+        self.navigationController?.pushViewController(HandwashingViewController(), animated: true)
     }
     
     @IBAction func changeClothesBtnDidTap(_ sender: Any) {
         self.navigationController?.pushViewController(ChangeClothesViewController(), animated: true)
+    }
+    @IBAction func macAoBtnDidTap(_ sender: Any) {
+        let vc = HandwashingViewController()
+        vc.typeView = TypeViewThaoDien.MacAo.rawValue
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func macQuanBtnDidTap(_ sender: Any) {
+        let vc = HandwashingViewController()
+        vc.typeView = TypeViewThaoDien.MacQuan.rawValue
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func coiQuanBtnDidTap(_ sender: Any) {
+        let vc = ChangeClothesViewController()
+        vc.typeView = TypeViewThaoDien.CoiQuan.rawValue
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

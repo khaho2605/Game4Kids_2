@@ -27,6 +27,9 @@
 		EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A067E200118F500C51C18 /* SocialStoryViewController.swift */; };
 		EA0C6071200201CF008598BF /* ChamSocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C606F200201CF008598BF /* ChamSocViewController.swift */; };
 		EA0C6072200201CF008598BF /* ChamSocViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA0C6070200201CF008598BF /* ChamSocViewController.xib */; };
+		EA132830200C5A63006118CF /* ChaoHoi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA13282F200C5A63006118CF /* ChaoHoi.storyboard */; };
+		EA132832200C5B8B006118CF /* ChaoHoiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA132831200C5B8B006118CF /* ChaoHoiDetailViewController.swift */; };
+		EA132834200C5E68006118CF /* ChaoHoiFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA132833200C5E68006118CF /* ChaoHoiFinishViewController.swift */; };
 		EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */; };
 		EA24F1261FF1CF8700FE7637 /* BubbleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */; };
 		EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */; };
@@ -36,6 +39,12 @@
 		EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */; };
 		EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */; };
 		EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */; };
+		EA3EE56E200CA53200531A1B /* ChiaSe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3EE56D200CA53200531A1B /* ChiaSe.storyboard */; };
+		EA3EE570200CA59400531A1B /* ChiaSeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EE56F200CA59400531A1B /* ChiaSeDetailViewController.swift */; };
+		EA3EE572200CA5BE00531A1B /* ChiaSeFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EE571200CA5BE00531A1B /* ChiaSeFinishViewController.swift */; };
+		EA3EE574200CA7F900531A1B /* GiupDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3EE573200CA7F900531A1B /* GiupDo.storyboard */; };
+		EA3EE576200CA84200531A1B /* GiupDoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EE575200CA84200531A1B /* GiupDoDetailViewController.swift */; };
+		EA3EE578200CA85600531A1B /* GiupDoFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EE577200CA85600531A1B /* GiupDoFinishViewController.swift */; };
 		EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */; };
 		EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */; };
 		EA72D875200439AF00A53866 /* XinGiupDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */; };
@@ -117,6 +126,9 @@
 		EA0A067E200118F500C51C18 /* SocialStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialStoryViewController.swift; sourceTree = "<group>"; };
 		EA0C606F200201CF008598BF /* ChamSocViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamSocViewController.swift; sourceTree = "<group>"; };
 		EA0C6070200201CF008598BF /* ChamSocViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChamSocViewController.xib; sourceTree = "<group>"; };
+		EA13282F200C5A63006118CF /* ChaoHoi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChaoHoi.storyboard; sourceTree = "<group>"; };
+		EA132831200C5B8B006118CF /* ChaoHoiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaoHoiDetailViewController.swift; sourceTree = "<group>"; };
+		EA132833200C5E68006118CF /* ChaoHoiFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaoHoiFinishViewController.swift; sourceTree = "<group>"; };
 		EA24F1231FF1CF8700FE7637 /* BubbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleViewController.swift; sourceTree = "<group>"; };
 		EA24F1241FF1CF8700FE7637 /* BubbleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BubbleViewController.xib; sourceTree = "<group>"; };
 		EA24F1271FF1D0EB00FE7637 /* KhaiTriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhaiTriViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +138,12 @@
 		EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeClothesViewController.xib; sourceTree = "<group>"; };
 		EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongCam2ViewController.swift; sourceTree = "<group>"; };
 		EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongCam2ViewController.xib; sourceTree = "<group>"; };
+		EA3EE56D200CA53200531A1B /* ChiaSe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChiaSe.storyboard; sourceTree = "<group>"; };
+		EA3EE56F200CA59400531A1B /* ChiaSeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiaSeDetailViewController.swift; sourceTree = "<group>"; };
+		EA3EE571200CA5BE00531A1B /* ChiaSeFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiaSeFinishViewController.swift; sourceTree = "<group>"; };
+		EA3EE573200CA7F900531A1B /* GiupDo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiupDo.storyboard; sourceTree = "<group>"; };
+		EA3EE575200CA84200531A1B /* GiupDoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiupDoDetailViewController.swift; sourceTree = "<group>"; };
+		EA3EE577200CA85600531A1B /* GiupDoFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiupDoFinishViewController.swift; sourceTree = "<group>"; };
 		EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwashingViewController.swift; sourceTree = "<group>"; };
 		EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandwashingViewController.xib; sourceTree = "<group>"; };
 		EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XinGiupDoViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +263,7 @@
 				EA0A067B2001182C00C51C18 /* GiupDoViewController.xib */,
 				EA72D873200439AF00A53866 /* XinGiupDoViewController.swift */,
 				EA72D874200439AF00A53866 /* XinGiupDoViewController.xib */,
+				EA3EE56C200CA4CC00531A1B /* Chi tiết */,
 			);
 			name = "Câu chuyện XH";
 			path = "Câu chuyện XH";
@@ -260,6 +279,23 @@
 			);
 			name = "Khai Trí";
 			path = "Khai Trí";
+			sourceTree = "<group>";
+		};
+		EA3EE56C200CA4CC00531A1B /* Chi tiết */ = {
+			isa = PBXGroup;
+			children = (
+				EA13282F200C5A63006118CF /* ChaoHoi.storyboard */,
+				EA132831200C5B8B006118CF /* ChaoHoiDetailViewController.swift */,
+				EA132833200C5E68006118CF /* ChaoHoiFinishViewController.swift */,
+				EA3EE56D200CA53200531A1B /* ChiaSe.storyboard */,
+				EA3EE56F200CA59400531A1B /* ChiaSeDetailViewController.swift */,
+				EA3EE571200CA5BE00531A1B /* ChiaSeFinishViewController.swift */,
+				EA3EE573200CA7F900531A1B /* GiupDo.storyboard */,
+				EA3EE575200CA84200531A1B /* GiupDoDetailViewController.swift */,
+				EA3EE577200CA85600531A1B /* GiupDoFinishViewController.swift */,
+			);
+			name = "Chi tiết";
+			path = "Chi tiết";
 			sourceTree = "<group>";
 		};
 		EA72D8772004431400A53866 /* Ước mơ */ = {
@@ -521,7 +557,9 @@
 				EABE1E7A2001D42000C23A1B /* maybay.MOV in Resources */,
 				EAB2D7C11FA5F58A001DD97E /* GameViewController.xib in Resources */,
 				EAA2FB8220047DB600F925B5 /* ChiaSeDoChoiViewController.xib in Resources */,
+				EA3EE574200CA7F900531A1B /* GiupDo.storyboard in Resources */,
 				EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */,
+				EA3EE56E200CA53200531A1B /* ChiaSe.storyboard in Resources */,
 				EA72D87B2004435000A53866 /* MeTangQuaViewController.xib in Resources */,
 				EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */,
 				EAEFF4A81FA5ABDC00AF4078 /* thu cach khac.wav in Resources */,
@@ -543,6 +581,7 @@
 				EAA2FB8D2004902B00F925B5 /* ChaoHoiKXViewController.xib in Resources */,
 				EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */,
 				EAEFF4A61FA5ABCE00AF4078 /* dung roi.wav in Resources */,
+				EA132830200C5A63006118CF /* ChaoHoi.storyboard in Resources */,
 				EA25C30220050B1500BF60F6 /* CoGiaoKhenViewController.xib in Resources */,
 				EAA2FB912004920600F925B5 /* ChaoHoiKXResultViewController.xib in Resources */,
 				EABE1E6E2001D40D00C23A1B /* DanTung.MOV in Resources */,
@@ -576,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3EE570200CA59400531A1B /* ChiaSeDetailViewController.swift in Sources */,
 				EA01CB6E1FEE98E900FCFB49 /* CamXuc2ViewController.swift in Sources */,
 				EA01CB801FEEB26A00FCFB49 /* DongCam1ViewController.swift in Sources */,
 				EA81A2EB1FE5007200206697 /* IntroHandwashingViewController.swift in Sources */,
@@ -586,16 +626,20 @@
 				EABE1E552001B99800C23A1B /* NhacCuViewController.swift in Sources */,
 				EA01CB721FEE9C9300FCFB49 /* DoanCamXuc1ViewController.swift in Sources */,
 				EA0C6071200201CF008598BF /* ChamSocViewController.swift in Sources */,
+				EA3EE576200CA84200531A1B /* GiupDoDetailViewController.swift in Sources */,
 				EA24F1251FF1CF8700FE7637 /* BubbleViewController.swift in Sources */,
 				EA01CB781FEEAAA900FCFB49 /* DoanCamXuc21ViewController.swift in Sources */,
 				EA25C30120050B1500BF60F6 /* CoGiaoKhenViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
+				EA3EE578200CA85600531A1B /* GiupDoFinishViewController.swift in Sources */,
 				EAA2FB8420048E2E00F925B5 /* UocMoViewController.swift in Sources */,
 				EA72D875200439AF00A53866 /* XinGiupDoViewController.swift in Sources */,
 				EA7F5CDD1FA587DC00A87ACC /* AppDelegate.swift in Sources */,
 				EABE1E4D2001B92E00C23A1B /* DongVatViewController.swift in Sources */,
+				EA132832200C5B8B006118CF /* ChaoHoiDetailViewController.swift in Sources */,
+				EA132834200C5E68006118CF /* ChaoHoiFinishViewController.swift in Sources */,
 				EA0A067C2001182C00C51C18 /* GiupDoViewController.swift in Sources */,
 				EAA2FB902004920600F925B5 /* ChaoHoiKXResultViewController.swift in Sources */,
 				EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */,
@@ -607,6 +651,7 @@
 				EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */,
 				EABE1E4A2001B80300C23A1B /* KhoiXuongViewController.swift in Sources */,
 				EA72D87A2004435000A53866 /* MeTangQuaViewController.swift in Sources */,
+				EA3EE572200CA5BE00531A1B /* ChiaSeFinishViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
 				EA72D87D2004453300A53866 /* CamOnViewController.swift in Sources */,
 				EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */,

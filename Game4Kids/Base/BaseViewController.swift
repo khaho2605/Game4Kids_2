@@ -109,7 +109,7 @@ extension BaseViewController {
     func checkContaintViewRandom2(view: UIView, framePlayer: CGRect, frameTarget: UIView, frameOrigin: CGPoint) -> Bool {
         if frameTarget.frame.contains(view.center) {
             UIView.animate(withDuration: 0.3) {
-                let posXRandom = CGFloat.random(min: frameTarget.x, max: frameTarget.maxX - framePlayer.width)
+                let posXRandom = view.x//CGFloat.random(min: frameTarget.x, max: frameTarget.maxX - framePlayer.width)
                 let posYRandom = frameTarget.maxY - framePlayer.height
                 view.frame.origin = CGPoint(x: posXRandom , y: posYRandom)
                 self.playSound(name: "dung roi", Extension: "wav")

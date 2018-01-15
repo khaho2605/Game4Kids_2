@@ -32,47 +32,47 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="Jeo-wd-FDo">
-                    <rect key="frame" x="219" y="301" width="170" height="170"/>
+                    <rect key="frame" x="23" y="378" width="180" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="gJJ-YY-KWh">
-                    <rect key="frame" x="435" y="301" width="170" height="170"/>
+                    <rect key="frame" x="224" y="378" width="180" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="df3-UP-ONG">
-                    <rect key="frame" x="635" y="301" width="170" height="170"/>
+                    <rect key="frame" x="424" y="378" width="180" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="9Rn-Qy-Zud">
-                    <rect key="frame" x="328" y="510" width="170" height="170"/>
+                    <rect key="frame" x="627" y="378" width="180" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="khung_hinh" translatesAutoresizingMaskIntoConstraints="NO" id="Ccb-71-2kJ">
-                    <rect key="frame" x="523" y="510" width="170" height="170"/>
+                    <rect key="frame" x="822" y="378" width="180" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handwashing_1" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-LT-wCi">
-                    <rect key="frame" x="61" y="65" width="160" height="160"/>
+                    <rect key="frame" x="27" y="97" width="170" height="170"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handwashing_2" translatesAutoresizingMaskIntoConstraints="NO" id="jR1-lH-BQZ">
-                    <rect key="frame" x="251" y="65" width="160" height="160"/>
+                    <rect key="frame" x="229" y="97" width="170" height="170"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handwashing_3" translatesAutoresizingMaskIntoConstraints="NO" id="inV-OP-Ukd">
-                    <rect key="frame" x="419" y="65" width="160" height="160"/>
+                    <rect key="frame" x="429" y="97" width="170" height="170"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handwashing_4" translatesAutoresizingMaskIntoConstraints="NO" id="Oqt-Ws-7bM">
-                    <rect key="frame" x="621" y="65" width="160" height="160"/>
+                    <rect key="frame" x="632" y="97" width="170" height="170"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="handwashing_5" translatesAutoresizingMaskIntoConstraints="NO" id="ax8-kk-Gpe">
-                    <rect key="frame" x="809" y="65" width="160" height="160"/>
+                    <rect key="frame" x="827" y="97" width="170" height="170"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IN-4I-emb">
-                    <rect key="frame" x="809" y="664" width="195" height="84"/>
+                    <rect key="frame" x="362" y="664" width="300" height="84"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
@@ -89,11 +89,11 @@
         </view>
     </objects>
     <resources>
-        <image name="handwashing_1" width="331" height="236"/>
-        <image name="handwashing_2" width="319" height="221"/>
-        <image name="handwashing_3" width="331" height="229"/>
-        <image name="handwashing_4" width="341" height="232"/>
-        <image name="handwashing_5" width="327" height="227"/>
+        <image name="handwashing_1" width="314" height="215"/>
+        <image name="handwashing_2" width="308" height="201"/>
+        <image name="handwashing_3" width="322" height="217"/>
+        <image name="handwashing_4" width="308" height="219"/>
+        <image name="handwashing_5" width="472" height="338"/>
         <image name="khung_hinh" width="291" height="321"/>
     </resources>
 </document>

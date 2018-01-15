@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--KỸ NĂNG CHIA SẺ-->
+        <scene sceneID="BpV-gQ-Cga">
+            <objects>
+                <viewController storyboardIdentifier="ChiaSe" id="YlZ-i6-WFu" customClass="ChiaSeDetailViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chA-pc-6mi">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase1" translatesAutoresizingMaskIntoConstraints="NO" id="0Ns-td-u4a">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhj-8g-zOS">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="zG8-f9-dQn" kind="show" id="iXJ-fY-33t">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Ns-td-u4a" firstAttribute="leading" secondItem="j54-vl-8uX" secondAttribute="leading" constant="20" id="ATK-wg-3Ty"/>
+                            <constraint firstItem="0Ns-td-u4a" firstAttribute="top" secondItem="j54-vl-8uX" secondAttribute="top" constant="20" id="ArH-LX-j8v"/>
+                            <constraint firstItem="yhj-8g-zOS" firstAttribute="top" secondItem="0Ns-td-u4a" secondAttribute="bottom" constant="20" id="BRb-XZ-hkC"/>
+                            <constraint firstItem="yhj-8g-zOS" firstAttribute="leading" secondItem="j54-vl-8uX" secondAttribute="leading" constant="20" id="K1A-E9-khc"/>
+                            <constraint firstItem="j54-vl-8uX" firstAttribute="trailing" secondItem="yhj-8g-zOS" secondAttribute="trailing" constant="20" id="MA4-5B-Ay7"/>
+                            <constraint firstItem="j54-vl-8uX" firstAttribute="trailing" secondItem="0Ns-td-u4a" secondAttribute="trailing" constant="20" id="eDi-Qw-N3Q"/>
+                            <constraint firstItem="j54-vl-8uX" firstAttribute="bottom" secondItem="yhj-8g-zOS" secondAttribute="bottom" constant="20" id="eZb-2s-2T0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j54-vl-8uX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHIA SẺ" id="WdU-aU-FNa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvF-1D-ksT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-445" y="-135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="70q-s7-hI7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AQt-ec-dzj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bj7-9j-vmo">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YlZ-i6-WFu" kind="relationship" relationship="rootViewController" id="EDr-A4-sjs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ELz-hE-nnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1115" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG CHIA SẺ-->
+        <scene sceneID="YR3-97-ItA">
+            <objects>
+                <viewController id="zG8-f9-dQn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b3x-cP-9dv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase2" translatesAutoresizingMaskIntoConstraints="NO" id="cQG-Py-8Ac">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mR-1p-Uz7">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="32H-eQ-pQA" kind="show" id="UGT-hR-owo">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BGJ-xL-hNu" firstAttribute="bottom" secondItem="5mR-1p-Uz7" secondAttribute="bottom" constant="20" id="O5Q-MC-avZ"/>
+                            <constraint firstItem="5mR-1p-Uz7" firstAttribute="top" secondItem="cQG-Py-8Ac" secondAttribute="bottom" constant="20" id="Oee-gV-rGK"/>
+                            <constraint firstItem="BGJ-xL-hNu" firstAttribute="trailing" secondItem="cQG-Py-8Ac" secondAttribute="trailing" constant="20" id="Sgl-xe-I4l"/>
+                            <constraint firstItem="cQG-Py-8Ac" firstAttribute="top" secondItem="BGJ-xL-hNu" secondAttribute="top" constant="20" id="Uya-ea-Djz"/>
+                            <constraint firstItem="BGJ-xL-hNu" firstAttribute="trailing" secondItem="5mR-1p-Uz7" secondAttribute="trailing" constant="20" id="jD4-5d-YTz"/>
+                            <constraint firstItem="5mR-1p-Uz7" firstAttribute="leading" secondItem="BGJ-xL-hNu" secondAttribute="leading" constant="20" id="uQe-EX-qUz"/>
+                            <constraint firstItem="cQG-Py-8Ac" firstAttribute="leading" secondItem="BGJ-xL-hNu" secondAttribute="leading" constant="20" id="xeS-30-Jop"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BGJ-xL-hNu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHIA SẺ" id="mhC-so-snn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0mO-w1-m5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG CHIA SẺ-->
+        <scene sceneID="xsa-GS-DBH">
+            <objects>
+                <viewController id="32H-eQ-pQA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ecw-Ho-3Qv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase3" translatesAutoresizingMaskIntoConstraints="NO" id="tBB-TC-jvG">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvD-nR-3d9">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Mg5-Qs-kHT" kind="show" id="Dh5-uL-m1m">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WvD-nR-3d9" firstAttribute="leading" secondItem="bC0-vI-sKL" secondAttribute="leading" constant="20" id="3GH-9a-n1Q"/>
+                            <constraint firstItem="bC0-vI-sKL" firstAttribute="bottom" secondItem="WvD-nR-3d9" secondAttribute="bottom" constant="20" id="4A4-fF-IZO"/>
+                            <constraint firstItem="bC0-vI-sKL" firstAttribute="trailing" secondItem="WvD-nR-3d9" secondAttribute="trailing" constant="20" id="Ujc-iQ-Rrj"/>
+                            <constraint firstItem="tBB-TC-jvG" firstAttribute="top" secondItem="bC0-vI-sKL" secondAttribute="top" constant="20" id="fNI-Ny-XQj"/>
+                            <constraint firstItem="WvD-nR-3d9" firstAttribute="top" secondItem="tBB-TC-jvG" secondAttribute="bottom" constant="20" id="lGo-0a-i8h"/>
+                            <constraint firstItem="tBB-TC-jvG" firstAttribute="leading" secondItem="bC0-vI-sKL" secondAttribute="leading" constant="20" id="ox1-rr-aA2"/>
+                            <constraint firstItem="bC0-vI-sKL" firstAttribute="trailing" secondItem="tBB-TC-jvG" secondAttribute="trailing" constant="20" id="zyv-lh-hNu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bC0-vI-sKL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHIA SẺ" id="dV6-fu-DBs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCz-nM-sqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG CHIA SẺ-->
+        <scene sceneID="JtV-qG-plY">
+            <objects>
+                <viewController id="Mg5-Qs-kHT" customClass="ChiaSeFinishViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CNb-kr-sqF">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase4" translatesAutoresizingMaskIntoConstraints="NO" id="Gih-Yy-QgJ">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVX-WK-4CX">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="KẾT THÚC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finishBtnDidTap:" destination="Mg5-Qs-kHT" eventType="touchUpInside" id="0EJ-CD-OpR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="riS-KM-hRd" firstAttribute="trailing" secondItem="DVX-WK-4CX" secondAttribute="trailing" constant="20" id="3Um-UE-gn0"/>
+                            <constraint firstItem="DVX-WK-4CX" firstAttribute="leading" secondItem="riS-KM-hRd" secondAttribute="leading" constant="20" id="CY8-Kf-RMi"/>
+                            <constraint firstItem="riS-KM-hRd" firstAttribute="bottom" secondItem="DVX-WK-4CX" secondAttribute="bottom" constant="20" id="HFL-de-x37"/>
+                            <constraint firstItem="Gih-Yy-QgJ" firstAttribute="leading" secondItem="riS-KM-hRd" secondAttribute="leading" constant="20" id="Ud4-tE-s39"/>
+                            <constraint firstItem="DVX-WK-4CX" firstAttribute="top" secondItem="Gih-Yy-QgJ" secondAttribute="bottom" constant="20" id="VRP-Jj-BSi"/>
+                            <constraint firstItem="Gih-Yy-QgJ" firstAttribute="top" secondItem="riS-KM-hRd" secondAttribute="top" constant="20" id="gpQ-LL-8Fm"/>
+                            <constraint firstItem="riS-KM-hRd" firstAttribute="trailing" secondItem="Gih-Yy-QgJ" secondAttribute="trailing" constant="20" id="xnE-pi-XHL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="riS-KM-hRd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHIA SẺ" id="kdv-fh-zCW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yky-BG-QdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="-135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chiase1" width="551" height="714"/>
+        <image name="chiase2" width="1010" height="768"/>
+        <image name="chiase3" width="1024" height="743"/>
+        <image name="chiase4" width="1024" height="730"/>
+    </resources>
+</document>

@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum TypeViewThaoDien: String {
+    case MacAo = "MacAo"
+    case CoiQuan = "CoiQuan"
+    case MacQuan = "MacQuan"
+}
+
 class HandwashingViewController: BaseViewController {
 
     @IBOutlet weak var playerImg1: UIImageView!
@@ -29,12 +35,15 @@ class HandwashingViewController: BaseViewController {
     var originPlayer5:CGPoint?
     var arrOrigin: [CGPoint] = [CGPoint]()
     
+    var typeView = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         arrOrigin = getPos()
         guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
         setPosition(arrData: data)
+        updateUI(with: typeView)
         
         playerImg1.isUserInteractionEnabled = true
         playerImg2.isUserInteractionEnabled = true
@@ -51,15 +60,15 @@ class HandwashingViewController: BaseViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        layout()
-        arrOrigin = getPos()
-        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
-        setPosition(arrData: data)
+//        layout()
+//        arrOrigin = getPos()
+//        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
+//        setPosition(arrData: data)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.title = "Rửa Tay"
+//        self.title = "Rửa Tay"
     }
     @IBAction func replayBtnDidTap(_ sender: Any) {
         guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
@@ -71,6 +80,24 @@ class HandwashingViewController: BaseViewController {
         playerImg5.isUserInteractionEnabled = true
     }
     
+    func updateUI(with typeView: String) {
+        switch typeView {
+        case TypeViewThaoDien.MacAo.rawValue:
+            playerImg1.image = #imageLiteral(resourceName: "mac_ao_1")
+            playerImg2.image = #imageLiteral(resourceName: "mac_ao_2")
+            playerImg3.image = #imageLiteral(resourceName: "mac_ao_3")
+            playerImg4.image = #imageLiteral(resourceName: "mac_ao_4")
+            playerImg5.image = #imageLiteral(resourceName: "mac_ao_5")
+        case TypeViewThaoDien.MacQuan.rawValue:
+            playerImg1.image = #imageLiteral(resourceName: "mac_quan_1")
+            playerImg2.image = #imageLiteral(resourceName: "mac_quan_2")
+            playerImg3.image = #imageLiteral(resourceName: "mac_quan_3")
+            playerImg4.image = #imageLiteral(resourceName: "mac_quan_4")
+            playerImg5.image = #imageLiteral(resourceName: "mac_quan_5")
+        default:
+            break
+        }
+    }
 }
 
 //MARK: Add gesture

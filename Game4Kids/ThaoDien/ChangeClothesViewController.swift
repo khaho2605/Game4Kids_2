@@ -13,38 +13,42 @@ class ChangeClothesViewController: BaseViewController {
     @IBOutlet weak var playerImg2: UIImageView!
     @IBOutlet weak var playerImg3: UIImageView!
     @IBOutlet weak var playerImg4: UIImageView!
-    @IBOutlet weak var playerImg5: UIImageView!
+//    @IBOutlet weak var playerImg5: UIImageView!
     @IBOutlet weak var targetImg1: UIImageView!
     @IBOutlet weak var targetImg2: UIImageView!
     @IBOutlet weak var targetImg3: UIImageView!
     @IBOutlet weak var targetImg4: UIImageView!
-    @IBOutlet weak var targetImg5: UIImageView!
+//    @IBOutlet weak var targetImg5: UIImageView!
     @IBOutlet weak var replayBtn: UIButton!
     
     var originPlayer1:CGPoint?
     var originPlayer2:CGPoint?
     var originPlayer3:CGPoint?
     var originPlayer4:CGPoint?
-    var originPlayer5:CGPoint?
+//    var originPlayer5:CGPoint?
     var arrOrigin: [CGPoint] = [CGPoint]()
+    
+    var typeView = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         arrOrigin = getPos()
         guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
         setPosition(arrData: data)
+        updateUI(with: typeView)
         
         playerImg1.isUserInteractionEnabled = true
         playerImg2.isUserInteractionEnabled = true
         playerImg3.isUserInteractionEnabled = true
         playerImg4.isUserInteractionEnabled = true
-        playerImg5.isUserInteractionEnabled = true
+//        playerImg5.isUserInteractionEnabled = true
         
         playerImg1.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
         playerImg2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
         playerImg3.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
         playerImg4.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
-        playerImg5.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
+//        playerImg5.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
         
     }
     
@@ -55,20 +59,32 @@ class ChangeClothesViewController: BaseViewController {
         playerImg2.isUserInteractionEnabled = true
         playerImg3.isUserInteractionEnabled = true
         playerImg4.isUserInteractionEnabled = true
-        playerImg5.isUserInteractionEnabled = true
+//        playerImg5.isUserInteractionEnabled = true
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        layout()
-        arrOrigin = getPos()
-        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
-        setPosition(arrData: data)
+//        layout()
+//        arrOrigin = getPos()
+//        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
+//        setPosition(arrData: data)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.title = "Thay Quần Áo"
+//        self.title = "Cởi Áo"
+    }
+    
+    func updateUI(with typeView: String) {
+        switch typeView {
+        case TypeViewThaoDien.CoiQuan.rawValue:
+            playerImg1.image = #imageLiteral(resourceName: "coi_quan_1")
+            playerImg2.image = #imageLiteral(resourceName: "coi_quan_2")
+            playerImg3.image = #imageLiteral(resourceName: "coi_quan_3")
+            playerImg4.image = #imageLiteral(resourceName: "coi_quan_4")
+        default:
+            break
+        }
     }
 }
 
@@ -81,7 +97,7 @@ extension ChangeClothesViewController {
         arr.append(playerImg2.frame.origin)
         arr.append(playerImg3.frame.origin)
         arr.append(playerImg4.frame.origin)
-        arr.append(playerImg5.frame.origin)
+//        arr.append(playerImg5.frame.origin)
         return arr
     }
     
@@ -90,13 +106,13 @@ extension ChangeClothesViewController {
         playerImg2.frame.origin = arrData[1]
         playerImg3.frame.origin = arrData[2]
         playerImg4.frame.origin = arrData[3]
-        playerImg5.frame.origin = arrData[4]
+//        playerImg5.frame.origin = arrData[4]
         
         originPlayer1 = playerImg1.center
         originPlayer2 = playerImg2.center
         originPlayer3 = playerImg3.center
         originPlayer4 = playerImg4.center
-        originPlayer5 = playerImg5.center
+//        originPlayer5 = playerImg5.center
     }
 }
 
@@ -120,9 +136,9 @@ extension ChangeClothesViewController {
         case 4:
             targetView = targetImg4
             posOrigin = originPlayer4 ?? CGPoint.zero
-        case 5:
-            targetView = targetImg5
-            posOrigin = originPlayer5 ?? CGPoint.zero
+//        case 5:
+//            targetView = targetImg5
+//            posOrigin = originPlayer5 ?? CGPoint.zero
         default:
             break
         }
@@ -137,7 +153,7 @@ extension ChangeClothesViewController {
     }
     
     func checkFinishGame() {
-        if isFinish == 5 {
+        if isFinish == 4 {
             print("Value", isFinish)
             playSound(name: "be that gioi", Extension: "wav")
             isFinish = 0
@@ -145,7 +161,7 @@ extension ChangeClothesViewController {
             playerImg2.isUserInteractionEnabled = false
             playerImg3.isUserInteractionEnabled = false
             playerImg4.isUserInteractionEnabled = false
-            playerImg5.isUserInteractionEnabled = false
+//            playerImg5.isUserInteractionEnabled = false
         }
     }
 }
@@ -172,7 +188,7 @@ extension ChangeClothesViewController {
         playerImg2.frame = CGRect(x: playerImg3.x - spacing - witdhPlayer, y: topMargin, width: witdhPlayer, height: witdhPlayer)
         playerImg1.frame = CGRect(x: playerImg2.x-spacing-witdhPlayer, y: playerImg2.frame.origin.y, width: witdhPlayer, height: heightPlayer)
         playerImg4.frame = CGRect(x: playerImg3.frame.maxX+spacing, y: topMargin, width: witdhPlayer, height: heightPlayer)
-        playerImg5.frame = CGRect(x: playerImg4.frame.maxX+spacing, y: topMargin, width: witdhPlayer, height: heightPlayer)
+//        playerImg5.frame = CGRect(x: playerImg4.frame.maxX+spacing, y: topMargin, width: witdhPlayer, height: heightPlayer)
         playerImg1.layer.cornerRadius = 5
         playerImg2.layer.cornerRadius = 5
         playerImg3.layer.cornerRadius = 5
@@ -182,7 +198,7 @@ extension ChangeClothesViewController {
         targetImg1.frame = CGRect(x: targetImg2.x - witdhTarget - spacingTarget, y: targetImg2.y, width: witdhTarget, height: heightTarget)
         targetImg3.frame = CGRect(x: targetImg2.frame.maxX + spacingTarget, y: targetImg2.y, width: witdhTarget, height: heightTarget)
         targetImg4.frame = CGRect(x: targetImg1.x + witdhTarget/2 + spacingTarget/2, y: targetImg1.frame.maxY + spacingTarget, width: witdhTarget, height: heightTarget)
-        targetImg5.frame = CGRect(x: targetImg2.x + witdhTarget/2 + spacingTarget/2, y: targetImg2.frame.maxY + spacingTarget, width: witdhTarget, height: heightTarget)
+//        targetImg5.frame = CGRect(x: targetImg2.x + witdhTarget/2 + spacingTarget/2, y: targetImg2.frame.maxY + spacingTarget, width: witdhTarget, height: heightTarget)
         
         let posX: CGFloat = screenWidth - widthButton - 8
         let posY: CGFloat = screenHeight - heightButton - 8

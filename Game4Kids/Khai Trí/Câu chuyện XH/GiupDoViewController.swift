@@ -20,4 +20,12 @@ class GiupDoViewController: BaseViewController {
         super.viewWillAppear(animated)
         self.title = "KỸ NĂNG GIÚP ĐỠ"
     }
+    
+    @IBAction func nextBtnDidTap(_ sender: Any) {
+        if let viewController = UIStoryboard(name: "GiupDo", bundle: nil).instantiateViewController(withIdentifier: "GiupDo") as? GiupDoDetailViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
 }

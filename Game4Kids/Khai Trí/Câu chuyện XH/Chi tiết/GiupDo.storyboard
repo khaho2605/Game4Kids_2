@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--KỸ NĂNG GIÚP ĐỠ-->
+        <scene sceneID="56P-ki-zXO">
+            <objects>
+                <viewController storyboardIdentifier="GiupDo" id="Ov7-KR-Cif" customClass="GiupDoDetailViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nMO-lO-pNC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="giupdo1" translatesAutoresizingMaskIntoConstraints="NO" id="Jdy-bJ-yhB">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUL-yB-xYJ">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="QZe-P6-kkX" kind="show" id="4C7-rk-WfB">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jdy-bJ-yhB" firstAttribute="leading" secondItem="Rdy-hh-WK0" secondAttribute="leading" constant="20" id="2od-4i-vaQ"/>
+                            <constraint firstItem="nUL-yB-xYJ" firstAttribute="top" secondItem="Jdy-bJ-yhB" secondAttribute="bottom" constant="20" id="3tx-aV-zt7"/>
+                            <constraint firstItem="Jdy-bJ-yhB" firstAttribute="top" secondItem="Rdy-hh-WK0" secondAttribute="top" constant="20" id="4bP-YS-h1G"/>
+                            <constraint firstItem="Rdy-hh-WK0" firstAttribute="bottom" secondItem="nUL-yB-xYJ" secondAttribute="bottom" constant="20" id="BIC-y0-utr"/>
+                            <constraint firstItem="nUL-yB-xYJ" firstAttribute="leading" secondItem="Rdy-hh-WK0" secondAttribute="leading" constant="20" id="PRI-1e-MgM"/>
+                            <constraint firstItem="Rdy-hh-WK0" firstAttribute="trailing" secondItem="nUL-yB-xYJ" secondAttribute="trailing" constant="20" id="YbE-Cl-CGA"/>
+                            <constraint firstItem="Rdy-hh-WK0" firstAttribute="trailing" secondItem="Jdy-bJ-yhB" secondAttribute="trailing" constant="20" id="lq3-2l-YGy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rdy-hh-WK0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG GIÚP ĐỠ" id="l1Y-AQ-CcV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVL-kH-ZKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-445" y="-135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Voe-dn-jUB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zXQ-Cp-o28" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lY9-t9-Ra0">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ov7-KR-Cif" kind="relationship" relationship="rootViewController" id="DcY-36-3eh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xca-VM-vn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1115" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG GIÚP ĐỠ-->
+        <scene sceneID="Nyr-u0-wnv">
+            <objects>
+                <viewController id="QZe-P6-kkX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yhz-1m-JwH">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="giupdo2" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-4q-bJI">
+                                <rect key="frame" x="20" y="84" width="984" height="601"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vhB-4q-bJI" secondAttribute="height" multiplier="984:601" id="gem-IT-nHK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79U-6A-GE5">
+                                <rect key="frame" x="20" y="705" width="984" height="43"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="p9W-d0-GDY" kind="show" id="SOT-tq-VgT">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vhB-4q-bJI" firstAttribute="leading" secondItem="ern-j3-JVQ" secondAttribute="leading" constant="20" id="6of-fP-uvI"/>
+                            <constraint firstItem="79U-6A-GE5" firstAttribute="top" secondItem="vhB-4q-bJI" secondAttribute="bottom" constant="20" id="H6o-Vw-8s6"/>
+                            <constraint firstItem="ern-j3-JVQ" firstAttribute="bottom" secondItem="79U-6A-GE5" secondAttribute="bottom" constant="20" id="LN7-ke-m9m"/>
+                            <constraint firstItem="79U-6A-GE5" firstAttribute="leading" secondItem="ern-j3-JVQ" secondAttribute="leading" constant="20" id="Lx5-Bq-ijT"/>
+                            <constraint firstItem="ern-j3-JVQ" firstAttribute="trailing" secondItem="vhB-4q-bJI" secondAttribute="trailing" constant="20" id="hqf-os-qSE"/>
+                            <constraint firstItem="vhB-4q-bJI" firstAttribute="top" secondItem="ern-j3-JVQ" secondAttribute="top" constant="20" id="jS4-8C-lON"/>
+                            <constraint firstItem="ern-j3-JVQ" firstAttribute="trailing" secondItem="79U-6A-GE5" secondAttribute="trailing" constant="20" id="zuD-xz-Uif"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ern-j3-JVQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG GIÚP ĐỠ" id="UtJ-cU-w1N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqJ-C8-Y07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183.984375" y="-135.15625"/>
+        </scene>
+        <!--KỸ NĂNG GIÚP ĐỠ-->
+        <scene sceneID="zaP-Wg-IGc">
+            <objects>
+                <viewController id="p9W-d0-GDY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Um-6h-Qy5">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="giupdo3" translatesAutoresizingMaskIntoConstraints="NO" id="gVe-bT-Ttq">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSh-Gl-wcK">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ach-QX-Wjd" kind="show" id="ws3-bw-kGR">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WI7-0i-kAJ" firstAttribute="trailing" secondItem="gVe-bT-Ttq" secondAttribute="trailing" constant="20" id="0lQ-d1-yFH"/>
+                            <constraint firstItem="gVe-bT-Ttq" firstAttribute="leading" secondItem="WI7-0i-kAJ" secondAttribute="leading" constant="20" id="4uc-OA-e25"/>
+                            <constraint firstItem="WI7-0i-kAJ" firstAttribute="bottom" secondItem="cSh-Gl-wcK" secondAttribute="bottom" constant="20" id="Cbb-da-VvV"/>
+                            <constraint firstItem="cSh-Gl-wcK" firstAttribute="top" secondItem="gVe-bT-Ttq" secondAttribute="bottom" constant="20" id="DjP-6N-vBP"/>
+                            <constraint firstItem="cSh-Gl-wcK" firstAttribute="leading" secondItem="WI7-0i-kAJ" secondAttribute="leading" constant="20" id="GUz-IO-vRM"/>
+                            <constraint firstItem="WI7-0i-kAJ" firstAttribute="trailing" secondItem="cSh-Gl-wcK" secondAttribute="trailing" constant="20" id="cZ6-bT-tSI"/>
+                            <constraint firstItem="gVe-bT-Ttq" firstAttribute="top" secondItem="WI7-0i-kAJ" secondAttribute="top" constant="20" id="iXm-pn-dZx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WI7-0i-kAJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG GIÚP ĐỠ" id="at3-Tg-M0B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Lw-0W-Ox7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG GIÚP ĐỠ-->
+        <scene sceneID="qc7-0g-bvQ">
+            <objects>
+                <viewController id="Ach-QX-Wjd" customClass="GiupDoFinishViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qOD-gO-uz2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="giupdo4" translatesAutoresizingMaskIntoConstraints="NO" id="bSC-nU-VGz">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a98-lY-yTU">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="KẾT THÚC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finishBtnDidTap:" destination="Ach-QX-Wjd" eventType="touchUpInside" id="6qJ-Yp-Trn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b5P-Yl-Zt1" firstAttribute="trailing" secondItem="bSC-nU-VGz" secondAttribute="trailing" constant="20" id="0Ur-FF-nGF"/>
+                            <constraint firstItem="a98-lY-yTU" firstAttribute="top" secondItem="bSC-nU-VGz" secondAttribute="bottom" constant="20" id="4p1-fG-TSa"/>
+                            <constraint firstItem="b5P-Yl-Zt1" firstAttribute="bottom" secondItem="a98-lY-yTU" secondAttribute="bottom" constant="20" id="Psg-LP-JpO"/>
+                            <constraint firstItem="a98-lY-yTU" firstAttribute="leading" secondItem="b5P-Yl-Zt1" secondAttribute="leading" constant="20" id="UYe-dE-nme"/>
+                            <constraint firstItem="b5P-Yl-Zt1" firstAttribute="trailing" secondItem="a98-lY-yTU" secondAttribute="trailing" constant="20" id="dnh-da-oBI"/>
+                            <constraint firstItem="bSC-nU-VGz" firstAttribute="leading" secondItem="b5P-Yl-Zt1" secondAttribute="leading" constant="20" id="wv1-gk-dsb"/>
+                            <constraint firstItem="bSC-nU-VGz" firstAttribute="top" secondItem="b5P-Yl-Zt1" secondAttribute="top" constant="20" id="ymE-0e-V8x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b5P-Yl-Zt1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG GIÚP ĐỠ" id="u6q-89-YkN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOY-Eh-eif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="-135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="giupdo1" width="948" height="700"/>
+        <image name="giupdo2" width="319" height="405"/>
+        <image name="giupdo3" width="1024" height="742"/>
+        <image name="giupdo4" width="1024" height="742"/>
+    </resources>
+</document>

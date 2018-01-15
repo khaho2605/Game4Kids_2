@@ -67,6 +67,22 @@
                         </label>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lT-kI-0Tv">
+                    <rect key="frame" x="20" y="700" width="984" height="48"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <state key="normal" title="TIẾP">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextBtnDidTap:" destination="-1" eventType="touchUpInside" id="C6h-b5-znQ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -75,6 +91,9 @@
                 <constraint firstItem="8Fo-aO-Lqw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="TYn-Jd-fwd"/>
                 <constraint firstItem="nD9-BZ-fOu" firstAttribute="top" secondItem="8Fo-aO-Lqw" secondAttribute="bottom" constant="8" id="YGX-UQ-omb"/>
                 <constraint firstItem="8Fo-aO-Lqw" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="2/5" id="d0l-ih-oZG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8lT-kI-0Tv" secondAttribute="trailing" constant="20" id="i8n-qj-m1T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8lT-kI-0Tv" secondAttribute="bottom" constant="20" id="lzU-Li-ULn"/>
+                <constraint firstItem="8lT-kI-0Tv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="mT2-Ug-mSa"/>
                 <constraint firstAttribute="trailing" secondItem="8Fo-aO-Lqw" secondAttribute="trailing" constant="16" id="nxw-eE-Jc9"/>
                 <constraint firstItem="8Fo-aO-Lqw" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="p9I-oW-Q7n"/>
             </constraints>

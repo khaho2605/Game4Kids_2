@@ -15,6 +15,13 @@ class ChaoHoiViewController: BaseViewController {
 
     }
     
+    @IBAction func nextBtnDidTap(_ sender: Any) {
+        if let viewController = UIStoryboard(name: "ChaoHoi", bundle: nil).instantiateViewController(withIdentifier: "ChaoHoi") as? ChaoHoiDetailViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title = "KỸ NĂNG CHÀO HỎI"

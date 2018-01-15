@@ -67,15 +67,34 @@
                         </label>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIi-s6-b9K">
+                    <rect key="frame" x="20" y="700" width="984" height="48"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <state key="normal" title="TIẾP">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nextBtnDidTap:" destination="-1" eventType="touchUpInside" id="L1V-aA-zN7"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KIi-s6-b9K" secondAttribute="bottom" constant="20" id="5Fr-3q-Ngk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y3x-6H-0al" secondAttribute="trailing" constant="16" id="76Y-Jg-0dA"/>
                 <constraint firstItem="Y3x-6H-0al" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Bph-zY-rda"/>
                 <constraint firstItem="tJ7-Fa-EA8" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="2/5" id="FPR-45-tAy"/>
                 <constraint firstItem="tJ7-Fa-EA8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GeJ-aT-daA"/>
                 <constraint firstItem="Y3x-6H-0al" firstAttribute="top" secondItem="tJ7-Fa-EA8" secondAttribute="bottom" constant="8" id="P1X-KM-pB4"/>
+                <constraint firstItem="KIi-s6-b9K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="QeJ-sL-KH6"/>
                 <constraint firstItem="tJ7-Fa-EA8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="UlX-WB-bOZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KIi-s6-b9K" secondAttribute="trailing" constant="20" id="hQB-xB-qtq"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tJ7-Fa-EA8" secondAttribute="trailing" constant="16" id="mNT-YY-Kqm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

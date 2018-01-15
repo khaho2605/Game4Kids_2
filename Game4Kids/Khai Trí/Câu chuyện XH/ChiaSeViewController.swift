@@ -19,5 +19,12 @@ class ChiaSeViewController: BaseViewController {
         super.viewWillAppear(animated)
         self.title = "KỸ NĂNG CHIA SẺ"
     }
-
+    
+    @IBAction func nextBtnDidTap(_ sender: Any) {
+        if let viewController = UIStoryboard(name: "ChiaSe", bundle: nil).instantiateViewController(withIdentifier: "ChiaSe") as? ChiaSeDetailViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
 }

@@ -82,6 +82,8 @@ class BubbleViewController: BaseViewController {
     @IBOutlet weak var lblScore: UILabel!
     
     let imageSize = CGSize(width: 80, height: 80)
+    let monsterImageSize = CGSize(width: 100, height: 100)
+
     var arrImage:[UIImageView] = [UIImageView]()
 //    weak var delegate:ViewControllerDelegate?
     
@@ -199,7 +201,7 @@ extension BubbleViewController {
     
     private func initMonster(position: CGPoint) {
         
-        let imgBongBong = UIImageView(frame: CGRect(x: position.x - 30, y: position.y, width: imageSize.width, height: imageSize.height))
+        let imgBongBong = UIImageView(frame: CGRect(x: position.x - 30, y: position.y, width: monsterImageSize.width, height: monsterImageSize.height))
         imgBongBong.image = UIImage().randomRemoveImage()
         imgBongBong.contentMode = .scaleAspectFit
         self.view.addSubview(imgBongBong)
