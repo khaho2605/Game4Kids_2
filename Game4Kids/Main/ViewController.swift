@@ -42,8 +42,9 @@ class ViewController: BaseViewController {
     }
     
     @IBAction func changeClothesBtnDidTap(_ sender: Any) {
-        self.navigationController?.pushViewController(ChangeClothesViewController(), animated: true)
-    }
+        let vc = HandwashingViewController()
+        vc.typeView = TypeViewThaoDien.CoiAo.rawValue
+        self.navigationController?.pushViewController(vc, animated: true)    }
     @IBAction func macAoBtnDidTap(_ sender: Any) {
         let vc = HandwashingViewController()
         vc.typeView = TypeViewThaoDien.MacAo.rawValue
@@ -57,7 +58,7 @@ class ViewController: BaseViewController {
     }
     
     @IBAction func coiQuanBtnDidTap(_ sender: Any) {
-        let vc = ChangeClothesViewController()
+        let vc = HandwashingViewController()
         vc.typeView = TypeViewThaoDien.CoiQuan.rawValue
         self.navigationController?.pushViewController(vc, animated: true)
     }

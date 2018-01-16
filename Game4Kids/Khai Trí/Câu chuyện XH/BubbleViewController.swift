@@ -60,10 +60,11 @@ extension UIImage {
     }
     
     func randomRemoveImage() -> UIImage {
-        var randomList = ["kt1", "kt2", "kt3", "kt4", "kt5"]
-        let rd = arc4random_uniform(5)
-        
-        return UIImage(named: randomList[Int(rd)]) ?? UIImage()
+        var arrImg = [#imageLiteral(resourceName: "kt1"), #imageLiteral(resourceName: "kt2"), #imageLiteral(resourceName: "kt3"), #imageLiteral(resourceName: "kt4"), #imageLiteral(resourceName: "kt5"), #imageLiteral(resourceName: "ant"), #imageLiteral(resourceName: "bird"), #imageLiteral(resourceName: "cat"), #imageLiteral(resourceName: "duck"), #imageLiteral(resourceName: "fish")]
+//        var randomList = ["kt1", "kt2", "kt3", "kt4", "kt5"]
+        let rd = arc4random_uniform(UInt32(arrImg.count))
+        return arrImg[Int(rd)]
+//        return UIImage(named: randomList[Int(rd)]) ?? UIImage()
     }
 }
 

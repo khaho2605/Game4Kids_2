@@ -76,13 +76,29 @@ class HandwashingViewController: BaseViewController {
     
     func updateUI(with typeView: String) {
         switch typeView {
+        case TypeViewThaoDien.CoiAo.rawValue:
+            self.title = "CỞI ÁO"
+            playerImg1.image = #imageLiteral(resourceName: "coi_ao_1")
+            playerImg2.image = #imageLiteral(resourceName: "coi_ao_2")
+            playerImg3.image = #imageLiteral(resourceName: "coi_ao_3")
+            playerImg4.image = #imageLiteral(resourceName: "coi_ao_4")
+            playerImg5.image = #imageLiteral(resourceName: "coi_ao_5")
         case TypeViewThaoDien.MacAo.rawValue:
+            self.title = "MẶC ÁO"
             playerImg1.image = #imageLiteral(resourceName: "mac_ao_1")
             playerImg2.image = #imageLiteral(resourceName: "mac_ao_2")
             playerImg3.image = #imageLiteral(resourceName: "mac_ao_3")
             playerImg4.image = #imageLiteral(resourceName: "mac_ao_4")
             playerImg5.image = #imageLiteral(resourceName: "mac_ao_5")
+        case TypeViewThaoDien.CoiQuan.rawValue:
+            self.title = "CỞI QUẦN"
+            playerImg1.image = #imageLiteral(resourceName: "coi_quan_1")
+            playerImg2.image = #imageLiteral(resourceName: "coi_quan_2")
+            playerImg3.image = #imageLiteral(resourceName: "coi_quan_3")
+            playerImg4.image = #imageLiteral(resourceName: "coi_quan_4")
+            playerImg5.image = #imageLiteral(resourceName: "coi_quan_5")
         case TypeViewThaoDien.MacQuan.rawValue:
+            self.title = "MẶC QUẦN"
             playerImg1.image = #imageLiteral(resourceName: "mac_quan_1")
             playerImg2.image = #imageLiteral(resourceName: "mac_quan_2")
             playerImg3.image = #imageLiteral(resourceName: "mac_quan_3")

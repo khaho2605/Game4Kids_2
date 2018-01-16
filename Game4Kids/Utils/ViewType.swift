@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 enum TypeViewThaoDien: String {
+    case CoiAo = "CoiAo"
     case MacAo = "MacAo"
     case CoiQuan = "CoiQuan"
     case MacQuan = "MacQuan"
