@@ -165,7 +165,7 @@ extension ChangeClothesViewController {
     func checkFinishGame() {
         if isFinish == 4 {
             print("Value", isFinish)
-            playSound(name: "be that gioi", Extension: "wav")
+            playSound(name: "VoTay", Extension: "mp3")
             isFinish = 0
             playerImg1.isUserInteractionEnabled = false
             playerImg2.isUserInteractionEnabled = false

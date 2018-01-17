@@ -115,6 +115,13 @@
 		EAEFF4A61FA5ABCE00AF4078 /* dung roi.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAEFF4A51FA5ABCE00AF4078 /* dung roi.wav */; };
 		EAEFF4A81FA5ABDC00AF4078 /* thu cach khac.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAEFF4A71FA5ABDC00AF4078 /* thu cach khac.wav */; };
 		EAEFF4AA1FA5B07700AF4078 /* be that gioi.wav in Resources */ = {isa = PBXBuildFile; fileRef = EAEFF4A91FA5B07700AF4078 /* be that gioi.wav */; };
+		EAFBB966200F82CB0092002D /* Correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB963200F82CA0092002D /* Correct.mp3 */; };
+		EAFBB967200F82CB0092002D /* VoTay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB964200F82CA0092002D /* VoTay.mp3 */; };
+		EAFBB968200F82CB0092002D /* Wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB965200F82CA0092002D /* Wrong.mp3 */; };
+		EAFFA32E200ECEAC00BDFEEB /* CoiAoFInishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA32D200ECEAC00BDFEEB /* CoiAoFInishViewController.swift */; };
+		EAFFA330200ED08D00BDFEEB /* MacAoFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA32F200ED08D00BDFEEB /* MacAoFinishViewController.swift */; };
+		EAFFA332200ED1DC00BDFEEB /* CoiQuanFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA331200ED1DC00BDFEEB /* CoiQuanFinishViewController.swift */; };
+		EAFFA334200ED29000BDFEEB /* MacQuanFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA333200ED29000BDFEEB /* MacQuanFinishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,6 +235,13 @@
 		EAEFF4A51FA5ABCE00AF4078 /* dung roi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "dung roi.wav"; sourceTree = "<group>"; };
 		EAEFF4A71FA5ABDC00AF4078 /* thu cach khac.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "thu cach khac.wav"; sourceTree = "<group>"; };
 		EAEFF4A91FA5B07700AF4078 /* be that gioi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "be that gioi.wav"; sourceTree = "<group>"; };
+		EAFBB963200F82CA0092002D /* Correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Correct.mp3; sourceTree = "<group>"; };
+		EAFBB964200F82CA0092002D /* VoTay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VoTay.mp3; sourceTree = "<group>"; };
+		EAFBB965200F82CA0092002D /* Wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wrong.mp3; sourceTree = "<group>"; };
+		EAFFA32D200ECEAC00BDFEEB /* CoiAoFInishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoiAoFInishViewController.swift; sourceTree = "<group>"; };
+		EAFFA32F200ED08D00BDFEEB /* MacAoFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAoFinishViewController.swift; sourceTree = "<group>"; };
+		EAFFA331200ED1DC00BDFEEB /* CoiQuanFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoiQuanFinishViewController.swift; sourceTree = "<group>"; };
+		EAFFA333200ED29000BDFEEB /* MacQuanFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacQuanFinishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,12 +344,16 @@
 			children = (
 				EA6C6554200E3752008919C4 /* CoiAo.storyboard */,
 				EA6C6556200E3CF3008919C4 /* CoiAoViewController.swift */,
+				EAFFA32D200ECEAC00BDFEEB /* CoiAoFInishViewController.swift */,
 				EA6C655A200E3EB7008919C4 /* MacAo.storyboard */,
 				EA6C655C200E3F07008919C4 /* MacAoViewController.swift */,
+				EAFFA32F200ED08D00BDFEEB /* MacAoFinishViewController.swift */,
 				EA6C655E200E3F81008919C4 /* CoiQuan.storyboard */,
 				EA6C6560200E3FD7008919C4 /* CoiQuanViewController.swift */,
+				EAFFA331200ED1DC00BDFEEB /* CoiQuanFinishViewController.swift */,
 				EA6C6562200E402B008919C4 /* MacQuan.storyboard */,
 				EA6C6564200E416C008919C4 /* MacQuanViewController.swift */,
+				EAFFA333200ED29000BDFEEB /* MacQuanFinishViewController.swift */,
 			);
 			path = XH;
 			sourceTree = "<group>";
@@ -532,6 +550,9 @@
 				EAEFF4A51FA5ABCE00AF4078 /* dung roi.wav */,
 				EAEFF4A71FA5ABDC00AF4078 /* thu cach khac.wav */,
 				EA956A572003526A001FB10E /* bong_no.mp3 */,
+				EAFBB963200F82CA0092002D /* Correct.mp3 */,
+				EAFBB964200F82CA0092002D /* VoTay.mp3 */,
+				EAFBB965200F82CA0092002D /* Wrong.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -617,6 +638,7 @@
 				EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */,
 				EA6C655F200E3F81008919C4 /* CoiQuan.storyboard in Resources */,
 				EA01CB7D1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib in Resources */,
+				EAFBB967200F82CB0092002D /* VoTay.mp3 in Resources */,
 				EAEFF4A01FA5979200AF4078 /* AllFallDown.mp3 in Resources */,
 				EABE1E772001D42000C23A1B /* xebus.MOV in Resources */,
 				EA0A067D2001182C00C51C18 /* GiupDoViewController.xib in Resources */,
@@ -628,6 +650,7 @@
 				EABE1E6F2001D40D00C23A1B /* dan.MOV in Resources */,
 				EAA2FB8D2004902B00F925B5 /* ChaoHoiKXViewController.xib in Resources */,
 				EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */,
+				EAFBB968200F82CB0092002D /* Wrong.mp3 in Resources */,
 				EAEFF4A61FA5ABCE00AF4078 /* dung roi.wav in Resources */,
 				EA132830200C5A63006118CF /* ChaoHoi.storyboard in Resources */,
 				EA25C30220050B1500BF60F6 /* CoGiaoKhenViewController.xib in Resources */,
@@ -640,6 +663,7 @@
 				EA01CB731FEE9C9300FCFB49 /* DoanCamXuc1ViewController.xib in Resources */,
 				EA7F5CE41FA587DC00A87ACC /* Assets.xcassets in Resources */,
 				EABE1E782001D42000C23A1B /* thuyen.MOV in Resources */,
+				EAFBB966200F82CB0092002D /* Correct.mp3 in Resources */,
 				EA0A067020010AAA00C51C18 /* ChaoHoiViewController.xib in Resources */,
 				EABE1E712001D40D00C23A1B /* violon.MOV in Resources */,
 				EA7F5CE21FA587DC00A87ACC /* Main.storyboard in Resources */,
@@ -685,6 +709,7 @@
 				EA25C30120050B1500BF60F6 /* CoGiaoKhenViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
+				EAFFA32E200ECEAC00BDFEEB /* CoiAoFInishViewController.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
 				EA3EE578200CA85600531A1B /* GiupDoFinishViewController.swift in Sources */,
 				EAA2FB8420048E2E00F925B5 /* UocMoViewController.swift in Sources */,
@@ -698,11 +723,13 @@
 				EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */,
 				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
 				EA6C6565200E416C008919C4 /* MacQuanViewController.swift in Sources */,
+				EAFFA334200ED29000BDFEEB /* MacQuanFinishViewController.swift in Sources */,
 				EA0A0677200113BF00C51C18 /* ChiaSeViewController.swift in Sources */,
 				EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */,
 				EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */,
 				EA6C655D200E3F07008919C4 /* MacAoViewController.swift in Sources */,
 				EAA2FB8C2004902B00F925B5 /* ChaoHoiKXViewController.swift in Sources */,
+				EAFFA330200ED08D00BDFEEB /* MacAoFinishViewController.swift in Sources */,
 				EA24F1281FF1D0EB00FE7637 /* KhaiTriViewController.swift in Sources */,
 				EABE1E4A2001B80300C23A1B /* KhoiXuongViewController.swift in Sources */,
 				EA72D87A2004435000A53866 /* MeTangQuaViewController.swift in Sources */,
@@ -712,6 +739,7 @@
 				EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */,
 				EAA2FB8120047DB600F925B5 /* ChiaSeDoChoiViewController.swift in Sources */,
 				EA125C7A200CE620003A4847 /* ViewType.swift in Sources */,
+				EAFFA332200ED1DC00BDFEEB /* CoiQuanFinishViewController.swift in Sources */,
 				EABE1E512001B97400C23A1B /* PhuongTienViewController.swift in Sources */,
 				EA0A066F20010AAA00C51C18 /* ChaoHoiViewController.swift in Sources */,
 				EADD1B1C1FE4B1B0003157F9 /* GoWCViewController.swift in Sources */,

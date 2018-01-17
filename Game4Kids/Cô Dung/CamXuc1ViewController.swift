@@ -172,7 +172,7 @@ extension CamXuc1ViewController {
     func checkFinishGame() {
         if isFinish == 4 {
             print("Game is finish---------")
-            playSound(name: "be that gioi", Extension: "wav")
+            playSound(name: "VoTay", Extension: "mp3")
         }
     }
 }

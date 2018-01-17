@@ -20,11 +20,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_ao_1" translatesAutoresizingMaskIntoConstraints="NO" id="qDB-ab-eq3">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elz-Ka-TzT">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Pa7-CN-kSb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,16 +65,17 @@
         <!--CỞI ÁO-->
         <scene sceneID="0Js-hF-q5j">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4SX-SE-oMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="CoiAo" id="uvm-MP-5GL" customClass="CoiAoViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7wF-Sa-y5p">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi7-cf-Kaq">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oi7-cf-Kaq">
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="o1J-zq-6SJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,7 +151,10 @@
                             <constraint firstItem="7zf-Vs-eh6" firstAttribute="centerY" secondItem="7wF-Sa-y5p" secondAttribute="centerY" id="1df-YH-o0x"/>
                             <constraint firstItem="7zf-Vs-eh6" firstAttribute="height" secondItem="7wF-Sa-y5p" secondAttribute="height" multiplier="2/5" id="33a-5n-7h9"/>
                             <constraint firstItem="GVK-pD-DaF" firstAttribute="top" secondItem="7zf-Vs-eh6" secondAttribute="bottom" constant="8" id="J1M-qM-Pce"/>
+                            <constraint firstItem="6xd-uz-joS" firstAttribute="bottom" secondItem="oi7-cf-Kaq" secondAttribute="bottom" constant="20" id="JRV-Ym-sxc"/>
                             <constraint firstItem="6xd-uz-joS" firstAttribute="trailing" secondItem="7zf-Vs-eh6" secondAttribute="trailing" constant="8" id="WBE-cX-I4Q"/>
+                            <constraint firstItem="oi7-cf-Kaq" firstAttribute="leading" secondItem="6xd-uz-joS" secondAttribute="leading" constant="20" id="ch7-xb-uVS"/>
+                            <constraint firstItem="6xd-uz-joS" firstAttribute="trailing" secondItem="oi7-cf-Kaq" secondAttribute="trailing" constant="20" id="dAq-uX-tzM"/>
                             <constraint firstItem="6xd-uz-joS" firstAttribute="trailing" secondItem="GVK-pD-DaF" secondAttribute="trailing" constant="8" id="dW2-ac-iZq"/>
                             <constraint firstItem="GVK-pD-DaF" firstAttribute="leading" secondItem="6xd-uz-joS" secondAttribute="leading" constant="8" id="x8B-5u-qQl"/>
                         </constraints>
@@ -155,6 +162,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="CỞI ÁO" id="Ems-vO-LiT"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4SX-SE-oMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-933.39843749999989" y="-135.15625"/>
         </scene>
@@ -167,11 +175,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_ao_2" translatesAutoresizingMaskIntoConstraints="NO" id="3UT-Ot-Akr">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unu-Li-jJl">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="rmx-2A-MgE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,11 +226,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_ao_3" translatesAutoresizingMaskIntoConstraints="NO" id="tIt-ay-7KK">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUx-S2-hSP">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="nZo-6n-4kF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -263,11 +277,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_ao_4" translatesAutoresizingMaskIntoConstraints="NO" id="xc0-8C-Ptp">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TX7-kb-AAg">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ln2-By-gzo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -305,17 +322,20 @@
         <!--CỞI ÁO-->
         <scene sceneID="d6L-52-I2S">
             <objects>
-                <viewController id="eM8-YZ-6sj" sceneMemberID="viewController">
+                <viewController id="eM8-YZ-6sj" customClass="CoiAoFInishViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vF5-PR-veH">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_ao_5" translatesAutoresizingMaskIntoConstraints="NO" id="0XA-Lm-uRJ">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOt-L3-lsH">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="TRu-xW-v47"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="KẾT THÚC">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -325,6 +345,9 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finishBtnDidTap:" destination="eM8-YZ-6sj" eventType="touchUpInside" id="1mK-rU-qah"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

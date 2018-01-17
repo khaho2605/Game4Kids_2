@@ -79,14 +79,14 @@ extension BaseViewController {
         if frameTarget.frame.contains(view.center) {
             UIView.animate(withDuration: 0.3) {
                 view.center = frameTarget.center
-                self.playSound(name: "dung roi", Extension: "wav")
+                self.playSound(name: "Correct", Extension: "mp3")
                 self.endTouch = true
             }
             return true
         } else {
             UIView.animate(withDuration: 0.3) {
                 view.center = frameOrigin
-                self.playSound(name: "thu cach khac", Extension: "wav")
+                self.playSound(name: "Wrong", Extension: "mp3")
             }
             return false
         }
@@ -112,14 +112,14 @@ extension BaseViewController {
                 let posXRandom = view.x//CGFloat.random(min: frameTarget.x, max: frameTarget.maxX - framePlayer.width)
                 let posYRandom = frameTarget.maxY - framePlayer.height
                 view.frame.origin = CGPoint(x: posXRandom , y: posYRandom)
-                self.playSound(name: "dung roi", Extension: "wav")
+                self.playSound(name: "Correct", Extension: "mp3")
                 self.endTouch = true
             }
             return true
         } else {
             UIView.animate(withDuration: 0.3) {
                 view.center = frameOrigin
-                self.playSound(name: "thu cach khac", Extension: "wav")
+                self.playSound(name: "Wrong", Extension: "mp3")
             }
             return false
         }
@@ -144,14 +144,14 @@ extension BaseViewController {
                 let posXRandom = CGFloat.random(min: frameTarget.x, max: frameTarget.maxX - framePlayer.width)
                 let posYRandom = CGFloat.random(min: frameTarget.y, max: frameTarget.maxY - framePlayer.height)
                 view.frame.origin = CGPoint(x: posXRandom , y: posYRandom)
-                self.playSound(name: "dung roi", Extension: "wav")
+                self.playSound(name: "Correct", Extension: "mp3")
                 self.endTouch = true
             }
             return true
         } else {
             UIView.animate(withDuration: 0.3) {
                 view.center = frameOrigin
-                self.playSound(name: "thu cach khac", Extension: "wav")
+                self.playSound(name: "Wrong", Extension: "mp3")
             }
             return false
         }
@@ -174,14 +174,14 @@ extension BaseViewController {
         if frameTarget.frame.contains(view.frame.origin) {
             UIView.animate(withDuration: 0.3) {
                 view.frame = frameTarget.convert(view.frame, to: frameTarget)
-                self.playSound(name: "dung roi", Extension: "wav")
+                self.playSound(name: "Correct", Extension: "mp3")
                 self.endTouch = true
             }
             return true
         } else {
             UIView.animate(withDuration: 0.3) {
                 view.center = frameOrigin
-                self.playSound(name: "thu cach khac", Extension: "wav")
+                self.playSound(name: "Wrong", Extension: "mp3")
             }
             return false
         }

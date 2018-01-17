@@ -20,10 +20,10 @@ class DoanCamXuc21ViewController: BaseViewController {
     }
 
     @IBAction func result1BtnDidTap(_ sender: Any) {
-        playSound(name: "dung roi", Extension: "wav", repeatSound: false)
+        playSound(name: "Correct", Extension: "mp3", repeatSound: false)
     }
     
     @IBAction func result2BtnDidTap(_ sender: Any) {
-        playSound(name: "thu cach khac", Extension: "wav", repeatSound: false)
+        playSound(name: "Wrong", Extension: "mp3", repeatSound: false)
     }
 }

@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--CỞI ÁO-->
+        <!--CỞI QUẦN-->
         <scene sceneID="7Rm-0P-hsl">
             <objects>
                 <viewController storyboardIdentifier="ChaoHoi" id="97Y-5Y-eL9" sceneMemberID="viewController">
@@ -20,11 +20,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_quan_1" translatesAutoresizingMaskIntoConstraints="NO" id="YqK-2j-QP7">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBO-Eq-1zI">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="vi5-9z-52E"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,25 +56,26 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uuQ-id-JAG"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CỞI ÁO" id="9Vb-Th-qSI"/>
+                    <navigationItem key="navigationItem" title="CỞI QUẦN" id="9Vb-Th-qSI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z88-0x-Moc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-321.09375" y="-135.15625"/>
         </scene>
-        <!--CỞI ÁO-->
+        <!--CỞI QUẦN-->
         <scene sceneID="sCP-mH-a5g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0AG-b7-mC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="CoiQuan" id="rxz-lR-1SU" customClass="CoiQuanViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EXB-oY-W1S">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yt-Dc-ZJ3">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yt-Dc-ZJ3">
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Dim-hv-unF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -146,21 +150,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Y5E-H0-7yQ" firstAttribute="leading" secondItem="XGc-6r-Xam" secondAttribute="leading" constant="8" id="7fb-9H-b7K"/>
+                            <constraint firstItem="XGc-6r-Xam" firstAttribute="trailing" secondItem="3Yt-Dc-ZJ3" secondAttribute="trailing" constant="20" id="Ax5-Xp-9yq"/>
                             <constraint firstItem="4vE-Ib-dzf" firstAttribute="height" secondItem="EXB-oY-W1S" secondAttribute="height" multiplier="2/5" id="SDZ-jD-Qr4"/>
                             <constraint firstItem="XGc-6r-Xam" firstAttribute="trailing" secondItem="4vE-Ib-dzf" secondAttribute="trailing" constant="8" id="WLJ-Yt-Ez2"/>
                             <constraint firstItem="XGc-6r-Xam" firstAttribute="trailing" secondItem="Y5E-H0-7yQ" secondAttribute="trailing" constant="8" id="aoY-Ts-BPH"/>
+                            <constraint firstItem="3Yt-Dc-ZJ3" firstAttribute="leading" secondItem="XGc-6r-Xam" secondAttribute="leading" constant="20" id="bZ0-73-Bpi"/>
                             <constraint firstItem="Y5E-H0-7yQ" firstAttribute="top" secondItem="4vE-Ib-dzf" secondAttribute="bottom" constant="8" id="goG-R7-IQI"/>
                             <constraint firstItem="4vE-Ib-dzf" firstAttribute="centerY" secondItem="EXB-oY-W1S" secondAttribute="centerY" id="koV-8f-cpS"/>
                             <constraint firstItem="4vE-Ib-dzf" firstAttribute="leading" secondItem="XGc-6r-Xam" secondAttribute="leading" constant="8" id="v4f-Li-Ze0"/>
+                            <constraint firstItem="XGc-6r-Xam" firstAttribute="bottom" secondItem="3Yt-Dc-ZJ3" secondAttribute="bottom" constant="20" id="zmQ-xx-vaX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XGc-6r-Xam"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CỞI ÁO" id="G0c-ZS-tXw"/>
+                    <navigationItem key="navigationItem" title="CỞI QUẦN" id="G0c-ZS-tXw"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AG-b7-mC5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-933.39843749999989" y="-135.15625"/>
         </scene>
-        <!--CỞI ÁO-->
+        <!--CỞI QUẦN-->
         <scene sceneID="oM2-Im-6aa">
             <objects>
                 <viewController id="xFp-X4-qt9" sceneMemberID="viewController">
@@ -169,11 +177,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_quan_2" translatesAutoresizingMaskIntoConstraints="NO" id="tvb-VU-OY0">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F0-HM-JyT">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="QHu-nw-Aq5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -202,13 +213,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uHG-gL-gjV"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CỞI ÁO" id="ukT-Ut-Whg"/>
+                    <navigationItem key="navigationItem" title="CỞI QUẦN" id="ukT-Ut-Whg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxP-Bj-FWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="308.203125" y="-135.15625"/>
         </scene>
-        <!--CỞI ÁO-->
+        <!--CỞI QUẦN-->
         <scene sceneID="AcV-6a-FvO">
             <objects>
                 <viewController id="adx-lB-sHB" sceneMemberID="viewController">
@@ -217,11 +228,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_quan_3" translatesAutoresizingMaskIntoConstraints="NO" id="6W8-LR-pW0">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZ8-Ti-HNY">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="DRp-xe-8Jw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -250,13 +264,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ePS-t6-v2c"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CỞI ÁO" id="YVO-PW-EeG"/>
+                    <navigationItem key="navigationItem" title="CỞI QUẦN" id="YVO-PW-EeG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WiY-5N-ioR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="952.14843749999989" y="-135.15625"/>
         </scene>
-        <!--CỞI ÁO-->
+        <!--CỞI QUẦN-->
         <scene sceneID="K2w-xV-NYe">
             <objects>
                 <viewController id="P5B-Ce-Xkj" sceneMemberID="viewController">
@@ -265,11 +279,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_quan_4" translatesAutoresizingMaskIntoConstraints="NO" id="4ic-Om-zvH">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqw-qm-sEO">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Skx-yq-zav"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="TIẾP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -298,26 +315,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wj8-51-KtT"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CỞI ÁO" id="Qki-PZ-kF4"/>
+                    <navigationItem key="navigationItem" title="CỞI QUẦN" id="Qki-PZ-kF4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vri-FV-JyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1580.859375" y="-135.15625"/>
         </scene>
-        <!--CỞI ÁO-->
+        <!--CỞI QUẦN-->
         <scene sceneID="wO9-Oq-yhR">
             <objects>
-                <viewController id="74c-NL-oT7" sceneMemberID="viewController">
+                <viewController id="74c-NL-oT7" customClass="CoiQuanFinishViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIY-KS-81H">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="coi_quan_5" translatesAutoresizingMaskIntoConstraints="NO" id="NUI-V6-OiG">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9s-le-e6z">
-                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="M3b-uu-5LR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <state key="normal" title="KẾT THÚC">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -327,6 +347,9 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finishBtnDidTap:" destination="74c-NL-oT7" eventType="touchUpInside" id="KA9-NF-H1Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -341,7 +364,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u72-pY-qO6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CỞI ÁO" id="Jkd-hz-bSc"/>
+                    <navigationItem key="navigationItem" title="CỞI QUẦN" id="Jkd-hz-bSc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRd-zl-Rrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
