@@ -118,6 +118,10 @@
 		EAFBB966200F82CB0092002D /* Correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB963200F82CA0092002D /* Correct.mp3 */; };
 		EAFBB967200F82CB0092002D /* VoTay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB964200F82CA0092002D /* VoTay.mp3 */; };
 		EAFBB968200F82CB0092002D /* Wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB965200F82CA0092002D /* Wrong.mp3 */; };
+		EAFBB96A200F88050092002D /* DiVeSinh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB969200F88050092002D /* DiVeSinh.storyboard */; };
+		EAFBB96C200F88710092002D /* DiVeSinhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBB96B200F88710092002D /* DiVeSinhViewController.swift */; };
+		EAFBB96E200F88850092002D /* DiVeSinhFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFBB96D200F88850092002D /* DiVeSinhFinishViewController.swift */; };
+		EAFBB970200F8B730092002D /* DiVeSinh_Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EAFBB96F200F8B730092002D /* DiVeSinh_Video.mp4 */; };
 		EAFFA32E200ECEAC00BDFEEB /* CoiAoFInishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA32D200ECEAC00BDFEEB /* CoiAoFInishViewController.swift */; };
 		EAFFA330200ED08D00BDFEEB /* MacAoFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA32F200ED08D00BDFEEB /* MacAoFinishViewController.swift */; };
 		EAFFA332200ED1DC00BDFEEB /* CoiQuanFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFFA331200ED1DC00BDFEEB /* CoiQuanFinishViewController.swift */; };
@@ -238,6 +242,10 @@
 		EAFBB963200F82CA0092002D /* Correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Correct.mp3; sourceTree = "<group>"; };
 		EAFBB964200F82CA0092002D /* VoTay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VoTay.mp3; sourceTree = "<group>"; };
 		EAFBB965200F82CA0092002D /* Wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Wrong.mp3; sourceTree = "<group>"; };
+		EAFBB969200F88050092002D /* DiVeSinh.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiVeSinh.storyboard; sourceTree = "<group>"; };
+		EAFBB96B200F88710092002D /* DiVeSinhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiVeSinhViewController.swift; sourceTree = "<group>"; };
+		EAFBB96D200F88850092002D /* DiVeSinhFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiVeSinhFinishViewController.swift; sourceTree = "<group>"; };
+		EAFBB96F200F8B730092002D /* DiVeSinh_Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DiVeSinh_Video.mp4; sourceTree = "<group>"; };
 		EAFFA32D200ECEAC00BDFEEB /* CoiAoFInishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoiAoFInishViewController.swift; sourceTree = "<group>"; };
 		EAFFA32F200ED08D00BDFEEB /* MacAoFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAoFinishViewController.swift; sourceTree = "<group>"; };
 		EAFFA331200ED1DC00BDFEEB /* CoiQuanFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoiQuanFinishViewController.swift; sourceTree = "<group>"; };
@@ -354,6 +362,9 @@
 				EA6C6562200E402B008919C4 /* MacQuan.storyboard */,
 				EA6C6564200E416C008919C4 /* MacQuanViewController.swift */,
 				EAFFA333200ED29000BDFEEB /* MacQuanFinishViewController.swift */,
+				EAFBB969200F88050092002D /* DiVeSinh.storyboard */,
+				EAFBB96B200F88710092002D /* DiVeSinhViewController.swift */,
+				EAFBB96D200F88850092002D /* DiVeSinhFinishViewController.swift */,
 			);
 			path = XH;
 			sourceTree = "<group>";
@@ -553,6 +564,7 @@
 				EAFBB963200F82CA0092002D /* Correct.mp3 */,
 				EAFBB964200F82CA0092002D /* VoTay.mp3 */,
 				EAFBB965200F82CA0092002D /* Wrong.mp3 */,
+				EAFBB96F200F8B730092002D /* DiVeSinh_Video.mp4 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -628,6 +640,7 @@
 				EA6C655B200E3EB7008919C4 /* MacAo.storyboard in Resources */,
 				EA72D87B2004435000A53866 /* MeTangQuaViewController.xib in Resources */,
 				EADD1B1D1FE4B1B0003157F9 /* GoWCViewController.xib in Resources */,
+				EAFBB96A200F88050092002D /* DiVeSinh.storyboard in Resources */,
 				EAEFF4A81FA5ABDC00AF4078 /* thu cach khac.wav in Resources */,
 				EA956A582003526A001FB10E /* bong_no.mp3 in Resources */,
 				EABE1E792001D42000C23A1B /* xehoi.MOV in Resources */,
@@ -652,6 +665,7 @@
 				EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */,
 				EAFBB968200F82CB0092002D /* Wrong.mp3 in Resources */,
 				EAEFF4A61FA5ABCE00AF4078 /* dung roi.wav in Resources */,
+				EAFBB970200F8B730092002D /* DiVeSinh_Video.mp4 in Resources */,
 				EA132830200C5A63006118CF /* ChaoHoi.storyboard in Resources */,
 				EA25C30220050B1500BF60F6 /* CoGiaoKhenViewController.xib in Resources */,
 				EAA2FB912004920600F925B5 /* ChaoHoiKXResultViewController.xib in Resources */,
@@ -690,6 +704,7 @@
 			files = (
 				EA6C6557200E3CF3008919C4 /* CoiAoViewController.swift in Sources */,
 				EA3EE570200CA59400531A1B /* ChiaSeDetailViewController.swift in Sources */,
+				EAFBB96E200F88850092002D /* DiVeSinhFinishViewController.swift in Sources */,
 				EA01CB6E1FEE98E900FCFB49 /* CamXuc2ViewController.swift in Sources */,
 				EA125C77200CE48E003A4847 /* GameXHViewController.swift in Sources */,
 				EA6C6559200E3D61008919C4 /* XHThaoDienViewController.swift in Sources */,
@@ -720,6 +735,7 @@
 				EA132834200C5E68006118CF /* ChaoHoiFinishViewController.swift in Sources */,
 				EA0A067C2001182C00C51C18 /* GiupDoViewController.swift in Sources */,
 				EAA2FB902004920600F925B5 /* ChaoHoiKXResultViewController.swift in Sources */,
+				EAFBB96C200F88710092002D /* DiVeSinhViewController.swift in Sources */,
 				EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */,
 				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
 				EA6C6565200E416C008919C4 /* MacQuanViewController.swift in Sources */,
