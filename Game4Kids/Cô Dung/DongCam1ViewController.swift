@@ -143,11 +143,11 @@ extension DongCam1ViewController {
         let topMargin: CGFloat = screenHeight*0.1
         let witdhPlayer: CGFloat = screenHeight*0.26
         let heightPlayer: CGFloat = witdhPlayer
-        let widthButton: CGFloat = screenWidth*0.2
-        let heightButton: CGFloat = screenHeight*0.26
-        let topMarginTarget: CGFloat = 20
+        let widthButton: CGFloat = screenWidth*0.4
+        let heightButton: CGFloat = screenHeight*0.13
+//        let topMarginTarget: CGFloat = 20
         let witdhTarget: CGFloat = screenHeight*0.26
-        let heightTarget: CGFloat = witdhTarget
+//        let heightTarget: CGFloat = witdhTarget
         let spacing: CGFloat = 32
         var spacingTarget: CGFloat = 40
         
@@ -166,12 +166,12 @@ extension DongCam1ViewController {
         playerImg3.layer.cornerRadius = 5
         playerImg4.layer.cornerRadius = 5
         
-        targetImg1.frame = CGRect(x: centerX - witdhTarget - spacingTarget/2, y: playerImg1.frame.maxY+topMarginTarget, width: witdhTarget, height: heightTarget)
-        targetImg3.frame = CGRect(x: targetImg1.frame.origin.x, y: targetImg1.frame.maxY + spacingTarget, width: witdhTarget, height: heightTarget)
-        targetImg2.frame = CGRect(x: centerX + spacingTarget/2, y: targetImg1.frame.origin.y, width: witdhTarget, height: heightTarget)
-        targetImg4.frame = CGRect(x: targetImg2.frame.origin.x, y: targetImg2.frame.maxY + spacingTarget, width: witdhTarget, height: heightTarget)
+        targetImg2.frame = CGRect(x: playerImg2.x, y: playerImg2.maxY + topMargin, width: witdhPlayer, height: witdhPlayer)
+        targetImg1.frame = CGRect(x: playerImg1.x, y: targetImg2.y, width: witdhPlayer, height: witdhPlayer)
+        targetImg3.frame = CGRect(x: playerImg3.x, y: targetImg2.y, width: witdhPlayer, height: witdhPlayer)
+        targetImg4.frame = CGRect(x: playerImg4.x, y: targetImg2.y, width: witdhPlayer, height: witdhPlayer)
         
-        let posX: CGFloat = screenWidth - widthButton - 8
+        let posX: CGFloat = screenWidth/2 - widthButton/2
         let posY: CGFloat = screenHeight - heightButton - 8
         replayBtn.frame = CGRect(x: posX, y: posY, width: widthButton, height: heightButton)
         replayBtn.layer.cornerRadius = 10
