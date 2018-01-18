@@ -19,6 +19,10 @@ class DongCam1ViewController: BaseViewController {
     @IBOutlet weak var targetImg3: UIImageView!
     @IBOutlet weak var targetImg4: UIImageView!
     @IBOutlet weak var replayBtn: UIButton!
+    @IBOutlet weak var no1Lb: UILabel!
+    @IBOutlet weak var no2Lb: UILabel!
+    @IBOutlet weak var no3Lb: UILabel!
+    @IBOutlet weak var no4Lb: UILabel!
     
     var originPlayer1:CGPoint?
     var originPlayer2:CGPoint?
@@ -151,6 +155,11 @@ extension DongCam1ViewController {
         let spacing: CGFloat = 32
         var spacingTarget: CGFloat = 40
         
+        no1Lb.sizeToFit()
+        no2Lb.sizeToFit()
+        no3Lb.sizeToFit()
+        no4Lb.sizeToFit()
+
         if !DeviceType.IS_IPAD {
             spacingTarget = 20
         }
@@ -170,7 +179,11 @@ extension DongCam1ViewController {
         targetImg1.frame = CGRect(x: playerImg1.x, y: targetImg2.y, width: witdhPlayer, height: witdhPlayer)
         targetImg3.frame = CGRect(x: playerImg3.x, y: targetImg2.y, width: witdhPlayer, height: witdhPlayer)
         targetImg4.frame = CGRect(x: playerImg4.x, y: targetImg2.y, width: witdhPlayer, height: witdhPlayer)
-        
+        no1Lb.frame = CGRect(x: targetImg1.x + witdhPlayer/2 - no1Lb.width/2, y: targetImg1.maxY+4, width: no1Lb.width, height: no1Lb.height)
+        no2Lb.frame = CGRect(x: targetImg2.x + witdhPlayer/2 - no1Lb.width/2, y: targetImg2.maxY+4, width: no2Lb.width, height: no2Lb.height)
+        no3Lb.frame = CGRect(x: targetImg3.x + witdhPlayer/2 - no1Lb.width/2, y: targetImg3.maxY+4, width: no3Lb.width, height: no3Lb.height)
+        no4Lb.frame = CGRect(x: targetImg4.x + witdhPlayer/2 - no1Lb.width/2, y: targetImg4.maxY+4, width: no4Lb.width, height: no4Lb.height)
+
         let posX: CGFloat = screenWidth/2 - widthButton/2
         let posY: CGFloat = screenHeight - heightButton - 8
         replayBtn.frame = CGRect(x: posX, y: posY, width: widthButton, height: heightButton)
