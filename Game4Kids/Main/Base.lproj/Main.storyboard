@@ -827,7 +827,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qhZ-aL-QwX">
-                                        <rect key="frame" x="216" y="150" width="520" height="45"/>
+                                        <rect key="frame" x="226.5" y="150" width="499" height="45"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeu-Bm-uTq">
                                                 <rect key="frame" x="0.0" y="0.0" width="233" height="45"/>
@@ -846,10 +846,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-TR-JXt">
-                                                <rect key="frame" x="263" y="0.0" width="257" height="45"/>
+                                                <rect key="frame" x="263" y="0.0" width="236" height="45"/>
                                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                                <state key="normal" title="ĐOÁN CẢM XÚC 2.1">
+                                                <state key="normal" title="ĐOÁN CẢM XÚC 2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -866,13 +866,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mR-bf-vmM">
-                                <rect key="frame" x="381.5" y="469" width="261" height="48"/>
+                                <rect key="frame" x="393.5" y="469" width="237" height="48"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="JTn-HJ-cnG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
-                                <state key="normal" title="ĐOÁN CẢM XÚC 2.2">
+                                <state key="normal" title="ĐOÁN CẢM XÚC 3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -914,7 +914,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YWC-Yf-zOF">
-                                <rect key="frame" x="200" y="239.5" width="624" height="289"/>
+                                <rect key="frame" x="200" y="270" width="624" height="228"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-7Z-5to">
                                         <rect key="frame" x="0.0" y="0.0" width="624" height="45"/>
@@ -981,8 +981,8 @@
                                             <segue destination="qQd-zP-lzS" kind="push" id="hzq-dw-FMf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCt-S6-icR">
-                                        <rect key="frame" x="0.0" y="244" width="624" height="45"/>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCt-S6-icR">
+                                        <rect key="frame" x="0.0" y="228" width="624" height="0.0"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="KỸ NĂNG CHĂM SÓC BẢN THÂN">
