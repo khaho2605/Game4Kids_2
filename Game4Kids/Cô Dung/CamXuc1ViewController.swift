@@ -173,6 +173,7 @@ extension CamXuc1ViewController {
         if isFinish == 4 {
             print("Game is finish---------")
             playSound(name: "VoTay", Extension: "mp3")
+            isFinish = 0
         }
     }
 }
