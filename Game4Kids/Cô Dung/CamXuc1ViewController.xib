@@ -148,9 +148,9 @@
         </view>
     </objects>
     <resources>
-        <image name="buồn_D" width="350" height="330"/>
-        <image name="giận_D" width="572" height="536"/>
-        <image name="sợ_D" width="664" height="600"/>
-        <image name="vui_D" width="620" height="506"/>
+        <image name="buồn_D" width="851" height="1089"/>
+        <image name="giận_D" width="843" height="1090"/>
+        <image name="sợ_D" width="379" height="445"/>
+        <image name="vui_D" width="855" height="1090"/>
     </resources>
 </document>

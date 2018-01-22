@@ -17,5 +17,16 @@ enum TypeViewThaoDien: String {
     case ChaoHoi = "ChaoHoi"
     case ChiaSe = "ChiaSe"
     case GiupDo = "GiupDo"
+}
 
+enum TypeViewCoDung: String {
+    case XayNha = "XayNha"
+    case BanTe = "BanTe"
+    case VoChuoi = "VoChuoi"
+    case BongRo = "BongRo"
+    case ChoiVoiCho = "ChoiVoiCho"
+    case CauTruot = "CauTruot"
+    case ChiaSeBanh = "ChiaSeBanh"
+    case CungChoi = "CungChoi"
+    case LuanPhien = "LuanPhien"
 }

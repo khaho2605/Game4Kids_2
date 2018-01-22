@@ -1,21 +1,20 @@
 //
-//  DongCam2ViewController.swift
+//  XayNhaViewController.swift
 //  Game4Kids
 //
-//  Created by KHA on 12/24/17.
-//  Copyright © 2017 Kha. All rights reserved.
+//  Created by KHA on 1/22/18.
+//  Copyright © 2018 Kha. All rights reserved.
 //
 
 import UIKit
 
-class DongCam2ViewController: BaseViewController {
-
+class XayNhaViewController: BaseViewController {
+    
     @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
     @IBOutlet weak var playerImg1: UIImageView!
     @IBOutlet weak var playerImg2: UIImageView!
-    @IBOutlet weak var playerImg3: UIImageView!
     @IBOutlet weak var targetImg1: UIImageView!
     @IBOutlet weak var arrowLb1: UILabel!
     @IBOutlet weak var arrowLb2: UILabel!
@@ -26,20 +25,15 @@ class DongCam2ViewController: BaseViewController {
     var originPlayer2:CGPoint?
     var originPlayer3:CGPoint?
     var arrOrigin: [CGPoint] = [CGPoint]()
-    
+    var typeView = TypeViewCoDung.BanTe
+
     override func viewDidLoad() {
         super.viewDidLoad()
-//        arrOrigin = getPos()
-//        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
-//        setPosition(arrData: data)
-        
+        layoutImg(typeView: typeView.rawValue)
         playerImg1.isUserInteractionEnabled = true
         playerImg2.isUserInteractionEnabled = true
-        playerImg3.isUserInteractionEnabled = true
-        
         playerImg1.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
         playerImg2.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
-        playerImg3.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(actionForGesture)))
     }
     
     override func viewWillLayoutSubviews() {
@@ -50,42 +44,49 @@ class DongCam2ViewController: BaseViewController {
         setPosition(arrData: data)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.title = "ĐỒNG CẢM 2"
-    }
-    
     @IBAction func replayBtnDidTap(_ sender: Any) {
         guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
         setPosition(arrData: data)
         playerImg1.isUserInteractionEnabled = true
         playerImg2.isUserInteractionEnabled = true
-        playerImg3.isUserInteractionEnabled = true
+    }
+
+    func layoutImg(typeView: String) {
+        switch typeView {
+        case TypeViewCoDung.XayNha.rawValue:
+            self.title = "XÂY NHÀ"
+            image1.image = #imageLiteral(resourceName: "xaynha1")
+            image2.image = #imageLiteral(resourceName: "xaynha2")
+            image3.image = #imageLiteral(resourceName: "xaynha3")
+            playerImg1.image = #imageLiteral(resourceName: "xaynha_answer1")
+            playerImg2.image = #imageLiteral(resourceName: "xaynha_answer2")
+        case TypeViewCoDung.BanTe.rawValue:
+            image1.image = #imageLiteral(resourceName: "KhoiXuongKetBan")
+        default:
+            break
+        }
     }
 }
 
-extension DongCam2ViewController {
+extension XayNhaViewController {
     //Get arr posX
     func getPos() -> [CGPoint] {
         var arr = [CGPoint]()
         arr.append(playerImg1.frame.origin)
         arr.append(playerImg2.frame.origin)
-        arr.append(playerImg3.frame.origin)
         return arr
     }
     
     func setPosition(arrData: [CGPoint]) {
         playerImg1.frame.origin = arrData[0]
         playerImg2.frame.origin = arrData[1]
-        playerImg3.frame.origin = arrData[2]
         
         originPlayer1 = playerImg1.center
         originPlayer2 = playerImg2.center
-        originPlayer3 = playerImg3.center
     }
 }
 
-extension DongCam2ViewController {
+extension XayNhaViewController {
     @objc func actionForGesture(recognizer: UIPanGestureRecognizer) {
         var targetView = UIView()
         var posOrigin = CGPoint(x: 0, y: 0)
@@ -94,14 +95,14 @@ extension DongCam2ViewController {
         let viewPlayer = recognizer.view
         switch tagView {
         case 1:
-//            targetView = targetImg2
+            //            targetView = targetImg2
             posOrigin = originPlayer1 ?? CGPoint.zero
         case 2:
             targetView = targetImg1
             posOrigin = originPlayer2 ?? CGPoint.zero
-       
+            
         case 3:
-//            targetView = targetImg3
+            //            targetView = targetImg3
             posOrigin = originPlayer3 ?? CGPoint.zero
         default:
             break
@@ -123,34 +124,33 @@ extension DongCam2ViewController {
             isFinish = 0
             playerImg1.isUserInteractionEnabled = false
             playerImg2.isUserInteractionEnabled = false
-            playerImg3.isUserInteractionEnabled = false
         }
     }
 }
 
 //MARK: Layout
-extension DongCam2ViewController {
+extension XayNhaViewController {
     func layout() {
         let screenHeight: CGFloat = self.view.frame.height
         let screenWidth: CGFloat = self.view.frame.width
         let topMargin: CGFloat = screenHeight*0.1
         let witdhPlayer: CGFloat = screenHeight*0.26
         let heightPlayer: CGFloat = witdhPlayer
-        let widthButton: CGFloat = screenWidth*0.2
-        let heightButton: CGFloat = screenHeight*0.26
-        let topMarginTarget: CGFloat = screenHeight*0.08
+        let widthButton: CGFloat = screenWidth*0.6
+        let heightButton: CGFloat = screenHeight*0.14
+        let topMarginTarget: CGFloat = screenHeight*0.1
         let witdhTarget: CGFloat = screenHeight*0.26
         let heightTarget: CGFloat = witdhTarget
         let spacing: CGFloat = 50
-//        var spacingTarget: CGFloat = 40
-//        let marginLb: CGFloat = 8
+        //        var spacingTarget: CGFloat = 40
+        //        let marginLb: CGFloat = 8
         
         arrowLb1.sizeToFit()
         arrowLb2.sizeToFit()
         arrowLb3.sizeToFit()
-
+        
         if !DeviceType.IS_IPAD {
-//            spacingTarget = 20
+            //            spacingTarget = 20
         }
         let centerX = self.view.center.x
         
@@ -161,22 +161,19 @@ extension DongCam2ViewController {
         image3.frame = CGRect(x: arrowLb2.maxX, y: topMargin, width: witdhPlayer, height: heightPlayer)
         arrowLb3.frame = CGRect(x: image3.maxX , y: arrowLb2.y, width: arrowLb3.width, height: arrowLb3.height)
         targetImg1.frame = CGRect(x: arrowLb3.maxX, y: topMargin, width: witdhTarget, height: heightTarget)
-
-        playerImg2.frame = CGRect(x: centerX - witdhPlayer/2, y: image2.maxY + topMarginTarget, width: witdhPlayer, height: heightPlayer)
-        playerImg3.frame = CGRect(x: playerImg2.maxX + spacing, y: playerImg2.y, width: witdhPlayer, height: heightPlayer)
+        
+        playerImg2.frame = CGRect(x: centerX, y: image2.maxY + topMarginTarget, width: witdhPlayer, height: heightPlayer)
         playerImg1.frame = CGRect(x: playerImg2.x - spacing -  witdhPlayer, y: playerImg2.y, width: witdhPlayer, height: heightPlayer)
-
+        
         playerImg1.layer.masksToBounds = true
         playerImg2.layer.masksToBounds = true
-        playerImg3.layer.masksToBounds = true
         playerImg1.layer.cornerRadius = 5
         playerImg2.layer.cornerRadius = 5
-        playerImg3.layer.cornerRadius = 5
         
-        let posX: CGFloat = screenWidth - widthButton - 8
+        let posX: CGFloat = centerX - widthButton/2
         let posY: CGFloat = screenHeight - heightButton - 8
         replayBtn.frame = CGRect(x: posX, y: posY, width: widthButton, height: heightButton)
         replayBtn.layer.cornerRadius = 10
         replayBtn.titleLabel?.adjustsFontSizeToFitWidth = true
-    }    
+    }
 }
