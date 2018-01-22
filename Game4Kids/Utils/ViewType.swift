@@ -23,6 +23,7 @@ enum TypeViewCoDung: String {
     case XayNha = "XayNha"
     case BanTe = "BanTe"
     case VoChuoi = "VoChuoi"
+    case BiSot = "BiSot"
     case BongRo = "BongRo"
     case ChoiVoiCho = "ChoiVoiCho"
     case CauTruot = "CauTruot"

@@ -25,4 +25,32 @@ class CoDungViewController: BaseViewController {
         vc.typeView = TypeViewCoDung.XayNha
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func banTeBtnDidTap(_ sender: Any) {
+        let vc = BanTeViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func voChuoiBtnDidTap(_ sender: Any) {
+    }
+    
+    @IBAction func bongRoBtnDidTap(_ sender: Any) {
+    }
+    @IBAction func biSotBtnDidTap(_ sender: Any) {
+    }
+    
+    @IBAction func choiChoBtnDidTap(_ sender: Any) {
+    }
+    
+    @IBAction func cauTruotBtnDidTap(_ sender: Any) {
+    }
+    
+    @IBAction func sandwichBtnDidTap(_ sender: Any) {
+    }
+    
+    @IBAction func cungChoiBtnDidTap(_ sender: Any) {
+    }
+    
+    @IBAction func luanPhienBtnDidTap(_ sender: Any) {
+    }
 }
