@@ -99,7 +99,7 @@ extension BrushTeethViewController {
 }
 
 extension BrushTeethViewController {
-    func actionForGesture(recognizer: UIPanGestureRecognizer) {
+    @objc func actionForGesture(recognizer: UIPanGestureRecognizer) {
         var targetView = UIView()
         var posOrigin = CGPoint(x: 0, y: 0)
         
@@ -140,7 +140,7 @@ extension BrushTeethViewController {
     func checkFinishGame() {
         if isFinish == 6 {
             print("Value", isFinish)
-            playSound(name: "be that gioi", Extension: "wav")
+            playSound(name: "VoTay", Extension: "mp3")
             isFinish = 0
             playerImg1.isUserInteractionEnabled = false
             playerImg2.isUserInteractionEnabled = false

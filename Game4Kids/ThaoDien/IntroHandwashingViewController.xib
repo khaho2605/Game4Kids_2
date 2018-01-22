@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroHandwashingViewController" customModule="Game4Kids" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgH-4T-pP9">
+                    <rect key="frame" x="256" y="671" width="512" height="77"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <state key="normal" title="CHƠI">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="titleLabel.adjustsFontSizeToFitWidth" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="playBtnDidTap:" destination="-1" eventType="touchUpInside" id="X4A-Os-0nI"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Ex1-K8-ZCA">
+                    <rect key="frame" x="26" y="70" width="972" height="230.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_handwashing_1" translatesAutoresizingMaskIntoConstraints="NO" id="gcF-Yx-yRY">
+                            <rect key="frame" x="0.0" y="0.0" width="473" height="230.5"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_handwashing_2" translatesAutoresizingMaskIntoConstraints="NO" id="dkN-CI-1Ra">
+                            <rect key="frame" x="499" y="0.0" width="473" height="230.5"/>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_handwashing_3" translatesAutoresizingMaskIntoConstraints="NO" id="QSJ-vs-qX5">
+                    <rect key="frame" x="276" y="316.5" width="473" height="230"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="QSJ-vs-qX5" secondAttribute="height" multiplier="473:230" id="dhz-AY-Sr1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PgH-4T-pP9" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" id="6Wl-xF-Cob"/>
+                <constraint firstItem="Ex1-K8-ZCA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="7dV-rz-Xgm"/>
+                <constraint firstItem="QSJ-vs-qX5" firstAttribute="height" secondItem="Ex1-K8-ZCA" secondAttribute="height" id="NT6-VE-CcX"/>
+                <constraint firstItem="QSJ-vs-qX5" firstAttribute="top" secondItem="Ex1-K8-ZCA" secondAttribute="bottom" constant="16" id="TkI-Bd-JaQ"/>
+                <constraint firstItem="Ex1-K8-ZCA" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="bao-HN-C60"/>
+                <constraint firstItem="Ex1-K8-ZCA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="ekE-FB-7dG"/>
+                <constraint firstItem="PgH-4T-pP9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gA5-zO-n8f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PgH-4T-pP9" secondAttribute="bottom" constant="20" id="gLE-QR-vzx"/>
+                <constraint firstItem="PgH-4T-pP9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="jyM-oW-gFp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ex1-K8-ZCA" secondAttribute="trailing" constant="26" id="qh4-9y-uOX"/>
+                <constraint firstItem="QSJ-vs-qX5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xrm-WC-5WK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="intro_handwashing_1" width="500" height="447"/>
+        <image name="intro_handwashing_2" width="500" height="451"/>
+        <image name="intro_handwashing_3" width="333" height="235"/>
+    </resources>
+</document>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--KỸ NĂNG CHÀO HỎI-->
+        <scene sceneID="UTz-0o-G0x">
+            <objects>
+                <viewController storyboardIdentifier="ChaoHoi" id="Jkj-od-qxr" customClass="ChaoHoiDetailViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Au6-Qu-PIa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi1" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-qA-haR">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwi-pE-OsC">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="56u-Ut-Ie5" kind="show" id="KhR-yP-6a2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hwi-pE-OsC" firstAttribute="leading" secondItem="DPa-6w-uVu" secondAttribute="leading" constant="20" id="8Ow-nh-391"/>
+                            <constraint firstItem="DPa-6w-uVu" firstAttribute="trailing" secondItem="bQd-qA-haR" secondAttribute="trailing" constant="20" id="9nK-8q-15T"/>
+                            <constraint firstItem="DPa-6w-uVu" firstAttribute="trailing" secondItem="hwi-pE-OsC" secondAttribute="trailing" constant="20" id="OIB-no-G4G"/>
+                            <constraint firstItem="bQd-qA-haR" firstAttribute="leading" secondItem="DPa-6w-uVu" secondAttribute="leading" constant="20" id="ZLS-H3-cob"/>
+                            <constraint firstItem="hwi-pE-OsC" firstAttribute="top" secondItem="bQd-qA-haR" secondAttribute="bottom" constant="20" id="eqH-uX-TOU"/>
+                            <constraint firstItem="DPa-6w-uVu" firstAttribute="bottom" secondItem="hwi-pE-OsC" secondAttribute="bottom" constant="20" id="u5b-lf-iP2"/>
+                            <constraint firstItem="bQd-qA-haR" firstAttribute="top" secondItem="DPa-6w-uVu" secondAttribute="top" constant="20" id="yF9-wn-Stn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DPa-6w-uVu"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHÀO HỎI" id="Ngj-yn-YgE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TC7-zt-Oeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-445" y="-135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YtT-ff-M7y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UCF-58-EDG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3wt-gW-PmG">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jkj-od-qxr" kind="relationship" relationship="rootViewController" id="T1z-EQ-qMV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUX-sw-yhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1115" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG CHÀO HỎI-->
+        <scene sceneID="vcR-7k-18x">
+            <objects>
+                <viewController id="56u-Ut-Ie5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DAr-Ky-Q6x">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi2" translatesAutoresizingMaskIntoConstraints="NO" id="Bhv-aA-IY8">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-z7-Xe9">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="GTb-lv-ujB" kind="show" id="VfU-0v-7Zh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eX7-z7-Xe9" firstAttribute="leading" secondItem="CHc-v9-SOI" secondAttribute="leading" constant="20" id="6vh-hH-Rwx"/>
+                            <constraint firstItem="Bhv-aA-IY8" firstAttribute="leading" secondItem="CHc-v9-SOI" secondAttribute="leading" constant="20" id="Qwe-6L-tau"/>
+                            <constraint firstItem="eX7-z7-Xe9" firstAttribute="top" secondItem="Bhv-aA-IY8" secondAttribute="bottom" constant="20" id="R5M-xg-Hya"/>
+                            <constraint firstItem="CHc-v9-SOI" firstAttribute="bottom" secondItem="eX7-z7-Xe9" secondAttribute="bottom" constant="20" id="fNz-HM-R5E"/>
+                            <constraint firstItem="Bhv-aA-IY8" firstAttribute="top" secondItem="CHc-v9-SOI" secondAttribute="top" constant="20" id="kc4-SE-RSK"/>
+                            <constraint firstItem="CHc-v9-SOI" firstAttribute="trailing" secondItem="eX7-z7-Xe9" secondAttribute="trailing" constant="20" id="lHF-1G-vtG"/>
+                            <constraint firstItem="CHc-v9-SOI" firstAttribute="trailing" secondItem="Bhv-aA-IY8" secondAttribute="trailing" constant="20" id="oYp-7E-x2j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CHc-v9-SOI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHÀO HỎI" id="oi3-zV-he8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4R7-Dr-EDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG CHÀO HỎI-->
+        <scene sceneID="MgE-DU-W2K">
+            <objects>
+                <viewController id="GTb-lv-ujB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7I-me-jxP">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi3" translatesAutoresizingMaskIntoConstraints="NO" id="uNa-Dy-dge">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuH-7i-E9R">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="aHU-9a-OZb" kind="show" id="ReE-I9-jh6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uNa-Dy-dge" firstAttribute="leading" secondItem="dDY-RG-dJ9" secondAttribute="leading" constant="20" id="Gzr-al-MgC"/>
+                            <constraint firstItem="NuH-7i-E9R" firstAttribute="leading" secondItem="dDY-RG-dJ9" secondAttribute="leading" constant="20" id="Mcl-Pv-Suc"/>
+                            <constraint firstItem="dDY-RG-dJ9" firstAttribute="trailing" secondItem="uNa-Dy-dge" secondAttribute="trailing" constant="20" id="PSt-Yx-Ion"/>
+                            <constraint firstItem="dDY-RG-dJ9" firstAttribute="trailing" secondItem="NuH-7i-E9R" secondAttribute="trailing" constant="20" id="S71-3D-CuH"/>
+                            <constraint firstItem="dDY-RG-dJ9" firstAttribute="bottom" secondItem="NuH-7i-E9R" secondAttribute="bottom" constant="20" id="Va0-eF-h31"/>
+                            <constraint firstItem="NuH-7i-E9R" firstAttribute="top" secondItem="uNa-Dy-dge" secondAttribute="bottom" constant="20" id="sfE-W0-Zun"/>
+                            <constraint firstItem="uNa-Dy-dge" firstAttribute="top" secondItem="dDY-RG-dJ9" secondAttribute="top" constant="20" id="wpb-vD-r5Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dDY-RG-dJ9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHÀO HỎI" id="21q-wa-TcZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMQ-QW-oxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG CHÀO HỎI-->
+        <scene sceneID="zPB-kS-WzK">
+            <objects>
+                <viewController id="aHU-9a-OZb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TDO-2T-boR">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi4" translatesAutoresizingMaskIntoConstraints="NO" id="WLk-3d-Bnj">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdy-X2-SJS">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="n2E-2k-XRF" kind="show" id="wkm-7e-zlK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SSC-BA-gjf" firstAttribute="trailing" secondItem="WLk-3d-Bnj" secondAttribute="trailing" constant="20" id="1oN-kw-9qG"/>
+                            <constraint firstItem="gdy-X2-SJS" firstAttribute="top" secondItem="WLk-3d-Bnj" secondAttribute="bottom" constant="20" id="2Sw-qb-ZdX"/>
+                            <constraint firstItem="SSC-BA-gjf" firstAttribute="bottom" secondItem="gdy-X2-SJS" secondAttribute="bottom" constant="20" id="5gJ-1D-I4J"/>
+                            <constraint firstItem="WLk-3d-Bnj" firstAttribute="leading" secondItem="SSC-BA-gjf" secondAttribute="leading" constant="20" id="Fum-pR-Rxx"/>
+                            <constraint firstItem="gdy-X2-SJS" firstAttribute="leading" secondItem="SSC-BA-gjf" secondAttribute="leading" constant="20" id="Nv4-RG-qde"/>
+                            <constraint firstItem="WLk-3d-Bnj" firstAttribute="top" secondItem="SSC-BA-gjf" secondAttribute="top" constant="20" id="OK4-F6-E6x"/>
+                            <constraint firstItem="SSC-BA-gjf" firstAttribute="trailing" secondItem="gdy-X2-SJS" secondAttribute="trailing" constant="20" id="rQ1-vJ-0Ri"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SSC-BA-gjf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHÀO HỎI" id="oVZ-sf-42G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FwU-1s-Eb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG CHÀO HỎI-->
+        <scene sceneID="OuU-Ap-1JI">
+            <objects>
+                <viewController id="n2E-2k-XRF" customClass="ChaoHoiFinishViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kft-0Z-x8U">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chao_hoi5" translatesAutoresizingMaskIntoConstraints="NO" id="td2-WO-oWU">
+                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HW-Fc-n9G">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="KẾT THÚC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finishBtnDidTap:" destination="n2E-2k-XRF" eventType="touchUpInside" id="Swd-R4-LaY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZOg-R5-FZ3" firstAttribute="trailing" secondItem="9HW-Fc-n9G" secondAttribute="trailing" constant="20" id="QCy-pJ-wY3"/>
+                            <constraint firstItem="9HW-Fc-n9G" firstAttribute="leading" secondItem="ZOg-R5-FZ3" secondAttribute="leading" constant="20" id="Ug4-xw-qxK"/>
+                            <constraint firstItem="td2-WO-oWU" firstAttribute="top" secondItem="ZOg-R5-FZ3" secondAttribute="top" constant="20" id="d92-Ux-syl"/>
+                            <constraint firstItem="ZOg-R5-FZ3" firstAttribute="bottom" secondItem="9HW-Fc-n9G" secondAttribute="bottom" constant="20" id="gYf-zz-WLy"/>
+                            <constraint firstItem="td2-WO-oWU" firstAttribute="leading" secondItem="ZOg-R5-FZ3" secondAttribute="leading" constant="20" id="igP-De-AmY"/>
+                            <constraint firstItem="9HW-Fc-n9G" firstAttribute="top" secondItem="td2-WO-oWU" secondAttribute="bottom" constant="20" id="vIQ-Kr-zU3"/>
+                            <constraint firstItem="ZOg-R5-FZ3" firstAttribute="trailing" secondItem="td2-WO-oWU" secondAttribute="trailing" constant="20" id="zHM-mx-7hd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZOg-R5-FZ3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHÀO HỎI" id="hY3-6c-4U5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQk-7r-92b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2111" y="-135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chao_hoi1" width="1013" height="768"/>
+        <image name="chao_hoi2" width="1024" height="751"/>
+        <image name="chao_hoi3" width="976" height="768"/>
+        <image name="chao_hoi4" width="1024" height="696"/>
+        <image name="chao_hoi5" width="1024" height="703"/>
+    </resources>
+</document>
