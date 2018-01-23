@@ -25,6 +25,7 @@ class BanTeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        layoutImg(typeView: typeView.rawValue)
 //        layout()
 //        arrOrigin = getPos()
 //        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
@@ -56,14 +57,29 @@ class BanTeViewController: BaseViewController {
     func layoutImg(typeView: String) {
         switch typeView {
         case TypeViewCoDung.BanTe.rawValue:
-            self.title = "BẠN TÉ"
             image1.image = #imageLiteral(resourceName: "bante1")
             image2.image = #imageLiteral(resourceName: "bante2")
             image3.image = #imageLiteral(resourceName: "bante3")
             wrongButton.setImage(#imageLiteral(resourceName: "bante_answers1"), for: .normal)
             rightButton.setImage(#imageLiteral(resourceName: "bante_answers2"), for: .normal)
-        case TypeViewCoDung.BanTe.rawValue:
-            image1.image = #imageLiteral(resourceName: "KhoiXuongKetBan")
+        case TypeViewCoDung.BongRo.rawValue:
+            image1.image = #imageLiteral(resourceName: "bongro1")
+            image2.image = #imageLiteral(resourceName: "bongro2")
+            image3.image = #imageLiteral(resourceName: "bongro3")
+            wrongButton.setImage(#imageLiteral(resourceName: "bongro_answer1"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "bongro_answer2"), for: .normal)
+        case TypeViewCoDung.CauTruot.rawValue:
+            image1.image = #imageLiteral(resourceName: "cautruot1")
+            image2.image = #imageLiteral(resourceName: "cautruot2")
+            image3.image = #imageLiteral(resourceName: "cautruot3")
+            wrongButton.setImage(#imageLiteral(resourceName: "cautruot_answer1"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "cautruot_answer2"), for: .normal)
+        case TypeViewCoDung.LuanPhien.rawValue:
+            image1.image = #imageLiteral(resourceName: "luanphien1")
+            image2.image = #imageLiteral(resourceName: "luanphien2")
+            image3.image = #imageLiteral(resourceName: "luanphien3")
+            wrongButton.setImage(#imageLiteral(resourceName: "luanphien_answer1"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "luanphien_answer2"), for: .normal)
         default:
             break
         }

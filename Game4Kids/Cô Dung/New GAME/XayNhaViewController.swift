@@ -54,14 +54,41 @@ class XayNhaViewController: BaseViewController {
     func layoutImg(typeView: String) {
         switch typeView {
         case TypeViewCoDung.XayNha.rawValue:
-            self.title = "XÂY NHÀ"
             image1.image = #imageLiteral(resourceName: "xaynha1")
             image2.image = #imageLiteral(resourceName: "xaynha2")
             image3.image = #imageLiteral(resourceName: "xaynha3")
             playerImg1.image = #imageLiteral(resourceName: "xaynha_answer1")
             playerImg2.image = #imageLiteral(resourceName: "xaynha_answer2")
-        case TypeViewCoDung.BanTe.rawValue:
-            image1.image = #imageLiteral(resourceName: "KhoiXuongKetBan")
+        case TypeViewCoDung.VoChuoi.rawValue:
+            image1.image = #imageLiteral(resourceName: "truot1")
+            image2.image = #imageLiteral(resourceName: "truot2")
+            image3.image = #imageLiteral(resourceName: "truot3")
+            playerImg1.image = #imageLiteral(resourceName: "truot_answer1")
+            playerImg2.image = #imageLiteral(resourceName: "truot_answer2")
+        case TypeViewCoDung.BiSot.rawValue:
+            image1.image = #imageLiteral(resourceName: "Sot1")
+            image2.image = #imageLiteral(resourceName: "Sot2")
+            image3.image = #imageLiteral(resourceName: "Sot3")
+            playerImg1.image = #imageLiteral(resourceName: "Sot_answer1")
+            playerImg2.image = #imageLiteral(resourceName: "Sot_answer2")
+        case TypeViewCoDung.ChoiVoiCho.rawValue:
+            image1.image = #imageLiteral(resourceName: "choivoicho1")
+            image2.image = #imageLiteral(resourceName: "choivoicho2")
+            image3.image = #imageLiteral(resourceName: "choivoicho3")
+            playerImg1.image = #imageLiteral(resourceName: "choivoicho_answer1")
+            playerImg2.image = #imageLiteral(resourceName: "choivoicho_answer2")
+        case TypeViewCoDung.ChiaSeBanh.rawValue:
+            image1.image = #imageLiteral(resourceName: "sandwich1")
+            image2.image = #imageLiteral(resourceName: "sandwich2")
+            image3.image = #imageLiteral(resourceName: "sandwich3")
+            playerImg1.image = #imageLiteral(resourceName: "sandwich_answer1")
+            playerImg2.image = #imageLiteral(resourceName: "sandwich_answer2")
+        case TypeViewCoDung.CungChoi.rawValue:
+            image1.image = #imageLiteral(resourceName: "cungchoi1")
+            image2.image = #imageLiteral(resourceName: "cungchoi2")
+            image3.image = #imageLiteral(resourceName: "cungchoi3")
+            playerImg1.image = #imageLiteral(resourceName: "cungchoi_answer1")
+            playerImg2.image = #imageLiteral(resourceName: "cungchoi_answer2")
         default:
             break
         }
