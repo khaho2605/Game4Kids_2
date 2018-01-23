@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase1" translatesAutoresizingMaskIntoConstraints="NO" id="0Ns-td-u4a">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="526"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhj-8g-zOS">
                                 <rect key="frame" x="20" y="693" width="984" height="55"/>
@@ -39,16 +39,25 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẹ mua cho Bi nhiều đồ chơi đẹp nhưng bi vẫn không vui." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3c-fx-Vtb">
+                                <rect key="frame" x="20" y="630" width="984" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0Ns-td-u4a" firstAttribute="leading" secondItem="j54-vl-8uX" secondAttribute="leading" constant="20" id="ATK-wg-3Ty"/>
-                            <constraint firstItem="0Ns-td-u4a" firstAttribute="top" secondItem="j54-vl-8uX" secondAttribute="top" constant="20" id="ArH-LX-j8v"/>
-                            <constraint firstItem="yhj-8g-zOS" firstAttribute="top" secondItem="0Ns-td-u4a" secondAttribute="bottom" constant="20" id="BRb-XZ-hkC"/>
+                            <constraint firstItem="j54-vl-8uX" firstAttribute="trailing" secondItem="0Ns-td-u4a" secondAttribute="trailing" constant="20" id="1dt-N0-P6j"/>
+                            <constraint firstItem="yhj-8g-zOS" firstAttribute="top" secondItem="h3c-fx-Vtb" secondAttribute="bottom" constant="20" id="2Im-HZ-WqN"/>
+                            <constraint firstItem="h3c-fx-Vtb" firstAttribute="leading" secondItem="j54-vl-8uX" secondAttribute="leading" constant="20" id="6tj-zv-V1X"/>
+                            <constraint firstItem="j54-vl-8uX" firstAttribute="trailing" secondItem="h3c-fx-Vtb" secondAttribute="trailing" constant="20" id="Fjk-CE-ggY"/>
+                            <constraint firstItem="0Ns-td-u4a" firstAttribute="leading" secondItem="j54-vl-8uX" secondAttribute="leading" constant="20" id="Jbz-Ns-YVW"/>
                             <constraint firstItem="yhj-8g-zOS" firstAttribute="leading" secondItem="j54-vl-8uX" secondAttribute="leading" constant="20" id="K1A-E9-khc"/>
                             <constraint firstItem="j54-vl-8uX" firstAttribute="trailing" secondItem="yhj-8g-zOS" secondAttribute="trailing" constant="20" id="MA4-5B-Ay7"/>
-                            <constraint firstItem="j54-vl-8uX" firstAttribute="trailing" secondItem="0Ns-td-u4a" secondAttribute="trailing" constant="20" id="eDi-Qw-N3Q"/>
+                            <constraint firstItem="h3c-fx-Vtb" firstAttribute="top" secondItem="0Ns-td-u4a" secondAttribute="bottom" constant="20" id="dJH-yr-j17"/>
                             <constraint firstItem="j54-vl-8uX" firstAttribute="bottom" secondItem="yhj-8g-zOS" secondAttribute="bottom" constant="20" id="eZb-2s-2T0"/>
+                            <constraint firstItem="0Ns-td-u4a" firstAttribute="top" secondItem="j54-vl-8uX" secondAttribute="top" constant="20" id="fwf-CP-7j3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j54-vl-8uX"/>
                     </view>
@@ -56,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dvF-1D-ksT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-445" y="-135"/>
+            <point key="canvasLocation" x="-445.31249999999994" y="-135.15625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="70q-s7-hI7">
@@ -85,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase2" translatesAutoresizingMaskIntoConstraints="NO" id="cQG-Py-8Ac">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="526"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mR-1p-Uz7">
                                 <rect key="frame" x="20" y="693" width="984" height="55"/>
@@ -105,16 +114,25 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẹ hỏi tại sao con buồn? Bi trẻ lời: không có ai chơi với con." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FR3-LD-I2g">
+                                <rect key="frame" x="20" y="630" width="984" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BGJ-xL-hNu" firstAttribute="trailing" secondItem="cQG-Py-8Ac" secondAttribute="trailing" constant="20" id="Me4-LK-p8q"/>
                             <constraint firstItem="BGJ-xL-hNu" firstAttribute="bottom" secondItem="5mR-1p-Uz7" secondAttribute="bottom" constant="20" id="O5Q-MC-avZ"/>
-                            <constraint firstItem="5mR-1p-Uz7" firstAttribute="top" secondItem="cQG-Py-8Ac" secondAttribute="bottom" constant="20" id="Oee-gV-rGK"/>
-                            <constraint firstItem="BGJ-xL-hNu" firstAttribute="trailing" secondItem="cQG-Py-8Ac" secondAttribute="trailing" constant="20" id="Sgl-xe-I4l"/>
-                            <constraint firstItem="cQG-Py-8Ac" firstAttribute="top" secondItem="BGJ-xL-hNu" secondAttribute="top" constant="20" id="Uya-ea-Djz"/>
+                            <constraint firstItem="FR3-LD-I2g" firstAttribute="leading" secondItem="b3x-cP-9dv" secondAttribute="leading" constant="20" id="QmO-Ct-yku"/>
+                            <constraint firstItem="cQG-Py-8Ac" firstAttribute="top" secondItem="BGJ-xL-hNu" secondAttribute="top" constant="20" id="agE-bx-z1z"/>
+                            <constraint firstItem="BGJ-xL-hNu" firstAttribute="trailing" secondItem="FR3-LD-I2g" secondAttribute="trailing" constant="20" id="jCK-pl-KO7"/>
                             <constraint firstItem="BGJ-xL-hNu" firstAttribute="trailing" secondItem="5mR-1p-Uz7" secondAttribute="trailing" constant="20" id="jD4-5d-YTz"/>
+                            <constraint firstItem="FR3-LD-I2g" firstAttribute="top" secondItem="cQG-Py-8Ac" secondAttribute="bottom" constant="20" id="rOb-9l-vmg"/>
+                            <constraint firstItem="5mR-1p-Uz7" firstAttribute="top" secondItem="FR3-LD-I2g" secondAttribute="bottom" constant="20" id="rYV-Ez-E3E"/>
                             <constraint firstItem="5mR-1p-Uz7" firstAttribute="leading" secondItem="BGJ-xL-hNu" secondAttribute="leading" constant="20" id="uQe-EX-qUz"/>
-                            <constraint firstItem="cQG-Py-8Ac" firstAttribute="leading" secondItem="BGJ-xL-hNu" secondAttribute="leading" constant="20" id="xeS-30-Jop"/>
+                            <constraint firstItem="cQG-Py-8Ac" firstAttribute="leading" secondItem="BGJ-xL-hNu" secondAttribute="leading" constant="20" id="ulV-Jt-wso"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BGJ-xL-hNu"/>
                     </view>
@@ -122,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mO-w1-m5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="-135"/>
+            <point key="canvasLocation" x="183.984375" y="-135.15625"/>
         </scene>
         <!--KỸ NĂNG CHIA SẺ-->
         <scene sceneID="xsa-GS-DBH">
@@ -133,7 +151,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase3" translatesAutoresizingMaskIntoConstraints="NO" id="tBB-TC-jvG">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="483"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvD-nR-3d9">
                                 <rect key="frame" x="20" y="693" width="984" height="55"/>
@@ -153,16 +171,25 @@
                                     </segue>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẹ ơi! Con sẽ rất vui khi có bạn đến chơi chung đồ chơi với con." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yh-lj-Wzx">
+                                <rect key="frame" x="20" y="587" width="984" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WvD-nR-3d9" firstAttribute="leading" secondItem="bC0-vI-sKL" secondAttribute="leading" constant="20" id="3GH-9a-n1Q"/>
+                            <constraint firstItem="bC0-vI-sKL" firstAttribute="trailing" secondItem="0Yh-lj-Wzx" secondAttribute="trailing" constant="20" id="3KT-cr-Pr8"/>
                             <constraint firstItem="bC0-vI-sKL" firstAttribute="bottom" secondItem="WvD-nR-3d9" secondAttribute="bottom" constant="20" id="4A4-fF-IZO"/>
+                            <constraint firstItem="WvD-nR-3d9" firstAttribute="top" secondItem="0Yh-lj-Wzx" secondAttribute="bottom" constant="20" id="75R-nI-KAW"/>
+                            <constraint firstItem="bC0-vI-sKL" firstAttribute="trailing" secondItem="tBB-TC-jvG" secondAttribute="trailing" constant="20" id="FA6-TJ-hZj"/>
                             <constraint firstItem="bC0-vI-sKL" firstAttribute="trailing" secondItem="WvD-nR-3d9" secondAttribute="trailing" constant="20" id="Ujc-iQ-Rrj"/>
-                            <constraint firstItem="tBB-TC-jvG" firstAttribute="top" secondItem="bC0-vI-sKL" secondAttribute="top" constant="20" id="fNI-Ny-XQj"/>
-                            <constraint firstItem="WvD-nR-3d9" firstAttribute="top" secondItem="tBB-TC-jvG" secondAttribute="bottom" constant="20" id="lGo-0a-i8h"/>
-                            <constraint firstItem="tBB-TC-jvG" firstAttribute="leading" secondItem="bC0-vI-sKL" secondAttribute="leading" constant="20" id="ox1-rr-aA2"/>
-                            <constraint firstItem="bC0-vI-sKL" firstAttribute="trailing" secondItem="tBB-TC-jvG" secondAttribute="trailing" constant="20" id="zyv-lh-hNu"/>
+                            <constraint firstItem="0Yh-lj-Wzx" firstAttribute="leading" secondItem="bC0-vI-sKL" secondAttribute="leading" constant="20" id="ZWv-14-tRl"/>
+                            <constraint firstItem="tBB-TC-jvG" firstAttribute="leading" secondItem="bC0-vI-sKL" secondAttribute="leading" constant="20" id="khb-sV-lRX"/>
+                            <constraint firstItem="tBB-TC-jvG" firstAttribute="top" secondItem="bC0-vI-sKL" secondAttribute="top" constant="20" id="xtf-0i-6oY"/>
+                            <constraint firstItem="0Yh-lj-Wzx" firstAttribute="top" secondItem="tBB-TC-jvG" secondAttribute="bottom" constant="20" id="zFO-Ry-nx6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bC0-vI-sKL"/>
                     </view>
@@ -170,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCz-nM-sqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="-135"/>
+            <point key="canvasLocation" x="827.9296875" y="-135.15625"/>
         </scene>
         <!--KỸ NĂNG CHIA SẺ-->
         <scene sceneID="JtV-qG-plY">
@@ -181,7 +208,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase4" translatesAutoresizingMaskIntoConstraints="NO" id="Gih-Yy-QgJ">
-                                <rect key="frame" x="20" y="84" width="984" height="589"/>
+                                <rect key="frame" x="20" y="84" width="984" height="526"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVX-WK-4CX">
                                 <rect key="frame" x="20" y="693" width="984" height="55"/>
@@ -199,16 +226,25 @@
                                     <action selector="finishBtnDidTap:" destination="Mg5-Qs-kHT" eventType="touchUpInside" id="0EJ-CD-OpR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẹ sẽ gọi bạn qua chơi với con. Bi thích thú nói cảm ơn mẹ." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9a-fk-CVV">
+                                <rect key="frame" x="20" y="630" width="984" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="riS-KM-hRd" firstAttribute="trailing" secondItem="DVX-WK-4CX" secondAttribute="trailing" constant="20" id="3Um-UE-gn0"/>
                             <constraint firstItem="DVX-WK-4CX" firstAttribute="leading" secondItem="riS-KM-hRd" secondAttribute="leading" constant="20" id="CY8-Kf-RMi"/>
                             <constraint firstItem="riS-KM-hRd" firstAttribute="bottom" secondItem="DVX-WK-4CX" secondAttribute="bottom" constant="20" id="HFL-de-x37"/>
-                            <constraint firstItem="Gih-Yy-QgJ" firstAttribute="leading" secondItem="riS-KM-hRd" secondAttribute="leading" constant="20" id="Ud4-tE-s39"/>
-                            <constraint firstItem="DVX-WK-4CX" firstAttribute="top" secondItem="Gih-Yy-QgJ" secondAttribute="bottom" constant="20" id="VRP-Jj-BSi"/>
-                            <constraint firstItem="Gih-Yy-QgJ" firstAttribute="top" secondItem="riS-KM-hRd" secondAttribute="top" constant="20" id="gpQ-LL-8Fm"/>
-                            <constraint firstItem="riS-KM-hRd" firstAttribute="trailing" secondItem="Gih-Yy-QgJ" secondAttribute="trailing" constant="20" id="xnE-pi-XHL"/>
+                            <constraint firstItem="Gih-Yy-QgJ" firstAttribute="leading" secondItem="riS-KM-hRd" secondAttribute="leading" constant="20" id="KSv-iB-9vd"/>
+                            <constraint firstItem="riS-KM-hRd" firstAttribute="trailing" secondItem="Gih-Yy-QgJ" secondAttribute="trailing" constant="20" id="akh-ge-clr"/>
+                            <constraint firstItem="DVX-WK-4CX" firstAttribute="top" secondItem="S9a-fk-CVV" secondAttribute="bottom" constant="20" id="cjd-LK-0lU"/>
+                            <constraint firstItem="Gih-Yy-QgJ" firstAttribute="top" secondItem="riS-KM-hRd" secondAttribute="top" constant="20" id="rqc-u4-7d8"/>
+                            <constraint firstItem="riS-KM-hRd" firstAttribute="trailing" secondItem="S9a-fk-CVV" secondAttribute="trailing" constant="20" id="utY-UH-LsE"/>
+                            <constraint firstItem="S9a-fk-CVV" firstAttribute="top" secondItem="Gih-Yy-QgJ" secondAttribute="bottom" constant="20" id="vOk-Jp-yQj"/>
+                            <constraint firstItem="S9a-fk-CVV" firstAttribute="leading" secondItem="riS-KM-hRd" secondAttribute="leading" constant="20" id="xQo-Vo-u6h"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="riS-KM-hRd"/>
                     </view>
@@ -216,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yky-BG-QdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1457" y="-135"/>
+            <point key="canvasLocation" x="1456.640625" y="-135.15625"/>
         </scene>
     </scenes>
     <resources>
