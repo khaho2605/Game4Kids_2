@@ -109,12 +109,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="32H-eQ-pQA" kind="show" id="UGT-hR-owo">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="QEp-wR-cGM" kind="show" id="XCR-dU-0cI"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẹ hỏi tại sao con buồn? Bi trẻ lời: không có ai chơi với con." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FR3-LD-I2g">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mẹ hỏi tại sao con buồn?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FR3-LD-I2g">
                                 <rect key="frame" x="20" y="630" width="984" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -140,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mO-w1-m5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183.984375" y="-135.15625"/>
+            <point key="canvasLocation" x="244" y="-135"/>
         </scene>
         <!--KỸ NĂNG CHIA SẺ-->
         <scene sceneID="xsa-GS-DBH">
@@ -197,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCz-nM-sqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827.9296875" y="-135.15625"/>
+            <point key="canvasLocation" x="1595" y="-105"/>
         </scene>
         <!--KỸ NĂNG CHIA SẺ-->
         <scene sceneID="JtV-qG-plY">
@@ -252,7 +250,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yky-BG-QdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1456.640625" y="-135.15625"/>
+            <point key="canvasLocation" x="2223" y="-105"/>
+        </scene>
+        <!--KỸ NĂNG CHIA SẺ-->
+        <scene sceneID="cLn-gf-uR9">
+            <objects>
+                <viewController id="QEp-wR-cGM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="43A-qR-Bcc">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="chiase2" translatesAutoresizingMaskIntoConstraints="NO" id="0O5-V2-Xrn">
+                                <rect key="frame" x="20" y="84" width="984" height="526"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ6-YZ-Dh5">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="32H-eQ-pQA" kind="show" id="8BS-wF-cWQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bi trẻ lời: không có ai chơi với con." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-dA-riG">
+                                <rect key="frame" x="20" y="630" width="984" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0O5-V2-Xrn" firstAttribute="leading" secondItem="e3a-ff-oGA" secondAttribute="leading" constant="20" id="Dt6-IT-4EC"/>
+                            <constraint firstItem="e3a-ff-oGA" firstAttribute="trailing" secondItem="4rg-dA-riG" secondAttribute="trailing" constant="20" id="KCB-bv-FmL"/>
+                            <constraint firstItem="e3a-ff-oGA" firstAttribute="trailing" secondItem="0O5-V2-Xrn" secondAttribute="trailing" constant="20" id="MBf-ob-MbK"/>
+                            <constraint firstItem="e3a-ff-oGA" firstAttribute="trailing" secondItem="LZ6-YZ-Dh5" secondAttribute="trailing" constant="20" id="QPf-yV-2hA"/>
+                            <constraint firstItem="0O5-V2-Xrn" firstAttribute="top" secondItem="e3a-ff-oGA" secondAttribute="top" constant="20" id="QUt-al-tn8"/>
+                            <constraint firstItem="e3a-ff-oGA" firstAttribute="bottom" secondItem="LZ6-YZ-Dh5" secondAttribute="bottom" constant="20" id="Si5-1i-7T9"/>
+                            <constraint firstItem="LZ6-YZ-Dh5" firstAttribute="top" secondItem="4rg-dA-riG" secondAttribute="bottom" constant="20" id="ZTv-BB-ReB"/>
+                            <constraint firstItem="4rg-dA-riG" firstAttribute="leading" secondItem="43A-qR-Bcc" secondAttribute="leading" constant="20" id="iMV-HN-xhm"/>
+                            <constraint firstItem="4rg-dA-riG" firstAttribute="top" secondItem="0O5-V2-Xrn" secondAttribute="bottom" constant="20" id="t8N-4z-m6b"/>
+                            <constraint firstItem="LZ6-YZ-Dh5" firstAttribute="leading" secondItem="e3a-ff-oGA" secondAttribute="leading" constant="20" id="why-zt-UFV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e3a-ff-oGA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG CHIA SẺ" id="rbO-fp-U4Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UuZ-0z-u1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912" y="-135"/>
         </scene>
     </scenes>
     <resources>

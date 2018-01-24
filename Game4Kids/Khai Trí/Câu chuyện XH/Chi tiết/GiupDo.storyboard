@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="giupdo2" translatesAutoresizingMaskIntoConstraints="NO" id="vhB-4q-bJI">
-                                <rect key="frame" x="20" y="84" width="984" height="478"/>
+                                <rect key="frame" x="20" y="84" width="984" height="521"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79U-6A-GE5">
                                 <rect key="frame" x="20" y="688" width="984" height="60"/>
@@ -117,8 +117,8 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mai rất thích thú và chạy nhanh vào phòng thay đồ. Mai liền chạy ra gọi &quot;Mẹ ơi giúp con&quot;." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4j-cY-8qV">
-                                <rect key="frame" x="20" y="582" width="984" height="86"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mai rất thích thú và chạy nhanh vào phòng thay đồ. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p4j-cY-8qV">
+                                <rect key="frame" x="20" y="625" width="984" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -172,12 +172,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Ach-QX-Wjd" kind="show" id="ws3-bw-kGR">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="hpr-al-8tJ" kind="show" id="IZu-We-t8d"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mẹ nhanh chóng mặc áo cho Mai." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHY-P7-pg5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mai liền chạy ra gọi &quot;Mẹ ơi giúp con&quot;." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHY-P7-pg5">
                                 <rect key="frame" x="20" y="630" width="984" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -258,7 +256,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GOY-Eh-eif" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1456.640625" y="-135.15625"/>
+            <point key="canvasLocation" x="2188" y="-135"/>
+        </scene>
+        <!--KỸ NĂNG GIÚP ĐỠ-->
+        <scene sceneID="Dhk-ht-x9P">
+            <objects>
+                <viewController id="hpr-al-8tJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bLc-ve-vei">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="giupdo3" translatesAutoresizingMaskIntoConstraints="NO" id="QIx-xC-HdZ">
+                                <rect key="frame" x="20" y="84" width="984" height="526"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbH-Lp-Rux">
+                                <rect key="frame" x="20" y="693" width="984" height="55"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ach-QX-Wjd" kind="show" id="tFf-Jq-d8L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Mẹ nhanh chóng mặc áo cho Mai." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsd-eM-yqe">
+                                <rect key="frame" x="20" y="630" width="984" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WbH-Lp-Rux" firstAttribute="leading" secondItem="AmS-EH-pT1" secondAttribute="leading" constant="20" id="Ek2-dj-n3h"/>
+                            <constraint firstItem="lsd-eM-yqe" firstAttribute="leading" secondItem="AmS-EH-pT1" secondAttribute="leading" constant="20" id="EkK-iZ-Via"/>
+                            <constraint firstItem="lsd-eM-yqe" firstAttribute="top" secondItem="QIx-xC-HdZ" secondAttribute="bottom" constant="20" id="ReY-6a-dBU"/>
+                            <constraint firstItem="AmS-EH-pT1" firstAttribute="trailing" secondItem="WbH-Lp-Rux" secondAttribute="trailing" constant="20" id="bUN-JU-bl8"/>
+                            <constraint firstItem="AmS-EH-pT1" firstAttribute="bottom" secondItem="WbH-Lp-Rux" secondAttribute="bottom" constant="20" id="fsc-Dm-ra9"/>
+                            <constraint firstItem="QIx-xC-HdZ" firstAttribute="top" secondItem="AmS-EH-pT1" secondAttribute="top" constant="20" id="mfk-V6-cgu"/>
+                            <constraint firstItem="AmS-EH-pT1" firstAttribute="trailing" secondItem="lsd-eM-yqe" secondAttribute="trailing" constant="20" id="nJ6-dI-cI7"/>
+                            <constraint firstItem="QIx-xC-HdZ" firstAttribute="leading" secondItem="AmS-EH-pT1" secondAttribute="leading" constant="20" id="xqF-64-5kS"/>
+                            <constraint firstItem="WbH-Lp-Rux" firstAttribute="top" secondItem="lsd-eM-yqe" secondAttribute="bottom" constant="20" id="ySC-wv-YK4"/>
+                            <constraint firstItem="AmS-EH-pT1" firstAttribute="trailing" secondItem="QIx-xC-HdZ" secondAttribute="trailing" constant="20" id="zPu-QV-mUd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AmS-EH-pT1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="KỸ NĂNG GIÚP ĐỠ" id="4KH-v9-gjo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KD3-Wy-eNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504" y="-135"/>
         </scene>
     </scenes>
     <resources>

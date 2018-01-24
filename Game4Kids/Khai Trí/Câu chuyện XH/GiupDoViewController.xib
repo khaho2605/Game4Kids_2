@@ -25,16 +25,19 @@
                     <rect key="frame" x="16" y="230.5" width="992" height="307"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giupdo1" translatesAutoresizingMaskIntoConstraints="NO" id="HdY-nC-XRW">
-                            <rect key="frame" x="0.0" y="0.0" width="239" height="307"/>
+                            <rect key="frame" x="0.0" y="0.0" width="189" height="307"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giupdo2" translatesAutoresizingMaskIntoConstraints="NO" id="lTt-RE-icj">
-                            <rect key="frame" x="251" y="0.0" width="239" height="307"/>
+                            <rect key="frame" x="201" y="0.0" width="188.5" height="307"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giupdo3" translatesAutoresizingMaskIntoConstraints="NO" id="lAV-1o-7Jc">
-                            <rect key="frame" x="502" y="0.0" width="239" height="307"/>
+                            <rect key="frame" x="401.5" y="0.0" width="189" height="307"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giupdo3" translatesAutoresizingMaskIntoConstraints="NO" id="wWu-hC-Ccd">
+                            <rect key="frame" x="602.5" y="0.0" width="188.5" height="307"/>
                         </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giupdo4" translatesAutoresizingMaskIntoConstraints="NO" id="OnJ-lE-1Bc">
-                            <rect key="frame" x="753" y="0.0" width="239" height="307"/>
+                            <rect key="frame" x="803" y="0.0" width="189" height="307"/>
                         </imageView>
                     </subviews>
                 </stackView>
@@ -42,25 +45,31 @@
                     <rect key="frame" x="16" y="545.5" width="992" height="41"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjh-hz-izL">
-                            <rect key="frame" x="0.0" y="0.0" width="248" height="41"/>
+                            <rect key="frame" x="0.0" y="0.0" width="198.5" height="41"/>
                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLc-va-mri">
-                            <rect key="frame" x="248" y="0.0" width="248" height="41"/>
+                            <rect key="frame" x="198.5" y="0.0" width="198.5" height="41"/>
                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gj1-YN-Tcn">
-                            <rect key="frame" x="496" y="0.0" width="248" height="41"/>
+                            <rect key="frame" x="397" y="0.0" width="198" height="41"/>
                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJz-qf-7We">
-                            <rect key="frame" x="744" y="0.0" width="248" height="41"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiF-5P-BGR">
+                            <rect key="frame" x="595" y="0.0" width="198.5" height="41"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJz-qf-7We">
+                            <rect key="frame" x="793.5" y="0.0" width="198.5" height="41"/>
                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
