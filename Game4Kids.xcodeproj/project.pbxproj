@@ -48,6 +48,8 @@
 		EA3EE574200CA7F900531A1B /* GiupDo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3EE573200CA7F900531A1B /* GiupDo.storyboard */; };
 		EA3EE576200CA84200531A1B /* GiupDoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EE575200CA84200531A1B /* GiupDoDetailViewController.swift */; };
 		EA3EE578200CA85600531A1B /* GiupDoFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3EE577200CA85600531A1B /* GiupDoFinishViewController.swift */; };
+		EA3F211F2018C32D007E162C /* ChamSocNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3F211D2018C32D007E162C /* ChamSocNewViewController.swift */; };
+		EA3F21202018C32D007E162C /* ChamSocNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3F211E2018C32D007E162C /* ChamSocNewViewController.xib */; };
 		EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */; };
 		EA600A221FE4F9FB00C2B123 /* HandwashingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */; };
 		EA6C6555200E3752008919C4 /* CoiAo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6C6554200E3752008919C4 /* CoiAo.storyboard */; };
@@ -175,6 +177,8 @@
 		EA3EE573200CA7F900531A1B /* GiupDo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiupDo.storyboard; sourceTree = "<group>"; };
 		EA3EE575200CA84200531A1B /* GiupDoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiupDoDetailViewController.swift; sourceTree = "<group>"; };
 		EA3EE577200CA85600531A1B /* GiupDoFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiupDoFinishViewController.swift; sourceTree = "<group>"; };
+		EA3F211D2018C32D007E162C /* ChamSocNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChamSocNewViewController.swift; sourceTree = "<group>"; };
+		EA3F211E2018C32D007E162C /* ChamSocNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChamSocNewViewController.xib; sourceTree = "<group>"; };
 		EA600A1F1FE4F9FB00C2B123 /* HandwashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandwashingViewController.swift; sourceTree = "<group>"; };
 		EA600A201FE4F9FB00C2B123 /* HandwashingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HandwashingViewController.xib; sourceTree = "<group>"; };
 		EA6C6554200E3752008919C4 /* CoiAo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoiAo.storyboard; sourceTree = "<group>"; };
@@ -336,6 +340,8 @@
 				EA0C6070200201CF008598BF /* ChamSocViewController.xib */,
 				EABE1E462001B7B000C23A1B /* Khởi xướng, chú ý */,
 				EA0A0679200117E000C51C18 /* Câu chuyện XH */,
+				EA3F211D2018C32D007E162C /* ChamSocNewViewController.swift */,
+				EA3F211E2018C32D007E162C /* ChamSocNewViewController.xib */,
 			);
 			name = "Khai Trí";
 			path = "Khai Trí";
@@ -671,6 +677,7 @@
 				EABE1E632001CD7000C23A1B /* meo.MOV in Resources */,
 				EABE1E522001B97400C23A1B /* PhuongTienViewController.xib in Resources */,
 				EAA3F27C201594F1006E4987 /* BanTeViewController.xib in Resources */,
+				EA3F21202018C32D007E162C /* ChamSocNewViewController.xib in Resources */,
 				EABE1E5D2001C91100C23A1B /* bo.MOV in Resources */,
 				EA7F5CE71FA587DC00A87ACC /* LaunchScreen.storyboard in Resources */,
 				EA6C655F200E3F81008919C4 /* CoiQuan.storyboard in Resources */,
@@ -766,6 +773,7 @@
 				EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */,
 				EAB2D7C01FA5F58A001DD97E /* GameViewController.swift in Sources */,
 				EA6C6565200E416C008919C4 /* MacQuanViewController.swift in Sources */,
+				EA3F211F2018C32D007E162C /* ChamSocNewViewController.swift in Sources */,
 				EAFFA334200ED29000BDFEEB /* MacQuanFinishViewController.swift in Sources */,
 				EA0A0677200113BF00C51C18 /* ChiaSeViewController.swift in Sources */,
 				EA600A211FE4F9FB00C2B123 /* HandwashingViewController.swift in Sources */,

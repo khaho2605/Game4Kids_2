@@ -1026,7 +1026,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibk-yA-Gd5">
-                                                <rect key="frame" x="-427.5" y="0.0" width="0.0" height="45"/>
+                                                <rect key="frame" x="169" y="0.0" width="0.0" height="45"/>
                                                 <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                                 <state key="normal" title="ĐỒNG CẢM 2">
@@ -1131,7 +1131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YWC-Yf-zOF">
-                                <rect key="frame" x="200" y="270" width="624" height="228"/>
+                                <rect key="frame" x="200" y="239.5" width="624" height="289"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2l2-7Z-5to">
                                         <rect key="frame" x="0.0" y="0.0" width="624" height="45"/>
@@ -1198,8 +1198,8 @@
                                             <segue destination="qQd-zP-lzS" kind="push" id="hzq-dw-FMf"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCt-S6-icR">
-                                        <rect key="frame" x="0.0" y="228" width="624" height="0.0"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCt-S6-icR">
+                                        <rect key="frame" x="0.0" y="244" width="624" height="45"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                         <state key="normal" title="KỸ NĂNG CHĂM SÓC BẢN THÂN">
