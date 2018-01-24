@@ -10,14 +10,14 @@ import UIKit
 
 class CamXuc1ViewController: BaseViewController {
 
-    @IBOutlet weak var happyView: UIView!
-    @IBOutlet weak var sadView: UIView!
-    @IBOutlet weak var angryView: UIView!
-    @IBOutlet weak var afraidView: UIView!
-    @IBOutlet weak var happyLb: UILabel!
-    @IBOutlet weak var sadLb: UILabel!
-    @IBOutlet weak var angryLb: UILabel!
-    @IBOutlet weak var afraidLb: UILabel!
+    @IBOutlet weak var happyView: UIImageView!
+    @IBOutlet weak var sadView: UIImageView!
+    @IBOutlet weak var angryView: UIImageView!
+    @IBOutlet weak var afraidView: UIImageView!
+//    @IBOutlet weak var happyLb: UILabel!
+//    @IBOutlet weak var sadLb: UILabel!
+//    @IBOutlet weak var angryLb: UILabel!
+//    @IBOutlet weak var afraidLb: UILabel!
     @IBOutlet weak var playerImg1: UIImageView!
     @IBOutlet weak var playerImg2: UIImageView!
     @IBOutlet weak var playerImg3: UIImageView!
@@ -172,8 +172,8 @@ extension CamXuc1ViewController {
     func checkFinishGame() {
         if isFinish == 4 {
             print("Game is finish---------")
-            playSound(name: "VoTay", Extension: "mp3")
             isFinish = 0
+            playSound(name: "VoTay", Extension: "mp3")
         }
     }
 }

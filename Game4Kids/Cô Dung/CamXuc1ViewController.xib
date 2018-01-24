@@ -12,19 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CamXuc1ViewController" customModule="Game4Kids" customModuleProvider="target">
             <connections>
-                <outlet property="afraidLb" destination="11M-Y5-W7U" id="QKW-M1-yoj"/>
-                <outlet property="afraidView" destination="VPU-uL-ONR" id="al0-ZM-tHV"/>
-                <outlet property="angryLb" destination="2P9-8y-yHl" id="q89-oi-urb"/>
-                <outlet property="angryView" destination="gRw-wk-moW" id="kme-Ra-th8"/>
-                <outlet property="happyLb" destination="1Mk-l6-1yB" id="Qxt-qb-bds"/>
-                <outlet property="happyView" destination="Psf-mf-rcm" id="1ls-Qb-7zK"/>
+                <outlet property="afraidView" destination="gZh-La-CnS" id="C4y-fj-f3R"/>
+                <outlet property="angryView" destination="qUS-gM-Ugq" id="L83-sI-2la"/>
+                <outlet property="happyView" destination="zmv-mS-kC5" id="kxX-vk-4KL"/>
                 <outlet property="playerImg1" destination="aov-hK-uKG" id="lkk-z1-Ija"/>
                 <outlet property="playerImg2" destination="Q0W-5K-wRo" id="CDL-gK-hAr"/>
                 <outlet property="playerImg3" destination="9SS-IL-rMW" id="wDH-Rk-M2b"/>
                 <outlet property="playerImg4" destination="Dfz-Gh-wd5" id="71F-XB-6RM"/>
                 <outlet property="replayBtn" destination="lnw-Va-A9p" id="kLS-Gw-Phn"/>
-                <outlet property="sadLb" destination="fPK-km-Qjo" id="IcD-19-lFi"/>
-                <outlet property="sadView" destination="3Ea-Zx-gAk" id="s7s-4v-LQG"/>
+                <outlet property="sadView" destination="ToR-us-SNp" id="s1n-OY-r9w"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,95 +29,35 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRw-wk-moW">
-                    <rect key="frame" x="89" y="498" width="170" height="170"/>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vui_D" translatesAutoresizingMaskIntoConstraints="NO" id="zmv-mS-kC5">
+                    <rect key="frame" x="94" y="106" width="160" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GIẬN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P9-8y-yHl">
-                            <rect key="frame" x="17" y="60" width="136" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="8"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPU-uL-ONR">
-                    <rect key="frame" x="765" y="497" width="170" height="170"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giận_D" translatesAutoresizingMaskIntoConstraints="NO" id="qUS-gM-Ugq">
+                    <rect key="frame" x="94" y="497" width="160" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SỢ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11M-Y5-W7U">
-                            <rect key="frame" x="31" y="60" width="109" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="8"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Psf-mf-rcm">
-                    <rect key="frame" x="89" y="102" width="170" height="170"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buồn_D" translatesAutoresizingMaskIntoConstraints="NO" id="ToR-us-SNp">
+                    <rect key="frame" x="791" y="106" width="160" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VUI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-l6-1yB">
-                            <rect key="frame" x="31" y="60" width="109" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="8"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ea-Zx-gAk">
-                    <rect key="frame" x="765" y="101" width="170" height="170"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sợ_D" translatesAutoresizingMaskIntoConstraints="NO" id="gZh-La-CnS">
+                    <rect key="frame" x="791" y="497" width="160" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BUỒN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPK-km-Qjo">
-                            <rect key="frame" x="6" y="60" width="158" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="8"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vui_D" translatesAutoresizingMaskIntoConstraints="NO" id="aov-hK-uKG">
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vui_N" translatesAutoresizingMaskIntoConstraints="NO" id="aov-hK-uKG">
                     <rect key="frame" x="325" y="177" width="160" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sợ_D" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-Gh-wd5">
+                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lo sợ_N" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-Gh-wd5">
                     <rect key="frame" x="547" y="431" width="160" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buồn_D" translatesAutoresizingMaskIntoConstraints="NO" id="Q0W-5K-wRo">
+                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buồn_N" translatesAutoresizingMaskIntoConstraints="NO" id="Q0W-5K-wRo">
                     <rect key="frame" x="547" y="177" width="160" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giận_D" translatesAutoresizingMaskIntoConstraints="NO" id="9SS-IL-rMW">
+                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="giận_N" translatesAutoresizingMaskIntoConstraints="NO" id="9SS-IL-rMW">
                     <rect key="frame" x="325" y="431" width="160" height="160"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -149,8 +85,12 @@
     </objects>
     <resources>
         <image name="buồn_D" width="851" height="1089"/>
+        <image name="buồn_N" width="592" height="542"/>
         <image name="giận_D" width="843" height="1090"/>
+        <image name="giận_N" width="572" height="536"/>
+        <image name="lo sợ_N" width="664" height="600"/>
         <image name="sợ_D" width="379" height="445"/>
         <image name="vui_D" width="855" height="1090"/>
+        <image name="vui_N" width="620" height="506"/>
     </resources>
 </document>

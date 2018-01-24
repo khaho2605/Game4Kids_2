@@ -82,8 +82,8 @@ class BubbleViewController: BaseViewController {
     @IBOutlet private weak var lblTimer:UILabel?
     @IBOutlet weak var lblScore: UILabel!
     
-    let imageSize = CGSize(width: 80, height: 80)
-    let monsterImageSize = CGSize(width: 100, height: 100)
+    let imageSize = CGSize(width: 200, height: 200)
+    let monsterImageSize = CGSize(width: 200, height: 200)
 
     var arrImage:[UIImageView] = [UIImageView]()
 //    weak var delegate:ViewControllerDelegate?

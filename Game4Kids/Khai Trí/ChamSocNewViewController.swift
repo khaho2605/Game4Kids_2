@@ -33,6 +33,11 @@ class ChamSocNewViewController: BaseViewController {
         guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
         setPosition(arrData: data)
         
+        targetImg1.backgroundColor = .clear
+        targetImg2.backgroundColor = .clear
+        targetImg3.backgroundColor = .clear
+        targetImg4.backgroundColor = .clear
+        
         playerImg1.isUserInteractionEnabled = true
         playerImg2.isUserInteractionEnabled = true
         playerImg3.isUserInteractionEnabled = true
@@ -50,10 +55,10 @@ class ChamSocNewViewController: BaseViewController {
         playerImg2.isUserInteractionEnabled = true
         playerImg3.isUserInteractionEnabled = true
         playerImg4.isUserInteractionEnabled = true
-        targetImg1.backgroundColor = .blue
-        targetImg2.backgroundColor = .red
-        targetImg3.backgroundColor = .yellow
-        targetImg4.backgroundColor = .brown
+        targetImg1.backgroundColor = .clear
+        targetImg2.backgroundColor = .clear
+        targetImg3.backgroundColor = .clear
+        targetImg4.backgroundColor = .clear
 
     }
 }
