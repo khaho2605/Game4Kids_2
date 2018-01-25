@@ -38,7 +38,9 @@ class ViewController: BaseViewController {
         self.navigationController?.pushViewController(GoWCViewController(), animated: true)
     }
     @IBAction func handwashingBtnDidTap(_ sender: Any) {
-        self.navigationController?.pushViewController(HandwashingViewController(), animated: true)
+        let vc = HandwashingViewController()
+        vc.title = "RỬA TAY"
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func changeClothesBtnDidTap(_ sender: Any) {

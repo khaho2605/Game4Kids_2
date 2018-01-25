@@ -14,9 +14,9 @@ class CustomAVPlayerViewController: AVPlayerViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.dismiss(animated: true, completion: nil)
         self.player?.pause()
-        if !MainViewController.sharedInstance.isMute {
+//        if MainViewController.sharedInstance.isMute {
             NotificationCenter.default.post(name: Notification.Name(rawValue: "play"), object: nil)
-        }
+//        }
     }
 }
 

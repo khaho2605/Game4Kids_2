@@ -137,7 +137,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cjF-UW-QOB">
-                                <rect key="frame" x="220" y="204" width="584" height="360"/>
+                                <rect key="frame" x="220" y="165" width="584" height="438"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeN-Nt-0cl">
                                         <rect key="frame" x="0.0" y="0.0" width="584" height="48"/>
@@ -156,8 +156,8 @@
                                             <action selector="goWcDidTap:" destination="ieS-he-dGW" eventType="touchUpInside" id="oC9-NV-exj"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-V3-8fO">
-                                        <rect key="frame" x="0.0" y="63" width="584" height="0.0"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-V3-8fO">
+                                        <rect key="frame" x="0.0" y="78" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Rửa Tay">
@@ -174,7 +174,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHY-Jh-ise">
-                                        <rect key="frame" x="0.0" y="78" width="584" height="48"/>
+                                        <rect key="frame" x="0.0" y="156" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Cởi Áo">
@@ -191,7 +191,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOX-B9-dD5">
-                                        <rect key="frame" x="0.0" y="156" width="584" height="48"/>
+                                        <rect key="frame" x="0.0" y="234" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Mặc Áo">
@@ -208,7 +208,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABp-XN-VQ7">
-                                        <rect key="frame" x="0.0" y="234" width="584" height="48"/>
+                                        <rect key="frame" x="0.0" y="312" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Cởi Quần">
@@ -225,7 +225,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C47-FH-Z5x">
-                                        <rect key="frame" x="0.0" y="312" width="584" height="48"/>
+                                        <rect key="frame" x="0.0" y="390" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Mặc Quần">
@@ -271,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ASP-3t-tL4">
-                                <rect key="frame" x="220" y="204" width="584" height="360"/>
+                                <rect key="frame" x="220" y="165" width="584" height="438"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r36-i8-kW1">
                                         <rect key="frame" x="0.0" y="0.0" width="584" height="48"/>
@@ -290,8 +290,8 @@
                                             <action selector="diVeSinhBtnDidTap:" destination="ScH-r3-goz" eventType="touchUpInside" id="IPf-w4-lnU"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-OJ-OFL">
-                                        <rect key="frame" x="0.0" y="63" width="584" height="0.0"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-OJ-OFL">
+                                        <rect key="frame" x="0.0" y="78" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Rửa Tay">
@@ -308,7 +308,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYr-wt-lFY">
-                                        <rect key="frame" x="0.0" y="78" width="584" height="48"/>
+                                        <rect key="frame" x="0.0" y="156" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Cởi Áo">
@@ -325,7 +325,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsz-It-aEU">
-                                        <rect key="frame" x="0.0" y="156" width="584" height="48"/>
+                                        <rect key="frame" x="0.0" y="234" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Mặc Áo">
@@ -342,7 +342,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjt-f3-Sov">
-                                        <rect key="frame" x="0.0" y="234" width="584" height="48"/>
+                                        <rect key="frame" x="0.0" y="312" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Cởi Quần">
@@ -359,7 +359,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3T-qY-Z0z">
-                                        <rect key="frame" x="0.0" y="312" width="584" height="48"/>
+                                        <rect key="frame" x="0.0" y="390" width="584" height="48"/>
                                         <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
                                         <state key="normal" title="Mặc Quần">
@@ -1527,11 +1527,11 @@
         <image name="4" width="496" height="494"/>
         <image name="5" width="502" height="500"/>
         <image name="6" width="500" height="500"/>
-        <image name="handwashing_1" width="314" height="215"/>
-        <image name="handwashing_2" width="308" height="201"/>
-        <image name="handwashing_3" width="322" height="217"/>
-        <image name="handwashing_4" width="308" height="219"/>
-        <image name="handwashing_5" width="472" height="338"/>
+        <image name="handwashing_1" width="952" height="731"/>
+        <image name="handwashing_2" width="939" height="709"/>
+        <image name="handwashing_3" width="940" height="654"/>
+        <image name="handwashing_4" width="925" height="694"/>
+        <image name="handwashing_5" width="950" height="692"/>
         <image name="khung_hinh" width="291" height="321"/>
         <image name="notMute" width="100" height="100"/>
         <image name="thank" width="179" height="188"/>
