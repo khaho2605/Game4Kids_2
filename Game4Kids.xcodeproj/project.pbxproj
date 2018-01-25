@@ -40,6 +40,9 @@
 		EA25C30220050B1500BF60F6 /* CoGiaoKhenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA25C30020050B1500BF60F6 /* CoGiaoKhenViewController.xib */; };
 		EA3730ED1FE5157D00607FB7 /* ChangeClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */; };
 		EA3730EE1FE5157D00607FB7 /* ChangeClothesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */; };
+		EA3B9169201A0F64004AA389 /* RuaTay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3B9168201A0F64004AA389 /* RuaTay.storyboard */; };
+		EA3B916B201A0F86004AA389 /* RuaTayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B916A201A0F86004AA389 /* RuaTayViewController.swift */; };
+		EA3B916D201A0FA6004AA389 /* RuaTayFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3B916C201A0FA6004AA389 /* RuaTayFinishViewController.swift */; };
 		EA3ED3481FEF2FC200BE3721 /* DongCam2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */; };
 		EA3ED3491FEF2FC200BE3721 /* DongCam2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */; };
 		EA3EE56E200CA53200531A1B /* ChiaSe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3EE56D200CA53200531A1B /* ChiaSe.storyboard */; };
@@ -169,6 +172,9 @@
 		EA25C30020050B1500BF60F6 /* CoGiaoKhenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoGiaoKhenViewController.xib; sourceTree = "<group>"; };
 		EA3730EB1FE5157D00607FB7 /* ChangeClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClothesViewController.swift; sourceTree = "<group>"; };
 		EA3730EC1FE5157D00607FB7 /* ChangeClothesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeClothesViewController.xib; sourceTree = "<group>"; };
+		EA3B9168201A0F64004AA389 /* RuaTay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RuaTay.storyboard; sourceTree = "<group>"; };
+		EA3B916A201A0F86004AA389 /* RuaTayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuaTayViewController.swift; sourceTree = "<group>"; };
+		EA3B916C201A0FA6004AA389 /* RuaTayFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuaTayFinishViewController.swift; sourceTree = "<group>"; };
 		EA3ED3461FEF2FC200BE3721 /* DongCam2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DongCam2ViewController.swift; sourceTree = "<group>"; };
 		EA3ED3471FEF2FC200BE3721 /* DongCam2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DongCam2ViewController.xib; sourceTree = "<group>"; };
 		EA3EE56D200CA53200531A1B /* ChiaSe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChiaSe.storyboard; sourceTree = "<group>"; };
@@ -382,6 +388,9 @@
 				EAFBB969200F88050092002D /* DiVeSinh.storyboard */,
 				EAFBB96B200F88710092002D /* DiVeSinhViewController.swift */,
 				EAFBB96D200F88850092002D /* DiVeSinhFinishViewController.swift */,
+				EA3B9168201A0F64004AA389 /* RuaTay.storyboard */,
+				EA3B916A201A0F86004AA389 /* RuaTayViewController.swift */,
+				EA3B916C201A0FA6004AA389 /* RuaTayFinishViewController.swift */,
 			);
 			path = XH;
 			sourceTree = "<group>";
@@ -683,6 +692,7 @@
 				EA6C655F200E3F81008919C4 /* CoiQuan.storyboard in Resources */,
 				EA01CB7D1FEEADB600FCFB49 /* DoanCamXuc22ViewController.xib in Resources */,
 				EAFBB967200F82CB0092002D /* VoTay.mp3 in Resources */,
+				EA3B9169201A0F64004AA389 /* RuaTay.storyboard in Resources */,
 				EAEFF4A01FA5979200AF4078 /* AllFallDown.mp3 in Resources */,
 				EABE1E772001D42000C23A1B /* xebus.MOV in Resources */,
 				EA0A067D2001182C00C51C18 /* GiupDoViewController.xib in Resources */,
@@ -757,6 +767,7 @@
 				EA01CB781FEEAAA900FCFB49 /* DoanCamXuc21ViewController.swift in Sources */,
 				EA25C30120050B1500BF60F6 /* CoGiaoKhenViewController.swift in Sources */,
 				EA7F5CDF1FA587DC00A87ACC /* ViewController.swift in Sources */,
+				EA3B916D201A0FA6004AA389 /* RuaTayFinishViewController.swift in Sources */,
 				EAEFF49D1FA5920700AF4078 /* Array.swift in Sources */,
 				EAFFA32E200ECEAC00BDFEEB /* CoiAoFInishViewController.swift in Sources */,
 				EAEFF49A1FA5903500AF4078 /* BaseViewController.swift in Sources */,
@@ -786,6 +797,7 @@
 				EABE1E4A2001B80300C23A1B /* KhoiXuongViewController.swift in Sources */,
 				EA72D87A2004435000A53866 /* MeTangQuaViewController.swift in Sources */,
 				EA3EE572200CA5BE00531A1B /* ChiaSeFinishViewController.swift in Sources */,
+				EA3B916B201A0F86004AA389 /* RuaTayViewController.swift in Sources */,
 				EAEFF4971FA58D6000AF4078 /* BrushTeethViewController.swift in Sources */,
 				EA72D87D2004453300A53866 /* CamOnViewController.swift in Sources */,
 				EA0A067F200118F500C51C18 /* SocialStoryViewController.swift in Sources */,

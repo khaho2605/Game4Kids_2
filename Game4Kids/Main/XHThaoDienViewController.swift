@@ -16,6 +16,13 @@ class XHThaoDienViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func ruaTayBtnDidTap(_ sender: Any) {
+        if let viewController = UIStoryboard(name: "RuaTay", bundle: nil).instantiateViewController(withIdentifier: "RuaTay") as? RuaTayViewController {
+            if let navigator = navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
+    }
     @IBAction func diVeSinhBtnDidTap(_ sender: Any) {
         if let viewController = UIStoryboard(name: "DiVeSinh", bundle: nil).instantiateViewController(withIdentifier: "DiVeSinh") as? DiVeSinhViewController {
             if let navigator = navigationController {

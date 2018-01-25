@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RỬA TAY-->
+        <scene sceneID="MFB-wM-Wqi">
+            <objects>
+                <viewController storyboardIdentifier="ChaoHoi" id="OrV-qd-caU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9fV-3t-Ji8">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="handwashing_1" translatesAutoresizingMaskIntoConstraints="NO" id="i5c-YG-xfM">
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q88-Zu-eO0">
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ucs-lU-ZGR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Clz-hS-wpE" kind="show" id="IWH-B8-PgJ">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q88-Zu-eO0" firstAttribute="leading" secondItem="zxP-KK-Gj4" secondAttribute="leading" constant="20" id="4fk-4l-nHn"/>
+                            <constraint firstItem="i5c-YG-xfM" firstAttribute="top" secondItem="zxP-KK-Gj4" secondAttribute="top" constant="20" id="CHH-ok-81r"/>
+                            <constraint firstItem="zxP-KK-Gj4" firstAttribute="bottom" secondItem="Q88-Zu-eO0" secondAttribute="bottom" constant="20" id="Gdt-RO-Svo"/>
+                            <constraint firstItem="i5c-YG-xfM" firstAttribute="leading" secondItem="zxP-KK-Gj4" secondAttribute="leading" constant="20" id="bO3-QJ-Lq0"/>
+                            <constraint firstItem="Q88-Zu-eO0" firstAttribute="top" secondItem="i5c-YG-xfM" secondAttribute="bottom" constant="20" id="icT-S2-uuX"/>
+                            <constraint firstItem="zxP-KK-Gj4" firstAttribute="trailing" secondItem="i5c-YG-xfM" secondAttribute="trailing" constant="20" id="lZD-fV-x5r"/>
+                            <constraint firstItem="zxP-KK-Gj4" firstAttribute="trailing" secondItem="Q88-Zu-eO0" secondAttribute="trailing" constant="20" id="t3d-Nq-ADo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zxP-KK-Gj4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RỬA TAY" id="Auu-Nw-ZTc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pgA-pH-w4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-321.09375" y="-135.15625"/>
+        </scene>
+        <!--RỬA TAY-->
+        <scene sceneID="Bis-cL-0ji">
+            <objects>
+                <viewController storyboardIdentifier="RuaTay" id="Zo6-8Z-0GJ" customClass="RuaTayViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7rZ-7u-V2I">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8LA-Ik-nYc">
+                                <rect key="frame" x="8" y="230.5" width="1008" height="307"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handwashing_1" translatesAutoresizingMaskIntoConstraints="NO" id="5N6-pH-ktt">
+                                        <rect key="frame" x="0.0" y="0.0" width="195" height="307"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handwashing_2" translatesAutoresizingMaskIntoConstraints="NO" id="QUy-4z-gZG">
+                                        <rect key="frame" x="203" y="0.0" width="195.5" height="307"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handwashing_3" translatesAutoresizingMaskIntoConstraints="NO" id="aFX-nI-OPb">
+                                        <rect key="frame" x="406.5" y="0.0" width="195" height="307"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handwashing_4" translatesAutoresizingMaskIntoConstraints="NO" id="RlM-IK-AaN">
+                                        <rect key="frame" x="609.5" y="0.0" width="195.5" height="307"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="handwashing_5" translatesAutoresizingMaskIntoConstraints="NO" id="GQa-w7-D45">
+                                        <rect key="frame" x="813" y="0.0" width="195" height="307"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="M4N-44-9l4">
+                                <rect key="frame" x="8" y="545.5" width="1008" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERc-B4-KSf">
+                                        <rect key="frame" x="0.0" y="0.0" width="201.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7N-on-RQE">
+                                        <rect key="frame" x="201.5" y="0.0" width="201.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcM-Mb-DgQ">
+                                        <rect key="frame" x="403" y="0.0" width="202" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P06-Qo-jMt">
+                                        <rect key="frame" x="605" y="0.0" width="201.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBD-bY-Suq">
+                                        <rect key="frame" x="806.5" y="0.0" width="201.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="D5N-n1-dz3">
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwW-E4-FKV">
+                                        <rect key="frame" x="0.0" y="0.0" width="984" height="70"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <state key="normal" title="TIẾP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="OrV-qd-caU" kind="show" id="iPt-ud-RGE">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6Io-gr-aek"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FrV-QB-CQh" firstAttribute="trailing" secondItem="D5N-n1-dz3" secondAttribute="trailing" constant="20" id="0NK-t3-goV"/>
+                            <constraint firstItem="M4N-44-9l4" firstAttribute="top" secondItem="8LA-Ik-nYc" secondAttribute="bottom" constant="8" id="3Op-He-Ujx"/>
+                            <constraint firstItem="M4N-44-9l4" firstAttribute="leading" secondItem="FrV-QB-CQh" secondAttribute="leading" constant="8" id="7YM-Ki-fPy"/>
+                            <constraint firstItem="FrV-QB-CQh" firstAttribute="bottom" secondItem="D5N-n1-dz3" secondAttribute="bottom" constant="20" id="8MV-dZ-aBY"/>
+                            <constraint firstItem="8LA-Ik-nYc" firstAttribute="centerY" secondItem="7rZ-7u-V2I" secondAttribute="centerY" id="DGj-9g-YxF"/>
+                            <constraint firstItem="FrV-QB-CQh" firstAttribute="trailing" secondItem="8LA-Ik-nYc" secondAttribute="trailing" constant="8" id="Fi8-sc-0Yn"/>
+                            <constraint firstItem="8LA-Ik-nYc" firstAttribute="leading" secondItem="FrV-QB-CQh" secondAttribute="leading" constant="8" id="GBu-4B-lt7"/>
+                            <constraint firstItem="D5N-n1-dz3" firstAttribute="leading" secondItem="FrV-QB-CQh" secondAttribute="leading" constant="20" id="Oxv-M5-A4M"/>
+                            <constraint firstItem="FrV-QB-CQh" firstAttribute="trailing" secondItem="M4N-44-9l4" secondAttribute="trailing" constant="8" id="R80-Pe-Epw"/>
+                            <constraint firstItem="8LA-Ik-nYc" firstAttribute="height" secondItem="7rZ-7u-V2I" secondAttribute="height" multiplier="2/5" id="mTR-0f-CM2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FrV-QB-CQh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RỬA TAY" id="SU8-UU-Cm1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoL-Id-UYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-933.39843749999989" y="-135.15625"/>
+        </scene>
+        <!--RỬA TAY-->
+        <scene sceneID="Uv9-S6-ESg">
+            <objects>
+                <viewController id="Clz-hS-wpE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZDZ-Pb-Wgl">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="handwashing_2" translatesAutoresizingMaskIntoConstraints="NO" id="tki-oO-0zB">
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mz5-06-dVJ">
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="zHn-UD-bVL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="GO2-QN-bl8" kind="show" id="Iym-fi-Kep">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tki-oO-0zB" firstAttribute="leading" secondItem="3ZF-vY-aiL" secondAttribute="leading" constant="20" id="1h8-T1-mKS"/>
+                            <constraint firstItem="3ZF-vY-aiL" firstAttribute="trailing" secondItem="tki-oO-0zB" secondAttribute="trailing" constant="20" id="2z2-Kz-JKW"/>
+                            <constraint firstItem="Mz5-06-dVJ" firstAttribute="top" secondItem="tki-oO-0zB" secondAttribute="bottom" constant="20" id="N3h-Ii-QL9"/>
+                            <constraint firstItem="3ZF-vY-aiL" firstAttribute="trailing" secondItem="Mz5-06-dVJ" secondAttribute="trailing" constant="20" id="cXp-iu-c1l"/>
+                            <constraint firstItem="Mz5-06-dVJ" firstAttribute="leading" secondItem="3ZF-vY-aiL" secondAttribute="leading" constant="20" id="daY-1v-MTg"/>
+                            <constraint firstItem="3ZF-vY-aiL" firstAttribute="bottom" secondItem="Mz5-06-dVJ" secondAttribute="bottom" constant="20" id="u8U-tY-g80"/>
+                            <constraint firstItem="tki-oO-0zB" firstAttribute="top" secondItem="3ZF-vY-aiL" secondAttribute="top" constant="20" id="uTb-kJ-Ypu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3ZF-vY-aiL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RỬA TAY" id="Tlc-wa-ESw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOq-xu-SNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308.203125" y="-135.15625"/>
+        </scene>
+        <!--RỬA TAY-->
+        <scene sceneID="XHe-Av-Geo">
+            <objects>
+                <viewController id="GO2-QN-bl8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KDd-yF-8cf">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="handwashing_3" translatesAutoresizingMaskIntoConstraints="NO" id="Xub-lE-HFH">
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mP-Wh-xZM">
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ZLr-dh-sHb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="q2a-FI-acP" kind="show" id="pwM-Db-Rqg">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rgh-se-cJb" firstAttribute="bottom" secondItem="8mP-Wh-xZM" secondAttribute="bottom" constant="20" id="8xa-Az-U3s"/>
+                            <constraint firstItem="8mP-Wh-xZM" firstAttribute="top" secondItem="Xub-lE-HFH" secondAttribute="bottom" constant="20" id="GVr-zt-ubl"/>
+                            <constraint firstItem="8mP-Wh-xZM" firstAttribute="leading" secondItem="Rgh-se-cJb" secondAttribute="leading" constant="20" id="Gjv-fS-8Zy"/>
+                            <constraint firstItem="Xub-lE-HFH" firstAttribute="leading" secondItem="Rgh-se-cJb" secondAttribute="leading" constant="20" id="TVp-La-KOz"/>
+                            <constraint firstItem="Rgh-se-cJb" firstAttribute="trailing" secondItem="8mP-Wh-xZM" secondAttribute="trailing" constant="20" id="Ug0-2x-P11"/>
+                            <constraint firstItem="Rgh-se-cJb" firstAttribute="trailing" secondItem="Xub-lE-HFH" secondAttribute="trailing" constant="20" id="vmr-bL-U8f"/>
+                            <constraint firstItem="Xub-lE-HFH" firstAttribute="top" secondItem="Rgh-se-cJb" secondAttribute="top" constant="20" id="wlO-Fi-5OI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rgh-se-cJb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RỬA TAY" id="wto-4X-TCI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l61-7a-aKk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.14843749999989" y="-135.15625"/>
+        </scene>
+        <!--RỬA TAY-->
+        <scene sceneID="uj0-t8-r3M">
+            <objects>
+                <viewController id="q2a-FI-acP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AP2-yA-MBe">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="handwashing_4" translatesAutoresizingMaskIntoConstraints="NO" id="Qlu-0d-ZcI">
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-T4-7xS">
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3k2-zV-k4O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="TIẾP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Tdz-e1-JMA" kind="show" id="oDC-Q4-eTp">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mcS-bo-HH0" firstAttribute="trailing" secondItem="Qlu-0d-ZcI" secondAttribute="trailing" constant="20" id="Q9b-qX-8Pc"/>
+                            <constraint firstItem="Qlu-0d-ZcI" firstAttribute="leading" secondItem="mcS-bo-HH0" secondAttribute="leading" constant="20" id="bTI-vA-jwd"/>
+                            <constraint firstItem="Qlu-0d-ZcI" firstAttribute="top" secondItem="mcS-bo-HH0" secondAttribute="top" constant="20" id="bqg-53-P8S"/>
+                            <constraint firstItem="mcS-bo-HH0" firstAttribute="bottom" secondItem="JDL-T4-7xS" secondAttribute="bottom" constant="20" id="h8V-Sk-VdH"/>
+                            <constraint firstItem="JDL-T4-7xS" firstAttribute="top" secondItem="Qlu-0d-ZcI" secondAttribute="bottom" constant="20" id="i0j-lw-Pnl"/>
+                            <constraint firstItem="mcS-bo-HH0" firstAttribute="trailing" secondItem="JDL-T4-7xS" secondAttribute="trailing" constant="20" id="pMp-Dm-CXl"/>
+                            <constraint firstItem="JDL-T4-7xS" firstAttribute="leading" secondItem="mcS-bo-HH0" secondAttribute="leading" constant="20" id="xs7-q5-zfb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mcS-bo-HH0"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RỬA TAY" id="nZk-Xd-Rgt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9d-dB-KVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580.859375" y="-135.15625"/>
+        </scene>
+        <!--RỬA TAY-->
+        <scene sceneID="QNQ-xg-XwV">
+            <objects>
+                <viewController id="Tdz-e1-JMA" customClass="RuaTayFinishViewController" customModule="Game4Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tfg-2q-g8j">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="handwashing_5" translatesAutoresizingMaskIntoConstraints="NO" id="oEI-Ut-6Z7">
+                                <rect key="frame" x="20" y="84" width="984" height="574"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nh-HP-VT6">
+                                <rect key="frame" x="20" y="678" width="984" height="70"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69411764710000001" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Vyv-ce-YRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="KẾT THÚC">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="finishBtnDidTap:" destination="Tdz-e1-JMA" eventType="touchUpInside" id="kbd-pO-78I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0nh-HP-VT6" firstAttribute="leading" secondItem="NcU-7U-Cyc" secondAttribute="leading" constant="20" id="2br-HV-mDg"/>
+                            <constraint firstItem="NcU-7U-Cyc" firstAttribute="trailing" secondItem="0nh-HP-VT6" secondAttribute="trailing" constant="20" id="RSk-lq-vM5"/>
+                            <constraint firstItem="oEI-Ut-6Z7" firstAttribute="top" secondItem="NcU-7U-Cyc" secondAttribute="top" constant="20" id="SYX-8G-moQ"/>
+                            <constraint firstItem="NcU-7U-Cyc" firstAttribute="bottom" secondItem="0nh-HP-VT6" secondAttribute="bottom" constant="20" id="URX-GZ-ggN"/>
+                            <constraint firstItem="NcU-7U-Cyc" firstAttribute="trailing" secondItem="oEI-Ut-6Z7" secondAttribute="trailing" constant="20" id="jjH-y0-UeZ"/>
+                            <constraint firstItem="0nh-HP-VT6" firstAttribute="top" secondItem="oEI-Ut-6Z7" secondAttribute="bottom" constant="20" id="qxw-ww-lQp"/>
+                            <constraint firstItem="oEI-Ut-6Z7" firstAttribute="leading" secondItem="NcU-7U-Cyc" secondAttribute="leading" constant="20" id="r2A-pv-pLF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NcU-7U-Cyc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RỬA TAY" id="grT-6q-dMW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8q-uu-yNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2234.765625" y="-135.15625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iuy-lB-K9g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wcm-Hr-P7a" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ymn-IU-RDM">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zo6-8Z-0GJ" kind="relationship" relationship="rootViewController" id="tBv-EW-1AN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWD-cs-WkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1656" y="-135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="handwashing_1" width="952" height="731"/>
+        <image name="handwashing_2" width="939" height="709"/>
+        <image name="handwashing_3" width="940" height="654"/>
+        <image name="handwashing_4" width="925" height="694"/>
+        <image name="handwashing_5" width="950" height="692"/>
+    </resources>
+</document>
