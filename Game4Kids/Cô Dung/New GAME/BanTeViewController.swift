@@ -21,7 +21,7 @@ class BanTeViewController: BaseViewController {
     var originPlayer1:CGPoint?
     var originPlayer2:CGPoint?
     var arrOrigin: [CGPoint] = [CGPoint]()
-    var typeView = TypeViewCoDung.BanTe
+    var typeView = TypeViewCoDung.DiXeDap
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,30 +56,50 @@ class BanTeViewController: BaseViewController {
     
     func layoutImg(typeView: String) {
         switch typeView {
-        case TypeViewCoDung.BanTe.rawValue:
-            image1.image = #imageLiteral(resourceName: "bante1")
-            image2.image = #imageLiteral(resourceName: "bante2")
-            image3.image = #imageLiteral(resourceName: "bante3")
-            wrongButton.setImage(#imageLiteral(resourceName: "bante_answers1"), for: .normal)
-            rightButton.setImage(#imageLiteral(resourceName: "bante_answers2"), for: .normal)
-        case TypeViewCoDung.BongRo.rawValue:
-            image1.image = #imageLiteral(resourceName: "bongro1")
-            image2.image = #imageLiteral(resourceName: "bongro2")
-            image3.image = #imageLiteral(resourceName: "bongro3")
-            wrongButton.setImage(#imageLiteral(resourceName: "bongro_answer1"), for: .normal)
-            rightButton.setImage(#imageLiteral(resourceName: "bongro_answer2"), for: .normal)
+        case TypeViewCoDung.DiXeDap.rawValue:
+            image1.image = #imageLiteral(resourceName: "dixedap1")
+            image2.image = #imageLiteral(resourceName: "dixedap2")
+            image3.image = #imageLiteral(resourceName: "dixedap3")
+            wrongButton.setImage(#imageLiteral(resourceName: "answer1_dixedap"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "answer2_dixedap"), for: .normal)
+        case TypeViewCoDung.ChoDenLuot.rawValue:
+            image1.image = #imageLiteral(resourceName: "chodenluot1")
+            image2.image = #imageLiteral(resourceName: "chodenluot2")
+            image3.image = #imageLiteral(resourceName: "chodenluot3")
+            wrongButton.setImage(#imageLiteral(resourceName: "anwser1_chodenluot"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "answer2_chodenluot"), for: .normal)
+        case TypeViewCoDung.VanTruot.rawValue:
+            image1.image = #imageLiteral(resourceName: "vantruot1")
+            image2.image = #imageLiteral(resourceName: "vantruot2")
+            image3.image = #imageLiteral(resourceName: "vantruot3")
+            wrongButton.setImage(#imageLiteral(resourceName: "answer1_ vantruot"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "answer2_ vantruot"), for: .normal)
+        case TypeViewCoDung.DaBong.rawValue:
+            image1.image = #imageLiteral(resourceName: "dabong1")
+            image2.image = #imageLiteral(resourceName: "dabong2")
+            image3.image = #imageLiteral(resourceName: "dabong3")
+            wrongButton.setImage(#imageLiteral(resourceName: "false_answer_dabong"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "true_answer_dabong"), for: .normal)
+            
+        case TypeViewCoDung.ChiaSeBanh.rawValue:
+            image1.image = #imageLiteral(resourceName: "sandwich1")
+            image2.image = #imageLiteral(resourceName: "sandwich2")
+            image3.image = #imageLiteral(resourceName: "sandwich3")
+            wrongButton.setImage(#imageLiteral(resourceName: "answer1_sandwich"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "answer2_sandwich"), for: .normal)
+            
         case TypeViewCoDung.CauTruot.rawValue:
             image1.image = #imageLiteral(resourceName: "cautruot1")
             image2.image = #imageLiteral(resourceName: "cautruot2")
             image3.image = #imageLiteral(resourceName: "cautruot3")
             wrongButton.setImage(#imageLiteral(resourceName: "cautruot_answer1"), for: .normal)
             rightButton.setImage(#imageLiteral(resourceName: "cautruot_answer2"), for: .normal)
-        case TypeViewCoDung.LuanPhien.rawValue:
+        case TypeViewCoDung.BongRo.rawValue:
             image1.image = #imageLiteral(resourceName: "luanphien1")
             image2.image = #imageLiteral(resourceName: "luanphien2")
             image3.image = #imageLiteral(resourceName: "luanphien3")
-            wrongButton.setImage(#imageLiteral(resourceName: "luanphien_answer1"), for: .normal)
-            rightButton.setImage(#imageLiteral(resourceName: "luanphien_answer2"), for: .normal)
+            wrongButton.setImage(#imageLiteral(resourceName: "answer1_bongro"), for: .normal)
+            rightButton.setImage(#imageLiteral(resourceName: "answer2_bongro"), for: .normal)
         default:
             break
         }

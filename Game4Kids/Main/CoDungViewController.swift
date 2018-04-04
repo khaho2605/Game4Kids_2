@@ -20,23 +20,25 @@ class CoDungViewController: BaseViewController {
         self.navigationController?.pushViewController(CamXuc1ViewController(), animated: true)
     }
 
-    @IBAction func xayNhaBtnDidTap(_ sender: Any) {
-        let vc = XayNhaViewController()
-        vc.title = "XÂY NHÀ"
-        vc.typeView = TypeViewCoDung.XayNha
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func banTeBtnDidTap(_ sender: Any) {
+    @IBAction func choDenLuotBtnDidTap(_ sender: Any) {
+//        let vc = XayNhaViewController()
         let vc = BanTeViewController()
-        vc.title = "BẠN TÉ"
-        vc.typeView = TypeViewCoDung.BanTe
+        vc.title = "CHỜ ĐẾN LƯỢT"
+        vc.typeView = TypeViewCoDung.ChoDenLuot
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    @IBAction func voChuoiBtnDidTap(_ sender: Any) {
-        let vc = XayNhaViewController()
-        vc.title = "TRƯỢT VỎ CHUỐI"
+    @IBAction func diXeDapBtnDidTap(_ sender: Any) {
+        let vc = BanTeViewController()
+        vc.title = "ĐI XE ĐẠP"
+        vc.typeView = TypeViewCoDung.DiXeDap
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func vanTruotBtnDidTap(_ sender: Any) {
+//        let vc = XayNhaViewController()
+        let vc = BanTeViewController()
+        vc.title = "CHƠI XE VÁN TRƯỢT"
         vc.typeView = TypeViewCoDung.VoChuoi
         self.navigationController?.pushViewController(vc, animated: true)
     }
@@ -47,10 +49,11 @@ class CoDungViewController: BaseViewController {
         vc.typeView = TypeViewCoDung.BongRo
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    @IBAction func biSotBtnDidTap(_ sender: Any) {
-        let vc = XayNhaViewController()
-        vc.title = "BỊ SỐT"
-        vc.typeView = TypeViewCoDung.BiSot
+    @IBAction func daBongBtnDidTap(_ sender: Any) {
+//        let vc = XayNhaViewController()
+        let vc = BanTeViewController()
+        vc.title = "CHƠI ĐÁ BÓNG"
+        vc.typeView = TypeViewCoDung.DaBong
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -69,7 +72,8 @@ class CoDungViewController: BaseViewController {
     }
     
     @IBAction func sandwichBtnDidTap(_ sender: Any) {
-        let vc = XayNhaViewController()
+//        let vc = XayNhaViewController()
+        let vc = BanTeViewController()
         vc.title = "CHIA SẺ BÁNH SANDWICH"
         vc.typeView = TypeViewCoDung.ChiaSeBanh
         self.navigationController?.pushViewController(vc, animated: true)

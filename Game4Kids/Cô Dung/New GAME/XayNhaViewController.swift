@@ -25,7 +25,7 @@ class XayNhaViewController: BaseViewController {
     var originPlayer2:CGPoint?
     var originPlayer3:CGPoint?
     var arrOrigin: [CGPoint] = [CGPoint]()
-    var typeView = TypeViewCoDung.BanTe
+    var typeView = TypeViewCoDung.BiSot
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,12 +53,12 @@ class XayNhaViewController: BaseViewController {
 
     func layoutImg(typeView: String) {
         switch typeView {
-        case TypeViewCoDung.XayNha.rawValue:
-            image1.image = #imageLiteral(resourceName: "xaynha1")
-            image2.image = #imageLiteral(resourceName: "xaynha2")
-            image3.image = #imageLiteral(resourceName: "xaynha3")
-            playerImg1.image = #imageLiteral(resourceName: "xaynha_answer1")
-            playerImg2.image = #imageLiteral(resourceName: "xaynha_answer2")
+//        case TypeViewCoDung.XayNha.rawValue:
+//            image1.image = #imageLiteral(resourceName: "xaynha1")
+//            image2.image = #imageLiteral(resourceName: "xaynha2")
+//            image3.image = #imageLiteral(resourceName: "xaynha3")
+//            playerImg1.image = #imageLiteral(resourceName: "xaynha_answer1")
+//            playerImg2.image = #imageLiteral(resourceName: "xaynha_answer2")
         case TypeViewCoDung.VoChuoi.rawValue:
             image1.image = #imageLiteral(resourceName: "truot1")
             image2.image = #imageLiteral(resourceName: "truot2")
