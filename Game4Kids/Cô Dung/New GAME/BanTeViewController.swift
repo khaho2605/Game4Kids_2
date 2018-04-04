@@ -18,6 +18,13 @@ class BanTeViewController: BaseViewController {
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var replayButton: UIButton!
     
+    let checkImg: UIImageView = {
+        let imgView = UIImageView()
+        imgView.image = #imageLiteral(resourceName: "tick")
+        imgView.isHidden = true
+        return imgView
+    }()
+    
     var originPlayer1:CGPoint?
     var originPlayer2:CGPoint?
     var arrOrigin: [CGPoint] = [CGPoint]()
@@ -30,6 +37,7 @@ class BanTeViewController: BaseViewController {
 //        arrOrigin = getPos()
 //        guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
 //        setPosition(arrData: data)
+        rightButton.addSubview(checkImg)
     }
     
     override func viewWillLayoutSubviews() {
@@ -38,6 +46,7 @@ class BanTeViewController: BaseViewController {
         arrOrigin = getPos()
         guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
         setPosition(arrData: data)
+        checkImg.frame = CGRect(x: rightButton.width-50, y: 0, width: 50, height: 50)
     }
     
     func getPos() -> [CGPoint] {
@@ -114,6 +123,7 @@ class BanTeViewController: BaseViewController {
 
     @IBAction func rightBtnDidTap(_ sender: Any) {
         playSound(name: "Correct", Extension: "mp3", repeatSound: false)
+        checkImg.isHidden = false
     }
     @IBAction func wrongBtnDidTap(_ sender: Any) {
         playSound(name: "Wrong", Extension: "mp3", repeatSound: false)
@@ -122,5 +132,6 @@ class BanTeViewController: BaseViewController {
     @IBAction func replayBtnDidTap(_ sender: Any) {
         guard let data = arrOrigin.randomArr() as? [CGPoint]  else { return }
         setPosition(arrData: data)
+        checkImg.isHidden = true
     }
 }
