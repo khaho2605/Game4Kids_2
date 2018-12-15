@@ -13,20 +13,6 @@ import AVFoundation
 let theWidth:CGFloat = UIScreen.main.bounds.width
 let theHeight:CGFloat = UIScreen.main.bounds.height
 
-extension MutableCollection {
-    /// Shuffles the contents of this collection.
-    mutating func shuffle() {
-        let c = count
-        guard c > 1 else { return }
-        
-        for (firstUnshuffled, unshuffledCount) in zip(indices, stride(from: c, to: 1, by: -1)) {
-            let d: IndexDistance = numericCast(arc4random_uniform(numericCast(unshuffledCount)))
-            let i = index(firstUnshuffled, offsetBy: d)
-            swapAt(firstUnshuffled, i)
-        }
-    }
-}
-
 public func randomNumber<T : SignedInteger>(inRange range: ClosedRange<T> = 1...6) -> T {
     let length = Int64(range.upperBound - range.lowerBound + 1)
     let value = Int64(arc4random()) % length + Int64(range.lowerBound)
