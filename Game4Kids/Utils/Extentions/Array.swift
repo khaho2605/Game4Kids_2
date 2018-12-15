@@ -45,17 +45,17 @@ public extension CGFloat {
     }
 }
 
-extension MutableCollection where Index == Int {
-    /// Shuffle the elements of `self` in-place.
+extension MutableCollection {
+    /// Shuffles the contents of this collection.
     mutating func shuffle() {
-        // empty and single-element collections don't shuffle
-        if count < 2 { return }
+        let c = count
+        guard c > 1 else { return }
         
-        for i in startIndex ..< endIndex - 1 {
-            let j = Int(arc4random_uniform(UInt32(endIndex - i))) + i
-            if i != j {
-                self.swapAt(i, j)
-            }
+        for (firstUnshuffled, unshuffledCount) in zip(indices, stride(from: c, to: 1, by: -1)) {
+            // Change `Int` in the next line to `IndexDistance` in < Swift 4.1
+            let d: Int = numericCast(arc4random_uniform(numericCast(unshuffledCount)))
+            let i = index(firstUnshuffled, offsetBy: d)
+            swapAt(firstUnshuffled, i)
         }
     }
 }
